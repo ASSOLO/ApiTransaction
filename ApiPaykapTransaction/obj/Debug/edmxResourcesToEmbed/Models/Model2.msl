@@ -1,0 +1,1345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="paykapdevModelStoreContainer" CdmEntityContainer="DataModel">
+    <FunctionImportMapping FunctionName="paykapdevModel.Store.GetTransactionDetails" FunctionImportName="GetTransactionDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="paykapdevModel.GetTransactionDetails_Result">
+          <ScalarProperty Name="USR_FNM" ColumnName="USR_FNM" />
+          <ScalarProperty Name="USR_LNM" ColumnName="USR_LNM" />
+          <ScalarProperty Name="FROM_USR_NBR" ColumnName="FROM_USR_NBR" />
+          <ScalarProperty Name="RCPT_USR_BUS_NM" ColumnName="RCPT_USR_BUS_NM" />
+          <ScalarProperty Name="TRANS_ID" ColumnName="TRANS_ID" />
+          <ScalarProperty Name="TO_TRANS_AMT" ColumnName="TO_TRANS_AMT" />
+          <ScalarProperty Name="TRANS_DESC" ColumnName="TRANS_DESC" />
+          <ScalarProperty Name="FRA_TRSF_SERV_NM" ColumnName="FRA_TRSF_SERV_NM" />
+          <ScalarProperty Name="TRANS_SCD" ColumnName="TRANS_SCD" />
+          <ScalarProperty Name="CITY_NM" ColumnName="CITY_NM" />
+          <ScalarProperty Name="ADDR_LN1_TXT" ColumnName="ADDR_LN1_TXT" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetTransactionDetailsWithPin" FunctionName="paykapdevModel.Store.GetTransactionDetailsWithPin">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="paykapdevModel.GetTransactionDetailsWithPin_Result">
+          <ScalarProperty Name="USR_FNM" ColumnName="USR_FNM" />
+          <ScalarProperty Name="USR_LNM" ColumnName="USR_LNM" />
+          <ScalarProperty Name="FROM_USR_NBR" ColumnName="FROM_USR_NBR" />
+          <ScalarProperty Name="RCPT_USR_BUS_NM" ColumnName="RCPT_USR_BUS_NM" />
+          <ScalarProperty Name="TRANS_ID" ColumnName="TRANS_ID" />
+          <ScalarProperty Name="TO_TRANS_AMT" ColumnName="TO_TRANS_AMT" />
+          <ScalarProperty Name="TRANS_DESC" ColumnName="TRANS_DESC" />
+          <ScalarProperty Name="FRA_TRSF_SERV_NM" ColumnName="FRA_TRSF_SERV_NM" />
+          <ScalarProperty Name="TRANS_SCD" ColumnName="TRANS_SCD" />
+          <ScalarProperty Name="CITY_NM" ColumnName="CITY_NM" />
+          <ScalarProperty Name="ADDR_LN1_TXT" ColumnName="ADDR_LN1_TXT" />
+          <ScalarProperty Name="CARD_PIN" ColumnName="CARD_PIN" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="TCARD">
+      <EntityTypeMapping TypeName="paykapdevModel.TCARD">
+        <MappingFragment StoreEntitySet="TCARD">
+          <ScalarProperty Name="PHYS_CARD_SCD" ColumnName="PHYS_CARD_SCD" />
+          <ScalarProperty Name="DFLT_PIN_IND" ColumnName="DFLT_PIN_IND" />
+          <ScalarProperty Name="USR_NBR" ColumnName="USR_NBR" />
+          <ScalarProperty Name="CARD_CDT" ColumnName="CARD_CDT" />
+          <ScalarProperty Name="CARD_CTRY_CD" ColumnName="CARD_CTRY_CD" />
+          <ScalarProperty Name="CARD_SCD" ColumnName="CARD_SCD" />
+          <ScalarProperty Name="CARD_TCD" ColumnName="CARD_TCD" />
+          <ScalarProperty Name="CARD_XDT" ColumnName="CARD_XDT" />
+          <ScalarProperty Name="CARD_EDT" ColumnName="CARD_EDT" />
+          <ScalarProperty Name="CARD_PIN" ColumnName="CARD_PIN" />
+          <ScalarProperty Name="CARD_CVV_CD" ColumnName="CARD_CVV_CD" />
+          <ScalarProperty Name="CARD_NBR" ColumnName="CARD_NBR" />
+          <ScalarProperty Name="CARD_OWNR_FNM" ColumnName="CARD_OWNR_FNM" />
+          <ScalarProperty Name="CARD_ID" ColumnName="CARD_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="InsertTransaction" FunctionName="paykapdevModel.Store.InsertTransaction" />
+    <FunctionImportMapping FunctionImportName="RetraitDetails1" FunctionName="paykapdevModel.Store.RetraitDetails1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="paykapdevModel.RetraitDetails1_Result">
+          <ScalarProperty Name="CLT_FUL_NM" ColumnName="CLT_FUL_NM" />
+          <ScalarProperty Name="FEE_AMT" ColumnName="FEE_AMT" />
+          <ScalarProperty Name="TOT_AMT_TO_PAY" ColumnName="TOT_AMT_TO_PAY" />
+          <ScalarProperty Name="AMT_TO_RECEIVE" ColumnName="AMT_TO_RECEIVE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="RetraitDetails2" FunctionName="paykapdevModel.Store.RetraitDetails2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="paykapdevModel.RetraitDetails2_Result">
+          <ScalarProperty Name="CLT_USR_NBR" ColumnName="CLT_USR_NBR" />
+          <ScalarProperty Name="CLT_FUL_NM" ColumnName="CLT_FUL_NM" />
+          <ScalarProperty Name="FEE_AMT" ColumnName="FEE_AMT" />
+          <ScalarProperty Name="TOT_AMT_TO_PAY" ColumnName="TOT_AMT_TO_PAY" />
+          <ScalarProperty Name="AMT_TO_RECEIVE" ColumnName="AMT_TO_RECEIVE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LastInsertedTransID" FunctionName="paykapdevModel.Store.LastInsertedTransID" />
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="paykapdevModel.AspNetRoles">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="paykapdevModel.AspNetUserClaims">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="paykapdevModel.AspNetUserLogins">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="paykapdevModel.AspNetUsers">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TACCT">
+      <EntityTypeMapping TypeName="paykapdevModel.TACCT">
+        <MappingFragment StoreEntitySet="TACCT">
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="USR_NBR" ColumnName="USR_NBR" />
+          <ScalarProperty Name="ACCT_CDT" ColumnName="ACCT_CDT" />
+          <ScalarProperty Name="ACCT_CLTR_INFO" ColumnName="ACCT_CLTR_INFO" />
+          <ScalarProperty Name="ACCT_BAL" ColumnName="ACCT_BAL" />
+          <ScalarProperty Name="ACCT_NAME" ColumnName="ACCT_NAME" />
+          <ScalarProperty Name="ACCT_NBR" ColumnName="ACCT_NBR" />
+          <ScalarProperty Name="ACCT_SCD" ColumnName="ACCT_SCD" />
+          <ScalarProperty Name="CRCY_CD" ColumnName="CRCY_CD" />
+          <ScalarProperty Name="ACCT_TCD" ColumnName="ACCT_TCD" />
+          <ScalarProperty Name="ACCT_ID" ColumnName="ACCT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TACCT_BUS_AGNT_CMSN">
+      <EntityTypeMapping TypeName="paykapdevModel.TACCT_BUS_AGNT_CMSN">
+        <MappingFragment StoreEntitySet="TACCT_BUS_AGNT_CMSN">
+          <ScalarProperty Name="SPNSR_CNTL_CMSN_ACCT_IND" ColumnName="SPNSR_CNTL_CMSN_ACCT_IND" />
+          <ScalarProperty Name="DPLY_ACCT_TO_SPNSR_IND" ColumnName="DPLY_ACCT_TO_SPNSR_IND" />
+          <ScalarProperty Name="BUS_AGNT_TCD" ColumnName="BUS_AGNT_TCD" />
+          <ScalarProperty Name="ACCT_SCD" ColumnName="ACCT_SCD" />
+          <ScalarProperty Name="ACCT_CLTR_INFO" ColumnName="ACCT_CLTR_INFO" />
+          <ScalarProperty Name="ACCT_BAL" ColumnName="ACCT_BAL" />
+          <ScalarProperty Name="ACCT_NBR" ColumnName="ACCT_NBR" />
+          <ScalarProperty Name="CRCY_CD" ColumnName="CRCY_CD" />
+          <ScalarProperty Name="ACCT_TCD" ColumnName="ACCT_TCD" />
+          <ScalarProperty Name="ACCT_ID" ColumnName="ACCT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TACCT_BUS_SRVC">
+      <EntityTypeMapping TypeName="paykapdevModel.TACCT_BUS_SRVC">
+        <MappingFragment StoreEntitySet="TACCT_BUS_SRVC">
+          <ScalarProperty Name="ACCT_OTH2_IND" ColumnName="ACCT_OTH2_IND" />
+          <ScalarProperty Name="ACCT_OTH1_IND" ColumnName="ACCT_OTH1_IND" />
+          <ScalarProperty Name="ACCT_SCD" ColumnName="ACCT_SCD" />
+          <ScalarProperty Name="ACCT_CLTR_INFO" ColumnName="ACCT_CLTR_INFO" />
+          <ScalarProperty Name="ACCT_BAL" ColumnName="ACCT_BAL" />
+          <ScalarProperty Name="ACCT_NBR" ColumnName="ACCT_NBR" />
+          <ScalarProperty Name="CRCY_CD" ColumnName="CRCY_CD" />
+          <ScalarProperty Name="ACCT_TCD" ColumnName="ACCT_TCD" />
+          <ScalarProperty Name="ACCT_BUS_SRVC_CD" ColumnName="ACCT_BUS_SRVC_CD" />
+          <ScalarProperty Name="ACCT_ID" ColumnName="ACCT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TACCT_CRDT">
+      <EntityTypeMapping TypeName="paykapdevModel.TACCT_CRDT">
+        <MappingFragment StoreEntitySet="TACCT_CRDT">
+          <ScalarProperty Name="ACCT_CRDT_CHCK_IND" ColumnName="ACCT_CRDT_CHCK_IND" />
+          <ScalarProperty Name="ACCT_CRDT_DT" ColumnName="ACCT_CRDT_DT" />
+          <ScalarProperty Name="ACCT_CRDT_AMT" ColumnName="ACCT_CRDT_AMT" />
+          <ScalarProperty Name="ACCT_ID" ColumnName="ACCT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TACCT_HIST">
+      <EntityTypeMapping TypeName="paykapdevModel.TACCT_HIST">
+        <MappingFragment StoreEntitySet="TACCT_HIST">
+          <ScalarProperty Name="TRANS_DESC" ColumnName="TRANS_DESC" />
+          <ScalarProperty Name="TRANS_DTTM" ColumnName="TRANS_DTTM" />
+          <ScalarProperty Name="TRANS_AMT" ColumnName="TRANS_AMT" />
+          <ScalarProperty Name="BAL_AFTR_TRANS" ColumnName="BAL_AFTR_TRANS" />
+          <ScalarProperty Name="TRANS_SRVC_TCD" ColumnName="TRANS_SRVC_TCD" />
+          <ScalarProperty Name="TRANS_PAY_SRC_CD" ColumnName="TRANS_PAY_SRC_CD" />
+          <ScalarProperty Name="TRANS_TCD" ColumnName="TRANS_TCD" />
+          <ScalarProperty Name="ACCT_ID" ColumnName="ACCT_ID" />
+          <ScalarProperty Name="ACCT_HIST_ID" ColumnName="ACCT_HIST_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TACCT_ID">
+      <EntityTypeMapping TypeName="paykapdevModel.TACCT_ID">
+        <MappingFragment StoreEntitySet="TACCT_ID">
+          <ScalarProperty Name="IDENT_DT" ColumnName="IDENT_DT" />
+          <ScalarProperty Name="ACCT_ID" ColumnName="ACCT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAGNT">
+      <EntityTypeMapping TypeName="paykapdevModel.TAGNT">
+        <MappingFragment StoreEntitySet="TAGNT">
+          <ScalarProperty Name="SPNSR_AGNT_IND" ColumnName="SPNSR_AGNT_IND" />
+          <ScalarProperty Name="SPNSR_AGNT_ID" ColumnName="SPNSR_AGNT_ID" />
+          <ScalarProperty Name="AGNT_TKN_CD" ColumnName="AGNT_TKN_CD" />
+          <ScalarProperty Name="AGNT_ACCT_ID" ColumnName="AGNT_ACCT_ID" />
+          <ScalarProperty Name="AGNT_BUS_USR_TCD" ColumnName="AGNT_BUS_USR_TCD" />
+          <ScalarProperty Name="AGNT_BUS_NBR" ColumnName="AGNT_BUS_NBR" />
+          <ScalarProperty Name="AGNT_USR_NBR" ColumnName="AGNT_USR_NBR" />
+          <ScalarProperty Name="AGNT_XDT" ColumnName="AGNT_XDT" />
+          <ScalarProperty Name="AGNT_EDT" ColumnName="AGNT_EDT" />
+          <ScalarProperty Name="AGNT_EXP_IND" ColumnName="AGNT_EXP_IND" />
+          <ScalarProperty Name="AGNT_NM" ColumnName="AGNT_NM" />
+          <ScalarProperty Name="AGNT_ID" ColumnName="AGNT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAGNT_CMSN">
+      <EntityTypeMapping TypeName="paykapdevModel.TAGNT_CMSN">
+        <MappingFragment StoreEntitySet="TAGNT_CMSN">
+          <ScalarProperty Name="APLY_SPNSR_CMSN_IND" ColumnName="APLY_SPNSR_CMSN_IND" />
+          <ScalarProperty Name="APLY_PRCNT_TRANS_FEE_PTNR_CMSN_CD" ColumnName="APLY_PRCNT_TRANS_FEE_PTNR_CMSN_CD" />
+          <ScalarProperty Name="CMSN_CUR_APBL_XDT" ColumnName="CMSN_CUR_APBL_XDT" />
+          <ScalarProperty Name="CMSN_CUR_APBL_EDT" ColumnName="CMSN_CUR_APBL_EDT" />
+          <ScalarProperty Name="CMSN_CUR_APBL_IND" ColumnName="CMSN_CUR_APBL_IND" />
+          <ScalarProperty Name="CMSN_TCD" ColumnName="CMSN_TCD" />
+          <ScalarProperty Name="SPNSR_PRCNT_CMSN_RT" ColumnName="SPNSR_PRCNT_CMSN_RT" />
+          <ScalarProperty Name="SPNSR_FIX_CMSN_AMT" ColumnName="SPNSR_FIX_CMSN_AMT" />
+          <ScalarProperty Name="AGNT_PRCNT_CMSN_RT" ColumnName="AGNT_PRCNT_CMSN_RT" />
+          <ScalarProperty Name="AGNT_FIX_CMSN_AMT" ColumnName="AGNT_FIX_CMSN_AMT" />
+          <ScalarProperty Name="AGNT_CLT_PRTR_TCD" ColumnName="AGNT_CLT_PRTR_TCD" />
+          <ScalarProperty Name="PRTNSP_BN" ColumnName="PRTNSP_BN" />
+          <ScalarProperty Name="CTRY_CD" ColumnName="CTRY_CD" />
+          <ScalarProperty Name="ONLN_AGCY_SRVC_TCD" ColumnName="ONLN_AGCY_SRVC_TCD" />
+          <ScalarProperty Name="SRVC_TCD" ColumnName="SRVC_TCD" />
+          <ScalarProperty Name="AGNT_ID" ColumnName="AGNT_ID" />
+          <ScalarProperty Name="AGNT_CMSN_ID" ColumnName="AGNT_CMSN_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAGNT_PKP_CMSN">
+      <EntityTypeMapping TypeName="paykapdevModel.TAGNT_PKP_CMSN">
+        <MappingFragment StoreEntitySet="TAGNT_PKP_CMSN">
+          <ScalarProperty Name="CMSN_CUR_APBL_XDT" ColumnName="CMSN_CUR_APBL_XDT" />
+          <ScalarProperty Name="CMSN_CUR_APBL_EDT" ColumnName="CMSN_CUR_APBL_EDT" />
+          <ScalarProperty Name="CMSN_CUR_APBL_IND" ColumnName="CMSN_CUR_APBL_IND" />
+          <ScalarProperty Name="CMSN_TCD" ColumnName="CMSN_TCD" />
+          <ScalarProperty Name="SPNSR_PRCNT_CMSN_RT" ColumnName="SPNSR_PRCNT_CMSN_RT" />
+          <ScalarProperty Name="SPNSR_FIX_CMSN_AMT" ColumnName="SPNSR_FIX_CMSN_AMT" />
+          <ScalarProperty Name="AGNT_PRCNT_CMSN_RT" ColumnName="AGNT_PRCNT_CMSN_RT" />
+          <ScalarProperty Name="AGNT_FIX_CMSN_AMT" ColumnName="AGNT_FIX_CMSN_AMT" />
+          <ScalarProperty Name="CRCY_CD" ColumnName="CRCY_CD" />
+          <ScalarProperty Name="CTRY_CD" ColumnName="CTRY_CD" />
+          <ScalarProperty Name="ONLN_AGCY_SRVC_TCD" ColumnName="ONLN_AGCY_SRVC_TCD" />
+          <ScalarProperty Name="SRVC_TCD" ColumnName="SRVC_TCD" />
+          <ScalarProperty Name="CMSN_ID" ColumnName="CMSN_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAGNT_SPNSRD">
+      <EntityTypeMapping TypeName="paykapdevModel.TAGNT_SPNSRD">
+        <MappingFragment StoreEntitySet="TAGNT_SPNSRD">
+          <ScalarProperty Name="AGNT_ID" ColumnName="AGNT_ID" />
+          <ScalarProperty Name="SPNSRD_FUL_NM" ColumnName="SPNSRD_FUL_NM" />
+          <ScalarProperty Name="SPNSRD_CRT_DT" ColumnName="SPNSRD_CRT_DT" />
+          <ScalarProperty Name="SPNSRD_USR_NBR" ColumnName="SPNSRD_USR_NBR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAGNT_TRANS_CMSN">
+      <EntityTypeMapping TypeName="paykapdevModel.TAGNT_TRANS_CMSN">
+        <MappingFragment StoreEntitySet="TAGNT_TRANS_CMSN">
+          <ScalarProperty Name="SRVC_TCD" ColumnName="SRVC_TCD" />
+          <ScalarProperty Name="TRANS_SPNSRD_TCD" ColumnName="TRANS_SPNSRD_TCD" />
+          <ScalarProperty Name="TRANS_SPNSRD_NM" ColumnName="TRANS_SPNSRD_NM" />
+          <ScalarProperty Name="TRANS_SPNSRD_NBR" ColumnName="TRANS_SPNSRD_NBR" />
+          <ScalarProperty Name="TRANS_CMSN_DESC" ColumnName="TRANS_CMSN_DESC" />
+          <ScalarProperty Name="TRANS_CMSN_CRCY_CD" ColumnName="TRANS_CMSN_CRCY_CD" />
+          <ScalarProperty Name="TRANS_CMSN_DT" ColumnName="TRANS_CMSN_DT" />
+          <ScalarProperty Name="TRANS_CMSN_AMT" ColumnName="TRANS_CMSN_AMT" />
+          <ScalarProperty Name="TRANS_ID" ColumnName="TRANS_ID" />
+          <ScalarProperty Name="AGNT_SPNSR_TCD" ColumnName="AGNT_SPNSR_TCD" />
+          <ScalarProperty Name="AGNT_ID" ColumnName="AGNT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAGNT_TRANS_CMSN_TEMPO">
+      <EntityTypeMapping TypeName="paykapdevModel.TAGNT_TRANS_CMSN_TEMPO">
+        <MappingFragment StoreEntitySet="TAGNT_TRANS_CMSN_TEMPO">
+          <ScalarProperty Name="AGNT_TKN_CD" ColumnName="AGNT_TKN_CD" />
+          <ScalarProperty Name="NEW_TO_TRSF_SRVC_IND" ColumnName="NEW_TO_TRSF_SRVC_IND" />
+          <ScalarProperty Name="TRANS_ID" ColumnName="TRANS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAGNT_TRSF">
+      <EntityTypeMapping TypeName="paykapdevModel.TAGNT_TRSF">
+        <MappingFragment StoreEntitySet="TAGNT_TRSF">
+          <ScalarProperty Name="CRCY_CD" ColumnName="CRCY_CD" />
+          <ScalarProperty Name="AGNT_TRSF_DT" ColumnName="AGNT_TRSF_DT" />
+          <ScalarProperty Name="AGNT_TRSF_AMT" ColumnName="AGNT_TRSF_AMT" />
+          <ScalarProperty Name="AGNT_TRSF_ID" ColumnName="AGNT_TRSF_ID" />
+          <ScalarProperty Name="AGNT_ID" ColumnName="AGNT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBIL_PYMT_TRANS">
+      <EntityTypeMapping TypeName="paykapdevModel.TBIL_PYMT_TRANS">
+        <MappingFragment StoreEntitySet="TBIL_PYMT_TRANS">
+          <ScalarProperty Name="BIL_PYMT_TRANS_DT" ColumnName="BIL_PYMT_TRANS_DT" />
+          <ScalarProperty Name="BIL_NBR" ColumnName="BIL_NBR" />
+          <ScalarProperty Name="CLT_ACCT_NBR" ColumnName="CLT_ACCT_NBR" />
+          <ScalarProperty Name="TRANS_ID" ColumnName="TRANS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBNK_TRANS">
+      <EntityTypeMapping TypeName="paykapdevModel.TBNK_TRANS">
+        <MappingFragment StoreEntitySet="TBNK_TRANS">
+          <ScalarProperty Name="EXRL_BNK_TRANS_RCEIPT_FILE_NM" ColumnName="EXRL_BNK_TRANS_RCEIPT_FILE_NM" />
+          <ScalarProperty Name="EXRL_BNK_TRANS_DESC" ColumnName="EXRL_BNK_TRANS_DESC" />
+          <ScalarProperty Name="EXRL_BNK_TRANS_DT" ColumnName="EXRL_BNK_TRANS_DT" />
+          <ScalarProperty Name="EXRL_BNK_TRANS_ID" ColumnName="EXRL_BNK_TRANS_ID" />
+          <ScalarProperty Name="BNK_TRANS_DT" ColumnName="BNK_TRANS_DT" />
+          <ScalarProperty Name="TRANS_TRSF_CRDT_DBT_TCD" ColumnName="TRANS_TRSF_CRDT_DBT_TCD" />
+          <ScalarProperty Name="EXRL_ACCT_ID" ColumnName="EXRL_ACCT_ID" />
+          <ScalarProperty Name="FROM_TO_USR_CD" ColumnName="FROM_TO_USR_CD" />
+          <ScalarProperty Name="TRANS_ID" ColumnName="TRANS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBP">
+      <EntityTypeMapping TypeName="paykapdevModel.TBP">
+        <MappingFragment StoreEntitySet="TBP">
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="BP_ITA_NM" ColumnName="BP_ITA_NM" />
+          <ScalarProperty Name="BP_DEU_NM" ColumnName="BP_DEU_NM" />
+          <ScalarProperty Name="BP_RUS_NM" ColumnName="BP_RUS_NM" />
+          <ScalarProperty Name="BP_ZHO_NM" ColumnName="BP_ZHO_NM" />
+          <ScalarProperty Name="BP_POR_NM" ColumnName="BP_POR_NM" />
+          <ScalarProperty Name="BP_ARB_NM" ColumnName="BP_ARB_NM" />
+          <ScalarProperty Name="BP_SPA_NM" ColumnName="BP_SPA_NM" />
+          <ScalarProperty Name="BP_ENG_NM" ColumnName="BP_ENG_NM" />
+          <ScalarProperty Name="BP_FRA_NM" ColumnName="BP_FRA_NM" />
+          <ScalarProperty Name="BP_ID" ColumnName="BP_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBP_CTRCT">
+      <EntityTypeMapping TypeName="paykapdevModel.TBP_CTRCT">
+        <MappingFragment StoreEntitySet="TBP_CTRCT">
+          <ScalarProperty Name="BP_CTRCT_CRT_USR_NBR" ColumnName="BP_CTRCT_CRT_USR_NBR" />
+          <ScalarProperty Name="BP_CTRCT_XDT" ColumnName="BP_CTRCT_XDT" />
+          <ScalarProperty Name="BP_CTRCT_EDT" ColumnName="BP_CTRCT_EDT" />
+          <ScalarProperty Name="BP_ID" ColumnName="BP_ID" />
+          <ScalarProperty Name="BN" ColumnName="BN" />
+          <ScalarProperty Name="BP_CTRCT_NBR" ColumnName="BP_CTRCT_NBR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBPCS">
+      <EntityTypeMapping TypeName="paykapdevModel.TBPCS">
+        <MappingFragment StoreEntitySet="TBPCS">
+          <ScalarProperty Name="BN" ColumnName="BN" />
+          <ScalarProperty Name="ACCT_CRCY_CD" ColumnName="ACCT_CRCY_CD" />
+          <ScalarProperty Name="ACCT_ID" ColumnName="ACCT_ID" />
+          <ScalarProperty Name="BPCS_URL_NEED_IND" ColumnName="BPCS_URL_NEED_IND" />
+          <ScalarProperty Name="BPCS_URL_TXT" ColumnName="BPCS_URL_TXT" />
+          <ScalarProperty Name="BPCS_CLT_ACCT_DESC" ColumnName="BPCS_CLT_ACCT_DESC" />
+          <ScalarProperty Name="BPCS_BUS_NM" ColumnName="BPCS_BUS_NM" />
+          <ScalarProperty Name="BPCS_BUS_ID" ColumnName="BPCS_BUS_ID" />
+          <ScalarProperty Name="BPCS_NBR" ColumnName="BPCS_NBR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBUS">
+      <EntityTypeMapping TypeName="paykapdevModel.TBUS">
+        <MappingFragment StoreEntitySet="TBUS">
+          <ScalarProperty Name="DFLT_BUS_DSPL_IND" ColumnName="DFLT_BUS_DSPL_IND" />
+          <ScalarProperty Name="BUS_SCD" ColumnName="BUS_SCD" />
+          <ScalarProperty Name="CARD_ID" ColumnName="CARD_ID" />
+          <ScalarProperty Name="BUS_AREA" ColumnName="BUS_AREA" />
+          <ScalarProperty Name="BUS_SHORT_NM" ColumnName="BUS_SHORT_NM" />
+          <ScalarProperty Name="BUS_NM" ColumnName="BUS_NM" />
+          <ScalarProperty Name="ACCT_ID" ColumnName="ACCT_ID" />
+          <ScalarProperty Name="KTCT_ID" ColumnName="KTCT_ID" />
+          <ScalarProperty Name="BN" ColumnName="BN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBUS_AGCY">
+      <EntityTypeMapping TypeName="paykapdevModel.TBUS_AGCY">
+        <MappingFragment StoreEntitySet="TBUS_AGCY">
+          <ScalarProperty Name="BUS_AGCY_NO_SRVC_AV_IND" ColumnName="BUS_AGCY_NO_SRVC_AV_IND" />
+          <ScalarProperty Name="BUS_AGCY_OPNNG_HR" ColumnName="BUS_AGCY_OPNNG_HR" />
+          <ScalarProperty Name="BUS_AGCY_AV_AMT" ColumnName="BUS_AGCY_AV_AMT" />
+          <ScalarProperty Name="BUS_AGCY_MXAMT_TO_WDRW_AMT" ColumnName="BUS_AGCY_MXAMT_TO_WDRW_AMT" />
+          <ScalarProperty Name="BUS_AGCY_INTRNT_CHK_IND" ColumnName="BUS_AGCY_INTRNT_CHK_IND" />
+          <ScalarProperty Name="BUS_AGCY_ACCT_ID" ColumnName="BUS_AGCY_ACCT_ID" />
+          <ScalarProperty Name="BUS_AGCY_HDQRTR_IND" ColumnName="BUS_AGCY_HDQRTR_IND" />
+          <ScalarProperty Name="BUS_AGCY_KTCT_ID" ColumnName="BUS_AGCY_KTCT_ID" />
+          <ScalarProperty Name="BUS_AGCY_NM" ColumnName="BUS_AGCY_NM" />
+          <ScalarProperty Name="BUS_AGCY_NBR" ColumnName="BUS_AGCY_NBR" />
+          <ScalarProperty Name="BN" ColumnName="BN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBUS_AGCY_SRVC">
+      <EntityTypeMapping TypeName="paykapdevModel.TBUS_AGCY_SRVC">
+        <MappingFragment StoreEntitySet="TBUS_AGCY_SRVC">
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="BUS_AGCY_SRVC_CD" ColumnName="BUS_AGCY_SRVC_CD" />
+          <ScalarProperty Name="BUS_AGCY_NBR" ColumnName="BUS_AGCY_NBR" />
+          <ScalarProperty Name="BN" ColumnName="BN" />
+          <ScalarProperty Name="BUS_AGCY_SRVC_ID" ColumnName="BUS_AGCY_SRVC_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBUS_CMSN">
+      <EntityTypeMapping TypeName="paykapdevModel.TBUS_CMSN">
+        <MappingFragment StoreEntitySet="TBUS_CMSN">
+          <ScalarProperty Name="BUS_OFR_SRVC_TO_OWN_CLT_IND" ColumnName="BUS_OFR_SRVC_TO_OWN_CLT_IND" />
+          <ScalarProperty Name="BUS_CMSN_DT" ColumnName="BUS_CMSN_DT" />
+          <ScalarProperty Name="BUS_CMSN_SCD" ColumnName="BUS_CMSN_SCD" />
+          <ScalarProperty Name="BUS_CMSN_TCD" ColumnName="BUS_CMSN_TCD" />
+          <ScalarProperty Name="PRCNT_CMSN_RT" ColumnName="PRCNT_CMSN_RT" />
+          <ScalarProperty Name="CRCY_CD" ColumnName="CRCY_CD" />
+          <ScalarProperty Name="FIX_CMSN_AMT" ColumnName="FIX_CMSN_AMT" />
+          <ScalarProperty Name="CTRY_CD" ColumnName="CTRY_CD" />
+          <ScalarProperty Name="BN" ColumnName="BN" />
+          <ScalarProperty Name="TO_AMT" ColumnName="TO_AMT" />
+          <ScalarProperty Name="FROM_AMT" ColumnName="FROM_AMT" />
+          <ScalarProperty Name="FST_BUS_CMSN_ID" ColumnName="FST_BUS_CMSN_ID" />
+          <ScalarProperty Name="BUS_CMSN_ID" ColumnName="BUS_CMSN_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBUS_CMSN_TRANS">
+      <EntityTypeMapping TypeName="paykapdevModel.TBUS_CMSN_TRANS">
+        <MappingFragment StoreEntitySet="TBUS_CMSN_TRANS">
+          <ScalarProperty Name="TRANS_TRSF_CRDT_DBT_TCD" ColumnName="TRANS_TRSF_CRDT_DBT_TCD" />
+          <ScalarProperty Name="BUS_USR_NBR" ColumnName="BUS_USR_NBR" />
+          <ScalarProperty Name="CRCY_CD" ColumnName="CRCY_CD" />
+          <ScalarProperty Name="BUS_CMSN_AMT" ColumnName="BUS_CMSN_AMT" />
+          <ScalarProperty Name="TRANS_ID" ColumnName="TRANS_ID" />
+          <ScalarProperty Name="BUS_CMSN_TRANS_ID" ColumnName="BUS_CMSN_TRANS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBUS_CTRY_FEE">
+      <EntityTypeMapping TypeName="paykapdevModel.TBUS_CTRY_FEE">
+        <MappingFragment StoreEntitySet="TBUS_CTRY_FEE">
+          <ScalarProperty Name="BUS_FEE_DT" ColumnName="BUS_FEE_DT" />
+          <ScalarProperty Name="BUS_FEE_TCD" ColumnName="BUS_FEE_TCD" />
+          <ScalarProperty Name="PRCNT_FEE_RT" ColumnName="PRCNT_FEE_RT" />
+          <ScalarProperty Name="FIX_FEE_AMT" ColumnName="FIX_FEE_AMT" />
+          <ScalarProperty Name="TO_AMT" ColumnName="TO_AMT" />
+          <ScalarProperty Name="FROM_AMT" ColumnName="FROM_AMT" />
+          <ScalarProperty Name="SRVC_TCD" ColumnName="SRVC_TCD" />
+          <ScalarProperty Name="CRCY_CD" ColumnName="CRCY_CD" />
+          <ScalarProperty Name="CTRY_CD" ColumnName="CTRY_CD" />
+          <ScalarProperty Name="BUS_FEE_ID" ColumnName="BUS_FEE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBUS_INTRN_TRSF_TRANS">
+      <EntityTypeMapping TypeName="paykapdevModel.TBUS_INTRN_TRSF_TRANS">
+        <MappingFragment StoreEntitySet="TBUS_INTRN_TRSF_TRANS">
+          <ScalarProperty Name="TRANS_DESC" ColumnName="TRANS_DESC" />
+          <ScalarProperty Name="TRANS_TCD" ColumnName="TRANS_TCD" />
+          <ScalarProperty Name="TRANS_DT" ColumnName="TRANS_DT" />
+          <ScalarProperty Name="TRANS_SCD" ColumnName="TRANS_SCD" />
+          <ScalarProperty Name="TO_TRANS_AMT" ColumnName="TO_TRANS_AMT" />
+          <ScalarProperty Name="FROM_TRANS_AMT" ColumnName="FROM_TRANS_AMT" />
+          <ScalarProperty Name="CRCY_XCHG_RT" ColumnName="CRCY_XCHG_RT" />
+          <ScalarProperty Name="TO_CRCY_CD" ColumnName="TO_CRCY_CD" />
+          <ScalarProperty Name="FROM_CRCY_CD" ColumnName="FROM_CRCY_CD" />
+          <ScalarProperty Name="TO_ACCT_NBR" ColumnName="TO_ACCT_NBR" />
+          <ScalarProperty Name="FROM_ACCT_NBR" ColumnName="FROM_ACCT_NBR" />
+          <ScalarProperty Name="TO_BUS_USR_NM" ColumnName="TO_BUS_USR_NM" />
+          <ScalarProperty Name="TO_BUS_USR_NBR" ColumnName="TO_BUS_USR_NBR" />
+          <ScalarProperty Name="FROM_BUS_USR_NM" ColumnName="FROM_BUS_USR_NM" />
+          <ScalarProperty Name="FROM_BUS_USR_NBR" ColumnName="FROM_BUS_USR_NBR" />
+          <ScalarProperty Name="TRANS_ID" ColumnName="TRANS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBUS_TY">
+      <EntityTypeMapping TypeName="paykapdevModel.TBUS_TY">
+        <MappingFragment StoreEntitySet="TBUS_TY">
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="BN" ColumnName="BN" />
+          <ScalarProperty Name="BUS_TCD" ColumnName="BUS_TCD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBUS_USR">
+      <EntityTypeMapping TypeName="paykapdevModel.TBUS_USR">
+        <MappingFragment StoreEntitySet="TBUS_USR">
+          <ScalarProperty Name="BUS_EMPE_IS_PKP_CLT_IND" ColumnName="BUS_EMPE_IS_PKP_CLT_IND" />
+          <ScalarProperty Name="BUS_USR_SCD" ColumnName="BUS_USR_SCD" />
+          <ScalarProperty Name="BUS_EMPE_USR_NBR" ColumnName="BUS_EMPE_USR_NBR" />
+          <ScalarProperty Name="BUS_AV_CAMT" ColumnName="BUS_AV_CAMT" />
+          <ScalarProperty Name="BUS_USR_TCD" ColumnName="BUS_USR_TCD" />
+          <ScalarProperty Name="BUS_USR_EDT" ColumnName="BUS_USR_EDT" />
+          <ScalarProperty Name="BUS_ACCT_ID" ColumnName="BUS_ACCT_ID" />
+          <ScalarProperty Name="BUS_AGCY_NBR" ColumnName="BUS_AGCY_NBR" />
+          <ScalarProperty Name="BN" ColumnName="BN" />
+          <ScalarProperty Name="BUS_USR_NBR" ColumnName="BUS_USR_NBR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBUS_USR_EXCP_ROL">
+      <EntityTypeMapping TypeName="paykapdevModel.TBUS_USR_EXCP_ROL">
+        <MappingFragment StoreEntitySet="TBUS_USR_EXCP_ROL">
+          <ScalarProperty Name="TRANS_TRSF_CRDT_DBT_TCD" ColumnName="TRANS_TRSF_CRDT_DBT_TCD" />
+          <ScalarProperty Name="BUS_USR_EXCP_ROL_XDT" ColumnName="BUS_USR_EXCP_ROL_XDT" />
+          <ScalarProperty Name="BUS_USR_EXCP_ROL_EDT" ColumnName="BUS_USR_EXCP_ROL_EDT" />
+          <ScalarProperty Name="BUS_USR_EXCP_ROL_EXPY_IND" ColumnName="BUS_USR_EXCP_ROL_EXPY_IND" />
+          <ScalarProperty Name="BUS_AGCY_NBR" ColumnName="BUS_AGCY_NBR" />
+          <ScalarProperty Name="BN" ColumnName="BN" />
+          <ScalarProperty Name="BUS_USR_NBR" ColumnName="BUS_USR_NBR" />
+          <ScalarProperty Name="BUS_USR_EXCP_ROL_ID" ColumnName="BUS_USR_EXCP_ROL_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCAL_CTRY">
+      <EntityTypeMapping TypeName="paykapdevModel.TCAL_CTRY">
+        <MappingFragment StoreEntitySet="TCAL_CTRY">
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="CTRY_PHN_NBR_LNGH_LST_UPD_DT" ColumnName="CTRY_PHN_NBR_LNGH_LST_UPD_DT" />
+          <ScalarProperty Name="CTRY_PHN_NBR_LNGH_CNT" ColumnName="CTRY_PHN_NBR_LNGH_CNT" />
+          <ScalarProperty Name="CAL_CTRY_CD" ColumnName="CAL_CTRY_CD" />
+          <ScalarProperty Name="CTRY_CD" ColumnName="CTRY_CD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCARD_ID">
+      <EntityTypeMapping TypeName="paykapdevModel.TCARD_ID">
+        <MappingFragment StoreEntitySet="TCARD_ID">
+          <ScalarProperty Name="IDENT_DT" ColumnName="IDENT_DT" />
+          <ScalarProperty Name="CARD_ID" ColumnName="CARD_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCITY">
+      <EntityTypeMapping TypeName="paykapdevModel.TCITY">
+        <MappingFragment StoreEntitySet="TCITY">
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="CTRY_CD" ColumnName="CTRY_CD" />
+          <ScalarProperty Name="ITA_CITY_NM" ColumnName="ITA_CITY_NM" />
+          <ScalarProperty Name="DEU_CITY_NM" ColumnName="DEU_CITY_NM" />
+          <ScalarProperty Name="RUS_CITY_NM" ColumnName="RUS_CITY_NM" />
+          <ScalarProperty Name="ZHO_CITY_NM" ColumnName="ZHO_CITY_NM" />
+          <ScalarProperty Name="POR_CITY_NM" ColumnName="POR_CITY_NM" />
+          <ScalarProperty Name="ARB_CITY_NM" ColumnName="ARB_CITY_NM" />
+          <ScalarProperty Name="SPA_CITY_NM" ColumnName="SPA_CITY_NM" />
+          <ScalarProperty Name="ENG_CITY_NM" ColumnName="ENG_CITY_NM" />
+          <ScalarProperty Name="FRA_CITY_NM" ColumnName="FRA_CITY_NM" />
+          <ScalarProperty Name="CITY_CD" ColumnName="CITY_CD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCLT_IN_BUS">
+      <EntityTypeMapping TypeName="paykapdevModel.TCLT_IN_BUS">
+        <MappingFragment StoreEntitySet="TCLT_IN_BUS">
+          <ScalarProperty Name="OTH5_IND" ColumnName="OTH5_IND" />
+          <ScalarProperty Name="OTH4_IND" ColumnName="OTH4_IND" />
+          <ScalarProperty Name="OTH3_IND" ColumnName="OTH3_IND" />
+          <ScalarProperty Name="OTH2_IND" ColumnName="OTH2_IND" />
+          <ScalarProperty Name="OTH1_IND" ColumnName="OTH1_IND" />
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="CLT_IN_BUS_XDT" ColumnName="CLT_IN_BUS_XDT" />
+          <ScalarProperty Name="CLT_IN_BUS_EDT" ColumnName="CLT_IN_BUS_EDT" />
+          <ScalarProperty Name="MNGE_AGNT_IND" ColumnName="MNGE_AGNT_IND" />
+          <ScalarProperty Name="RST_CARD_PIN_IND" ColumnName="RST_CARD_PIN_IND" />
+          <ScalarProperty Name="RST_PWD_IND" ColumnName="RST_PWD_IND" />
+          <ScalarProperty Name="BNK_DPST_IND" ColumnName="BNK_DPST_IND" />
+          <ScalarProperty Name="WDRW_MNY_WTT_PIN_IND" ColumnName="WDRW_MNY_WTT_PIN_IND" />
+          <ScalarProperty Name="WDRW_MNY_IND" ColumnName="WDRW_MNY_IND" />
+          <ScalarProperty Name="SEND_MNY_IND" ColumnName="SEND_MNY_IND" />
+          <ScalarProperty Name="BUS_USR_NBR" ColumnName="BUS_USR_NBR" />
+          <ScalarProperty Name="BN" ColumnName="BN" />
+          <ScalarProperty Name="ACCT_ID" ColumnName="ACCT_ID" />
+          <ScalarProperty Name="CARD_ID" ColumnName="CARD_ID" />
+          <ScalarProperty Name="USR_NBR" ColumnName="USR_NBR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCNX_LOG">
+      <EntityTypeMapping TypeName="paykapdevModel.TCNX_LOG">
+        <MappingFragment StoreEntitySet="TCNX_LOG">
+          <ScalarProperty Name="LAST_CNX_DTTM" ColumnName="LAST_CNX_DTTM" />
+          <ScalarProperty Name="IP_VERS_TCD" ColumnName="IP_VERS_TCD" />
+          <ScalarProperty Name="IP_ADDR_NBR" ColumnName="IP_ADDR_NBR" />
+          <ScalarProperty Name="CNX_SCTY_QUES_CHKED" ColumnName="CNX_SCTY_QUES_CHKED" />
+          <ScalarProperty Name="CNX_SCTY_QUES_SEQ_NBR" ColumnName="CNX_SCTY_QUES_SEQ_NBR" />
+          <ScalarProperty Name="RESP3" ColumnName="RESP3" />
+          <ScalarProperty Name="QUES3" ColumnName="QUES3" />
+          <ScalarProperty Name="RESP2" ColumnName="RESP2" />
+          <ScalarProperty Name="QUES2" ColumnName="QUES2" />
+          <ScalarProperty Name="RESP1" ColumnName="RESP1" />
+          <ScalarProperty Name="QUES1" ColumnName="QUES1" />
+          <ScalarProperty Name="USR_NBR" ColumnName="USR_NBR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCRCY">
+      <EntityTypeMapping TypeName="paykapdevModel.TCRCY">
+        <MappingFragment StoreEntitySet="TCRCY">
+          <ScalarProperty Name="CRCY_ITA_NM" ColumnName="CRCY_ITA_NM" />
+          <ScalarProperty Name="CRCY_DEU_NM" ColumnName="CRCY_DEU_NM" />
+          <ScalarProperty Name="CRCY_RUS_NM" ColumnName="CRCY_RUS_NM" />
+          <ScalarProperty Name="CRCY_ZHO_NM" ColumnName="CRCY_ZHO_NM" />
+          <ScalarProperty Name="CRCY_POR_NM" ColumnName="CRCY_POR_NM" />
+          <ScalarProperty Name="CRCY_ARB_NM" ColumnName="CRCY_ARB_NM" />
+          <ScalarProperty Name="CRCY_SPA_NM" ColumnName="CRCY_SPA_NM" />
+          <ScalarProperty Name="CRCY_ENG_NM" ColumnName="CRCY_ENG_NM" />
+          <ScalarProperty Name="CRCY_FRA_NM" ColumnName="CRCY_FRA_NM" />
+          <ScalarProperty Name="CRCY_CD" ColumnName="CRCY_CD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCRCY_XCHG_PRCNT">
+      <EntityTypeMapping TypeName="paykapdevModel.TCRCY_XCHG_PRCNT">
+        <MappingFragment StoreEntitySet="TCRCY_XCHG_PRCNT">
+          <ScalarProperty Name="CRCY_XCHG_PRCNT_DT" ColumnName="CRCY_XCHG_PRCNT_DT" />
+          <ScalarProperty Name="NIVSTR_CRCY_XCHG_PRCNT_RT" ColumnName="NIVSTR_CRCY_XCHG_PRCNT_RT" />
+          <ScalarProperty Name="IVSTR_CRCY_XCHG_PRCNT_RT" ColumnName="IVSTR_CRCY_XCHG_PRCNT_RT" />
+          <ScalarProperty Name="CRCY_XCHG_PRCNT_ID" ColumnName="CRCY_XCHG_PRCNT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCRCY_XCHG_RT">
+      <EntityTypeMapping TypeName="paykapdevModel.TCRCY_XCHG_RT">
+        <MappingFragment StoreEntitySet="TCRCY_XCHG_RT">
+          <ScalarProperty Name="USR_NBR" ColumnName="USR_NBR" />
+          <ScalarProperty Name="CRCY_XCHG_RT_UPD_DT" ColumnName="CRCY_XCHG_RT_UPD_DT" />
+          <ScalarProperty Name="CRCY_XCHG_RT" ColumnName="CRCY_XCHG_RT" />
+          <ScalarProperty Name="TO_CRCY_CD" ColumnName="TO_CRCY_CD" />
+          <ScalarProperty Name="FROM_CRCY_CD" ColumnName="FROM_CRCY_CD" />
+          <ScalarProperty Name="CRCY_XCHG_RT_ID" ColumnName="CRCY_XCHG_RT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCTRY">
+      <EntityTypeMapping TypeName="paykapdevModel.TCTRY">
+        <MappingFragment StoreEntitySet="TCTRY">
+          <ScalarProperty Name="CTRY_LTR_CD" ColumnName="CTRY_LTR_CD" />
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="ITA_CTRY_NM" ColumnName="ITA_CTRY_NM" />
+          <ScalarProperty Name="DEU_CTRY_NM" ColumnName="DEU_CTRY_NM" />
+          <ScalarProperty Name="RUS_CTRY_NM" ColumnName="RUS_CTRY_NM" />
+          <ScalarProperty Name="ZHO_CTRY_NM" ColumnName="ZHO_CTRY_NM" />
+          <ScalarProperty Name="POR_CTRY_NM" ColumnName="POR_CTRY_NM" />
+          <ScalarProperty Name="ARB_CTRY_NM" ColumnName="ARB_CTRY_NM" />
+          <ScalarProperty Name="SPA_CTRY_NM" ColumnName="SPA_CTRY_NM" />
+          <ScalarProperty Name="ENG_CTRY_NM" ColumnName="ENG_CTRY_NM" />
+          <ScalarProperty Name="FRA_CTRY_NM" ColumnName="FRA_CTRY_NM" />
+          <ScalarProperty Name="CTRY_CD" ColumnName="CTRY_CD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCTRY_CRCY">
+      <EntityTypeMapping TypeName="paykapdevModel.TCTRY_CRCY">
+        <MappingFragment StoreEntitySet="TCTRY_CRCY">
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="CTRY_CRCY_CDT" ColumnName="CTRY_CRCY_CDT" />
+          <ScalarProperty Name="CRCY_CLTR_INFO" ColumnName="CRCY_CLTR_INFO" />
+          <ScalarProperty Name="CRCY_CD" ColumnName="CRCY_CD" />
+          <ScalarProperty Name="LANG_CD" ColumnName="LANG_CD" />
+          <ScalarProperty Name="CTRY_CD" ColumnName="CTRY_CD" />
+          <ScalarProperty Name="CTRY_CRCY_ID" ColumnName="CTRY_CRCY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEXCEPT_TRANS">
+      <EntityTypeMapping TypeName="paykapdevModel.TEXCEPT_TRANS">
+        <MappingFragment StoreEntitySet="TEXCEPT_TRANS">
+          <ScalarProperty Name="USR_NBR" ColumnName="USR_NBR" />
+          <ScalarProperty Name="ACTION_TAKEN_DESC" ColumnName="ACTION_TAKEN_DESC" />
+          <ScalarProperty Name="TRANS_AUTH_KTCT_PHN" ColumnName="TRANS_AUTH_KTCT_PHN" />
+          <ScalarProperty Name="TRANS_AUTH_KTCT_CD" ColumnName="TRANS_AUTH_KTCT_CD" />
+          <ScalarProperty Name="EXCEPT_TRANS_RCD" ColumnName="EXCEPT_TRANS_RCD" />
+          <ScalarProperty Name="TRANS_ID" ColumnName="TRANS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEXRL_TRANS">
+      <EntityTypeMapping TypeName="paykapdevModel.TEXRL_TRANS">
+        <MappingFragment StoreEntitySet="TEXRL_TRANS">
+          <ScalarProperty Name="EXRL_TRANS_DT" ColumnName="EXRL_TRANS_DT" />
+          <ScalarProperty Name="PYMT_PRTR_ID" ColumnName="PYMT_PRTR_ID" />
+          <ScalarProperty Name="EXRL_TRANS_OTH_DTL_TXT" ColumnName="EXRL_TRANS_OTH_DTL_TXT" />
+          <ScalarProperty Name="EXRL_TRANS_NSS_ID" ColumnName="EXRL_TRANS_NSS_ID" />
+          <ScalarProperty Name="PRTR_TRANS_RCD" ColumnName="PRTR_TRANS_RCD" />
+          <ScalarProperty Name="PRTR_TRANS_ID" ColumnName="PRTR_TRANS_ID" />
+          <ScalarProperty Name="PKP_TRANS_ID" ColumnName="PKP_TRANS_ID" />
+          <ScalarProperty Name="EXRL_TRANS_ID" ColumnName="EXRL_TRANS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TFI">
+      <EntityTypeMapping TypeName="paykapdevModel.TFI">
+        <MappingFragment StoreEntitySet="TFI">
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="FI_ITA_NM" ColumnName="FI_ITA_NM" />
+          <ScalarProperty Name="FI_DEU_NM" ColumnName="FI_DEU_NM" />
+          <ScalarProperty Name="FI_RUS_NM" ColumnName="FI_RUS_NM" />
+          <ScalarProperty Name="FI_ZHO_NM" ColumnName="FI_ZHO_NM" />
+          <ScalarProperty Name="FI_POR_NM" ColumnName="FI_POR_NM" />
+          <ScalarProperty Name="FI_ARB_NM" ColumnName="FI_ARB_NM" />
+          <ScalarProperty Name="FI_SPA_NM" ColumnName="FI_SPA_NM" />
+          <ScalarProperty Name="FI_ENG_NM" ColumnName="FI_ENG_NM" />
+          <ScalarProperty Name="FI_FRA_NM" ColumnName="FI_FRA_NM" />
+          <ScalarProperty Name="FI_ID" ColumnName="FI_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TFI_CTRY">
+      <EntityTypeMapping TypeName="paykapdevModel.TFI_CTRY">
+        <MappingFragment StoreEntitySet="TFI_CTRY">
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="FI_TCD" ColumnName="FI_TCD" />
+          <ScalarProperty Name="FI_ID" ColumnName="FI_ID" />
+          <ScalarProperty Name="FI_CTRY_CD" ColumnName="FI_CTRY_CD" />
+          <ScalarProperty Name="FI_CTRY_ITA_NM" ColumnName="FI_CTRY_ITA_NM" />
+          <ScalarProperty Name="FI_CTRY_DEU_NM" ColumnName="FI_CTRY_DEU_NM" />
+          <ScalarProperty Name="FI_CTRY_RUS_NM" ColumnName="FI_CTRY_RUS_NM" />
+          <ScalarProperty Name="FI_CTRY_ZHO_NM" ColumnName="FI_CTRY_ZHO_NM" />
+          <ScalarProperty Name="FI_CTRY_POR_NM" ColumnName="FI_CTRY_POR_NM" />
+          <ScalarProperty Name="FI_CTRY_ARB_NM" ColumnName="FI_CTRY_ARB_NM" />
+          <ScalarProperty Name="FI_CTRY_SPA_NM" ColumnName="FI_CTRY_SPA_NM" />
+          <ScalarProperty Name="FI_CTRY_ENG_NM" ColumnName="FI_CTRY_ENG_NM" />
+          <ScalarProperty Name="FI_CTRY_FRA_NM" ColumnName="FI_CTRY_FRA_NM" />
+          <ScalarProperty Name="FI_CTRY_ID" ColumnName="FI_CTRY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TFI_EXRL_ACCT">
+      <EntityTypeMapping TypeName="paykapdevModel.TFI_EXRL_ACCT">
+        <MappingFragment StoreEntitySet="TFI_EXRL_ACCT">
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="EXRL_ACCT_FOR_CURT_USR_IND" ColumnName="EXRL_ACCT_FOR_CURT_USR_IND" />
+          <ScalarProperty Name="USR_NBR" ColumnName="USR_NBR" />
+          <ScalarProperty Name="EXRL_ACCT_USR_BUS_TCD" ColumnName="EXRL_ACCT_USR_BUS_TCD" />
+          <ScalarProperty Name="EXRL_ACCT_BUS_NBR" ColumnName="EXRL_ACCT_BUS_NBR" />
+          <ScalarProperty Name="EXRL_ACCT_USR_NBR" ColumnName="EXRL_ACCT_USR_NBR" />
+          <ScalarProperty Name="CRCY_CD" ColumnName="CRCY_CD" />
+          <ScalarProperty Name="FI_CTRY_ID" ColumnName="FI_CTRY_ID" />
+          <ScalarProperty Name="EXRL_ACCT_DT" ColumnName="EXRL_ACCT_DT" />
+          <ScalarProperty Name="EXRL_ACCT_VLDT_IND" ColumnName="EXRL_ACCT_VLDT_IND" />
+          <ScalarProperty Name="EXRL_ACCT_PRT_NBR" ColumnName="EXRL_ACCT_PRT_NBR" />
+          <ScalarProperty Name="EXRL_ACCT_PRT5_NBR" ColumnName="EXRL_ACCT_PRT5_NBR" />
+          <ScalarProperty Name="EXRL_ACCT_PRT4_NBR" ColumnName="EXRL_ACCT_PRT4_NBR" />
+          <ScalarProperty Name="EXRL_ACCT_PRT3_NBR" ColumnName="EXRL_ACCT_PRT3_NBR" />
+          <ScalarProperty Name="EXRL_ACCT_PRT2_NBR" ColumnName="EXRL_ACCT_PRT2_NBR" />
+          <ScalarProperty Name="EXRL_ACCT_PRT1_NBR" ColumnName="EXRL_ACCT_PRT1_NBR" />
+          <ScalarProperty Name="EXRL_ACCT_TCD" ColumnName="EXRL_ACCT_TCD" />
+          <ScalarProperty Name="EXRL_ACCT_NBR" ColumnName="EXRL_ACCT_NBR" />
+          <ScalarProperty Name="EXRL_ACCT_NM" ColumnName="EXRL_ACCT_NM" />
+          <ScalarProperty Name="EXRL_ACCT_ID" ColumnName="EXRL_ACCT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TFI_EXRL_ACCT_DESC">
+      <EntityTypeMapping TypeName="paykapdevModel.TFI_EXRL_ACCT_DESC">
+        <MappingFragment StoreEntitySet="TFI_EXRL_ACCT_DESC">
+          <ScalarProperty Name="CTRY_CD" ColumnName="CTRY_CD" />
+          <ScalarProperty Name="EXRL_ACCT_DESC_DT" ColumnName="EXRL_ACCT_DESC_DT" />
+          <ScalarProperty Name="EXRL_ACCT_PRT5_DESC" ColumnName="EXRL_ACCT_PRT5_DESC" />
+          <ScalarProperty Name="EXRL_ACCT_PRT4_DESC" ColumnName="EXRL_ACCT_PRT4_DESC" />
+          <ScalarProperty Name="EXRL_ACCT_PRT3_DESC" ColumnName="EXRL_ACCT_PRT3_DESC" />
+          <ScalarProperty Name="EXRL_ACCT_PRT2_DESC" ColumnName="EXRL_ACCT_PRT2_DESC" />
+          <ScalarProperty Name="EXRL_ACCT_PRT1_DESC" ColumnName="EXRL_ACCT_PRT1_DESC" />
+          <ScalarProperty Name="EXRL_ACCT_DESC_ID" ColumnName="EXRL_ACCT_DESC_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TFI_TY">
+      <EntityTypeMapping TypeName="paykapdevModel.TFI_TY">
+        <MappingFragment StoreEntitySet="TFI_TY">
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="FI_TY_ITA_NM" ColumnName="FI_TY_ITA_NM" />
+          <ScalarProperty Name="FI_TY_DEU_NM" ColumnName="FI_TY_DEU_NM" />
+          <ScalarProperty Name="FI_TY_RUS_NM" ColumnName="FI_TY_RUS_NM" />
+          <ScalarProperty Name="FI_TY_ZHO_NM" ColumnName="FI_TY_ZHO_NM" />
+          <ScalarProperty Name="FI_TY_POR_NM" ColumnName="FI_TY_POR_NM" />
+          <ScalarProperty Name="FI_TY_ARB_NM" ColumnName="FI_TY_ARB_NM" />
+          <ScalarProperty Name="FI_TY_SPA_NM" ColumnName="FI_TY_SPA_NM" />
+          <ScalarProperty Name="FI_TY_ENG_NM" ColumnName="FI_TY_ENG_NM" />
+          <ScalarProperty Name="FI_TY_FRA_NM" ColumnName="FI_TY_FRA_NM" />
+          <ScalarProperty Name="FI_TCD" ColumnName="FI_TCD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TID_DOC">
+      <EntityTypeMapping TypeName="paykapdevModel.TID_DOC">
+        <MappingFragment StoreEntitySet="TID_DOC">
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="ITA_ID_DOC_NM" ColumnName="ITA_ID_DOC_NM" />
+          <ScalarProperty Name="DEU_ID_DOC_NM" ColumnName="DEU_ID_DOC_NM" />
+          <ScalarProperty Name="RUS_ID_DOC_NM" ColumnName="RUS_ID_DOC_NM" />
+          <ScalarProperty Name="ZHO_ID_DOC_NM" ColumnName="ZHO_ID_DOC_NM" />
+          <ScalarProperty Name="POR_ID_DOC_NM" ColumnName="POR_ID_DOC_NM" />
+          <ScalarProperty Name="ARB_ID_DOC_NM" ColumnName="ARB_ID_DOC_NM" />
+          <ScalarProperty Name="SPA_ID_DOC_NM" ColumnName="SPA_ID_DOC_NM" />
+          <ScalarProperty Name="ENG_ID_DOC_NM" ColumnName="ENG_ID_DOC_NM" />
+          <ScalarProperty Name="FRA_ID_DOC_NM" ColumnName="FRA_ID_DOC_NM" />
+          <ScalarProperty Name="ID_DOC_ID" ColumnName="ID_DOC_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIP_ADDR">
+      <EntityTypeMapping TypeName="paykapdevModel.TIP_ADDR">
+        <MappingFragment StoreEntitySet="TIP_ADDR">
+          <ScalarProperty Name="IP_ADDR_CRT_UPD_USR_NBR" ColumnName="IP_ADDR_CRT_UPD_USR_NBR" />
+          <ScalarProperty Name="IP_ADDR_CRT_DT" ColumnName="IP_ADDR_CRT_DT" />
+          <ScalarProperty Name="BUS_AGCY_NBR" ColumnName="BUS_AGCY_NBR" />
+          <ScalarProperty Name="BN" ColumnName="BN" />
+          <ScalarProperty Name="IP_ADDR_DESC" ColumnName="IP_ADDR_DESC" />
+          <ScalarProperty Name="IP_VERS_TCD" ColumnName="IP_VERS_TCD" />
+          <ScalarProperty Name="IP_ADDR_NBR" ColumnName="IP_ADDR_NBR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TKTCT">
+      <EntityTypeMapping TypeName="paykapdevModel.TKTCT">
+        <MappingFragment StoreEntitySet="TKTCT">
+          <ScalarProperty Name="CITY_CD" ColumnName="CITY_CD" />
+          <ScalarProperty Name="CTRY_CD" ColumnName="CTRY_CD" />
+          <ScalarProperty Name="CITY_NM" ColumnName="CITY_NM" />
+          <ScalarProperty Name="KTCT_TCD" ColumnName="KTCT_TCD" />
+          <ScalarProperty Name="WEBSITE_TXT" ColumnName="WEBSITE_TXT" />
+          <ScalarProperty Name="EM_ADDR2_TXT" ColumnName="EM_ADDR2_TXT" />
+          <ScalarProperty Name="EM_ADDR1_TXT" ColumnName="EM_ADDR1_TXT" />
+          <ScalarProperty Name="PHN2_NBR" ColumnName="PHN2_NBR" />
+          <ScalarProperty Name="PHN1_NBR" ColumnName="PHN1_NBR" />
+          <ScalarProperty Name="ADDR_LN2_TXT" ColumnName="ADDR_LN2_TXT" />
+          <ScalarProperty Name="ADDR_LN1_TXT" ColumnName="ADDR_LN1_TXT" />
+          <ScalarProperty Name="KTCT_ID" ColumnName="KTCT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TLANG">
+      <EntityTypeMapping TypeName="paykapdevModel.TLANG">
+        <MappingFragment StoreEntitySet="TLANG">
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="ITA_NM" ColumnName="ITA_NM" />
+          <ScalarProperty Name="DEU_NM" ColumnName="DEU_NM" />
+          <ScalarProperty Name="RUS_NM" ColumnName="RUS_NM" />
+          <ScalarProperty Name="ZHO_NM" ColumnName="ZHO_NM" />
+          <ScalarProperty Name="POR_NM" ColumnName="POR_NM" />
+          <ScalarProperty Name="ARB_NM" ColumnName="ARB_NM" />
+          <ScalarProperty Name="SPA_NM" ColumnName="SPA_NM" />
+          <ScalarProperty Name="ENG_NM" ColumnName="ENG_NM" />
+          <ScalarProperty Name="FRA_NM" ColumnName="FRA_NM" />
+          <ScalarProperty Name="LANG_CD" ColumnName="LANG_CD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TMNYT_AUTH_LMIT">
+      <EntityTypeMapping TypeName="paykapdevModel.TMNYT_AUTH_LMIT">
+        <MappingFragment StoreEntitySet="TMNYT_AUTH_LMIT">
+          <ScalarProperty Name="LAST_UPDT_DT" ColumnName="LAST_UPDT_DT" />
+          <ScalarProperty Name="MTHLY_AUTH_AMT" ColumnName="MTHLY_AUTH_AMT" />
+          <ScalarProperty Name="WKLY_AUTH_AMT" ColumnName="WKLY_AUTH_AMT" />
+          <ScalarProperty Name="DLY_AUTH_AMT" ColumnName="DLY_AUTH_AMT" />
+          <ScalarProperty Name="TRANS_AUTH_AMT" ColumnName="TRANS_AUTH_AMT" />
+          <ScalarProperty Name="MNYT_TCD" ColumnName="MNYT_TCD" />
+          <ScalarProperty Name="CRCY_CD" ColumnName="CRCY_CD" />
+          <ScalarProperty Name="CTRY_CD" ColumnName="CTRY_CD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TMNYT_RSN">
+      <EntityTypeMapping TypeName="paykapdevModel.TMNYT_RSN">
+        <MappingFragment StoreEntitySet="TMNYT_RSN">
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="ITA_MNYT_RSN_NM" ColumnName="ITA_MNYT_RSN_NM" />
+          <ScalarProperty Name="DEU_MNYT_RSN_NM" ColumnName="DEU_MNYT_RSN_NM" />
+          <ScalarProperty Name="RUS_MNYT_RSN_NM" ColumnName="RUS_MNYT_RSN_NM" />
+          <ScalarProperty Name="ZHO_MNYT_RSN_NM" ColumnName="ZHO_MNYT_RSN_NM" />
+          <ScalarProperty Name="POR_MNYT_RSN_NM" ColumnName="POR_MNYT_RSN_NM" />
+          <ScalarProperty Name="ARB_MNYT_RSN_NM" ColumnName="ARB_MNYT_RSN_NM" />
+          <ScalarProperty Name="SPA_MNYT_RSN_NM" ColumnName="SPA_MNYT_RSN_NM" />
+          <ScalarProperty Name="ENG_MNYT_RSN_NM" ColumnName="ENG_MNYT_RSN_NM" />
+          <ScalarProperty Name="FRA_MNYT_RSN_NM" ColumnName="FRA_MNYT_RSN_NM" />
+          <ScalarProperty Name="MNYT_RSN_ID" ColumnName="MNYT_RSN_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TONBHLF_CLT_CMSN">
+      <EntityTypeMapping TypeName="paykapdevModel.TONBHLF_CLT_CMSN">
+        <MappingFragment StoreEntitySet="TONBHLF_CLT_CMSN">
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="CMSN_TCD" ColumnName="CMSN_TCD" />
+          <ScalarProperty Name="PRCNT_CMSN_RT" ColumnName="PRCNT_CMSN_RT" />
+          <ScalarProperty Name="FIX_CMSN_AMT" ColumnName="FIX_CMSN_AMT" />
+          <ScalarProperty Name="CRCY_CD" ColumnName="CRCY_CD" />
+          <ScalarProperty Name="SRVC_TCD" ColumnName="SRVC_TCD" />
+          <ScalarProperty Name="CTRY_CD" ColumnName="CTRY_CD" />
+          <ScalarProperty Name="USR_NBR" ColumnName="USR_NBR" />
+          <ScalarProperty Name="CMSN_ID" ColumnName="CMSN_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TONBHLF_CLT_TRANS">
+      <EntityTypeMapping TypeName="paykapdevModel.TONBHLF_CLT_TRANS">
+        <MappingFragment StoreEntitySet="TONBHLF_CLT_TRANS">
+          <ScalarProperty Name="TRANS_SCD" ColumnName="TRANS_SCD" />
+          <ScalarProperty Name="CRCY_CD" ColumnName="CRCY_CD" />
+          <ScalarProperty Name="CMSN_AMT" ColumnName="CMSN_AMT" />
+          <ScalarProperty Name="USR_NBR" ColumnName="USR_NBR" />
+          <ScalarProperty Name="TRANS_ID" ColumnName="TRANS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPKP_TRCK_CMSN_FEE">
+      <EntityTypeMapping TypeName="paykapdevModel.TPKP_TRCK_CMSN_FEE">
+        <MappingFragment StoreEntitySet="TPKP_TRCK_CMSN_FEE">
+          <ScalarProperty Name="CMSN_FEE_TCD" ColumnName="CMSN_FEE_TCD" />
+          <ScalarProperty Name="SRVC_TCD" ColumnName="SRVC_TCD" />
+          <ScalarProperty Name="TRANS_DT" ColumnName="TRANS_DT" />
+          <ScalarProperty Name="BUS_AGNT_TCD" ColumnName="BUS_AGNT_TCD" />
+          <ScalarProperty Name="BUS_AGNT_NBR" ColumnName="BUS_AGNT_NBR" />
+          <ScalarProperty Name="TRANS_US_AMT" ColumnName="TRANS_US_AMT" />
+          <ScalarProperty Name="TRANS_CRCY_CD" ColumnName="TRANS_CRCY_CD" />
+          <ScalarProperty Name="TRANS_AMT" ColumnName="TRANS_AMT" />
+          <ScalarProperty Name="TRANS_ID" ColumnName="TRANS_ID" />
+          <ScalarProperty Name="PKP_TRCK_CMSN_FEE_ID" ColumnName="PKP_TRCK_CMSN_FEE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPROV">
+      <EntityTypeMapping TypeName="paykapdevModel.TPROV">
+        <MappingFragment StoreEntitySet="TPROV">
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="CTRY_CD" ColumnName="CTRY_CD" />
+          <ScalarProperty Name="ITA_PROV_NM" ColumnName="ITA_PROV_NM" />
+          <ScalarProperty Name="DEU_PROV_NM" ColumnName="DEU_PROV_NM" />
+          <ScalarProperty Name="RUS_PROV_NM" ColumnName="RUS_PROV_NM" />
+          <ScalarProperty Name="ZHO_PROV_NM" ColumnName="ZHO_PROV_NM" />
+          <ScalarProperty Name="POR_PROV_NM" ColumnName="POR_PROV_NM" />
+          <ScalarProperty Name="ARB_PROV_NM" ColumnName="ARB_PROV_NM" />
+          <ScalarProperty Name="SPA_PROV_NM" ColumnName="SPA_PROV_NM" />
+          <ScalarProperty Name="ENG_PROV_NM" ColumnName="ENG_PROV_NM" />
+          <ScalarProperty Name="FRA_PROV_NM" ColumnName="FRA_PROV_NM" />
+          <ScalarProperty Name="PROV_CD" ColumnName="PROV_CD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPYMT_PRTR">
+      <EntityTypeMapping TypeName="paykapdevModel.TPYMT_PRTR">
+        <MappingFragment StoreEntitySet="TPYMT_PRTR">
+          <ScalarProperty Name="PYMT_PRTR_DESC" ColumnName="PYMT_PRTR_DESC" />
+          <ScalarProperty Name="PYMT_PRTR_XDT" ColumnName="PYMT_PRTR_XDT" />
+          <ScalarProperty Name="PYMT_PRTR_EDT" ColumnName="PYMT_PRTR_EDT" />
+          <ScalarProperty Name="PYMT_PRTR_NM" ColumnName="PYMT_PRTR_NM" />
+          <ScalarProperty Name="PYMT_PRTR_ID" ColumnName="PYMT_PRTR_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRCPT_EXRL_ACCT_FOR_BUS">
+      <EntityTypeMapping TypeName="paykapdevModel.TRCPT_EXRL_ACCT_FOR_BUS">
+        <MappingFragment StoreEntitySet="TRCPT_EXRL_ACCT_FOR_BUS">
+          <ScalarProperty Name="RCPT_EXRL_ACCT_FOR_BUS_TCD" ColumnName="RCPT_EXRL_ACCT_FOR_BUS_TCD" />
+          <ScalarProperty Name="BN" ColumnName="BN" />
+          <ScalarProperty Name="RCPT_USR_BUS_ID" ColumnName="RCPT_USR_BUS_ID" />
+          <ScalarProperty Name="EXRL_ACCT_ID" ColumnName="EXRL_ACCT_ID" />
+          <ScalarProperty Name="RCPT_EXRL_ACCT_FOR_BUS_ID" ColumnName="RCPT_EXRL_ACCT_FOR_BUS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRCPT_USR_BUS">
+      <EntityTypeMapping TypeName="paykapdevModel.TRCPT_USR_BUS">
+        <MappingFragment StoreEntitySet="TRCPT_USR_BUS">
+          <ScalarProperty Name="ACTVT_TCD" ColumnName="ACTVT_TCD" />
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="USR_NBR" ColumnName="USR_NBR" />
+          <ScalarProperty Name="RCPT_USR_BUS_EDT" ColumnName="RCPT_USR_BUS_EDT" />
+          <ScalarProperty Name="RCPT_USR_BUS_TCD" ColumnName="RCPT_USR_BUS_TCD" />
+          <ScalarProperty Name="RCPT_BUS_NBR" ColumnName="RCPT_BUS_NBR" />
+          <ScalarProperty Name="RCPT_USR_NBR" ColumnName="RCPT_USR_NBR" />
+          <ScalarProperty Name="RCPT_TCD" ColumnName="RCPT_TCD" />
+          <ScalarProperty Name="RCPT_USR_BUS_NM" ColumnName="RCPT_USR_BUS_NM" />
+          <ScalarProperty Name="RCPT_USR_BUS3_UIN" ColumnName="RCPT_USR_BUS3_UIN" />
+          <ScalarProperty Name="RCPT_USR_BUS2_UIN" ColumnName="RCPT_USR_BUS2_UIN" />
+          <ScalarProperty Name="RCPT_USR_BUS1_UIN" ColumnName="RCPT_USR_BUS1_UIN" />
+          <ScalarProperty Name="ACCT_NBR" ColumnName="ACCT_NBR" />
+          <ScalarProperty Name="ACCT_ID" ColumnName="ACCT_ID" />
+          <ScalarProperty Name="RCPT_USR_BUS_ID" ColumnName="RCPT_USR_BUS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TSCTY_QUES_LIST">
+      <EntityTypeMapping TypeName="paykapdevModel.TSCTY_QUES_LIST">
+        <MappingFragment StoreEntitySet="TSCTY_QUES_LIST">
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="SCTY_QUES_ITA" ColumnName="SCTY_QUES_ITA" />
+          <ScalarProperty Name="SCTY_QUES_DEU" ColumnName="SCTY_QUES_DEU" />
+          <ScalarProperty Name="SCTY_QUES_RUS" ColumnName="SCTY_QUES_RUS" />
+          <ScalarProperty Name="SCTY_QUES_ZHO" ColumnName="SCTY_QUES_ZHO" />
+          <ScalarProperty Name="SCTY_QUES_POR" ColumnName="SCTY_QUES_POR" />
+          <ScalarProperty Name="SCTY_QUES_ARB" ColumnName="SCTY_QUES_ARB" />
+          <ScalarProperty Name="SCTY_QUES_SPA" ColumnName="SCTY_QUES_SPA" />
+          <ScalarProperty Name="SCTY_QUES_ENG" ColumnName="SCTY_QUES_ENG" />
+          <ScalarProperty Name="SCTY_QUES_FRA" ColumnName="SCTY_QUES_FRA" />
+          <ScalarProperty Name="SCTY_QUES_ID" ColumnName="SCTY_QUES_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TTAX">
+      <EntityTypeMapping TypeName="paykapdevModel.TTAX">
+        <MappingFragment StoreEntitySet="TTAX">
+          <ScalarProperty Name="TRANS_DTTM" ColumnName="TRANS_DTTM" />
+          <ScalarProperty Name="TAX_AMT" ColumnName="TAX_AMT" />
+          <ScalarProperty Name="TRANS_AMT" ColumnName="TRANS_AMT" />
+          <ScalarProperty Name="TRANS_SRVC_TCD" ColumnName="TRANS_SRVC_TCD" />
+          <ScalarProperty Name="CASH_TRANS_CNBR" ColumnName="CASH_TRANS_CNBR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TTAX_RT_CTRY">
+      <EntityTypeMapping TypeName="paykapdevModel.TTAX_RT_CTRY">
+        <MappingFragment StoreEntitySet="TTAX_RT_CTRY">
+          <ScalarProperty Name="LAST_UPDT_DT" ColumnName="LAST_UPDT_DT" />
+          <ScalarProperty Name="TAX_RT" ColumnName="TAX_RT" />
+          <ScalarProperty Name="CTRY_CD" ColumnName="CTRY_CD" />
+          <ScalarProperty Name="TAX_RT_CTRY_ID" ColumnName="TAX_RT_CTRY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TTRANS_FEE">
+      <EntityTypeMapping TypeName="paykapdevModel.TTRANS_FEE">
+        <MappingFragment StoreEntitySet="TTRANS_FEE">
+          <ScalarProperty Name="TRANS_FEE_GRP_IND" ColumnName="TRANS_FEE_GRP_IND" />
+          <ScalarProperty Name="TRANS_FEE_GRP_ID" ColumnName="TRANS_FEE_GRP_ID" />
+          <ScalarProperty Name="TRANS_FEE_GRP_NM" ColumnName="TRANS_FEE_GRP_NM" />
+          <ScalarProperty Name="TRANS_FEE_DT" ColumnName="TRANS_FEE_DT" />
+          <ScalarProperty Name="TRANS_FEE_TCD" ColumnName="TRANS_FEE_TCD" />
+          <ScalarProperty Name="CRCY_XCHG_PRCNT_ID" ColumnName="CRCY_XCHG_PRCNT_ID" />
+          <ScalarProperty Name="NIVSTR_PRCNT_FEE_RT" ColumnName="NIVSTR_PRCNT_FEE_RT" />
+          <ScalarProperty Name="NIVSTR_FIX_FEE_AMT" ColumnName="NIVSTR_FIX_FEE_AMT" />
+          <ScalarProperty Name="IVSTR_PRCNT_FEE_RT" ColumnName="IVSTR_PRCNT_FEE_RT" />
+          <ScalarProperty Name="IVSTR_FIX_FEE_AMT" ColumnName="IVSTR_FIX_FEE_AMT" />
+          <ScalarProperty Name="TO_AMT" ColumnName="TO_AMT" />
+          <ScalarProperty Name="FROM_AMT" ColumnName="FROM_AMT" />
+          <ScalarProperty Name="TO_CRCY_CD" ColumnName="TO_CRCY_CD" />
+          <ScalarProperty Name="FROM_CRCY_CD" ColumnName="FROM_CRCY_CD" />
+          <ScalarProperty Name="PROV_CD" ColumnName="PROV_CD" />
+          <ScalarProperty Name="TRANS_FEE_ID" ColumnName="TRANS_FEE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TTRANS_ID_DOC">
+      <EntityTypeMapping TypeName="paykapdevModel.TTRANS_ID_DOC">
+        <MappingFragment StoreEntitySet="TTRANS_ID_DOC">
+          <ScalarProperty Name="TRANS_ID_DOC_DT" ColumnName="TRANS_ID_DOC_DT" />
+          <ScalarProperty Name="CLT_ID_DOC_BRDAY" ColumnName="CLT_ID_DOC_BRDAY" />
+          <ScalarProperty Name="CLT_USR_NBR" ColumnName="CLT_USR_NBR" />
+          <ScalarProperty Name="BUS_USR_NBR" ColumnName="BUS_USR_NBR" />
+          <ScalarProperty Name="ID_DOC_XDT" ColumnName="ID_DOC_XDT" />
+          <ScalarProperty Name="ID_DOC_NBR" ColumnName="ID_DOC_NBR" />
+          <ScalarProperty Name="ID_DOC_ID" ColumnName="ID_DOC_ID" />
+          <ScalarProperty Name="TRANS_ID" ColumnName="TRANS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TTRANS_SSN">
+      <EntityTypeMapping TypeName="paykapdevModel.TTRANS_SSN">
+        <MappingFragment StoreEntitySet="TTRANS_SSN">
+          <ScalarProperty Name="BIL_NBR_NEED_IND" ColumnName="BIL_NBR_NEED_IND" />
+          <ScalarProperty Name="BIL_NBR" ColumnName="BIL_NBR" />
+          <ScalarProperty Name="CLT_ACCT_NBR_NEED_IND" ColumnName="CLT_ACCT_NBR_NEED_IND" />
+          <ScalarProperty Name="CLT_ACCT_NBR" ColumnName="CLT_ACCT_NBR" />
+          <ScalarProperty Name="USR_NBR" ColumnName="USR_NBR" />
+          <ScalarProperty Name="BPCS_NBR" ColumnName="BPCS_NBR" />
+          <ScalarProperty Name="TRANS_SSN_BPC_ID" ColumnName="TRANS_SSN_BPC_ID" />
+          <ScalarProperty Name="TRANS_SSN_XDTTM" ColumnName="TRANS_SSN_XDTTM" />
+          <ScalarProperty Name="TRANS_SSN_EDTTM" ColumnName="TRANS_SSN_EDTTM" />
+          <ScalarProperty Name="TRANS_SSN_CUST_AMT_IND" ColumnName="TRANS_SSN_CUST_AMT_IND" />
+          <ScalarProperty Name="TRANS_SSN_AMT_TXT" ColumnName="TRANS_SSN_AMT_TXT" />
+          <ScalarProperty Name="TRANS_SSN_AMT" ColumnName="TRANS_SSN_AMT" />
+          <ScalarProperty Name="TRANS_SSN_SECR_ID" ColumnName="TRANS_SSN_SECR_ID" />
+          <ScalarProperty Name="TRANS_SSN_ID" ColumnName="TRANS_SSN_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TTRANS_START_XSSN_TEMPO">
+      <EntityTypeMapping TypeName="paykapdevModel.TTRANS_START_XSSN_TEMPO">
+        <MappingFragment StoreEntitySet="TTRANS_START_XSSN_TEMPO">
+          <ScalarProperty Name="TRANS_OTH5_TXT" ColumnName="TRANS_OTH5_TXT" />
+          <ScalarProperty Name="TRANS_OTH4_TXT" ColumnName="TRANS_OTH4_TXT" />
+          <ScalarProperty Name="TRANS_OTH3_TXT" ColumnName="TRANS_OTH3_TXT" />
+          <ScalarProperty Name="TRANS_OTH2_TXT" ColumnName="TRANS_OTH2_TXT" />
+          <ScalarProperty Name="TRANS_OTH1_TXT" ColumnName="TRANS_OTH1_TXT" />
+          <ScalarProperty Name="CLT_USR_NBR" ColumnName="CLT_USR_NBR" />
+          <ScalarProperty Name="TRANS_XDTTM" ColumnName="TRANS_XDTTM" />
+          <ScalarProperty Name="TRANS_EDTTM" ColumnName="TRANS_EDTTM" />
+          <ScalarProperty Name="ADJUST_XCHG_RT" ColumnName="ADJUST_XCHG_RT" />
+          <ScalarProperty Name="DPLY_CRCY_XCHG_RT_IND" ColumnName="DPLY_CRCY_XCHG_RT_IND" />
+          <ScalarProperty Name="CRCY_XCHG_RT_TXT" ColumnName="CRCY_XCHG_RT_TXT" />
+          <ScalarProperty Name="CRCY_XCHG_RT" ColumnName="CRCY_XCHG_RT" />
+          <ScalarProperty Name="TO_TRANS_AMT_TXT" ColumnName="TO_TRANS_AMT_TXT" />
+          <ScalarProperty Name="TO_TRANS_AMT" ColumnName="TO_TRANS_AMT" />
+          <ScalarProperty Name="TOT_TO_PAY_AMT_TXT_PROMO_CD" ColumnName="TOT_TO_PAY_AMT_TXT_PROMO_CD" />
+          <ScalarProperty Name="TOT_TO_PAY_AMT_PROMO_CD" ColumnName="TOT_TO_PAY_AMT_PROMO_CD" />
+          <ScalarProperty Name="TOT_TO_PAY_AMT_TXT" ColumnName="TOT_TO_PAY_AMT_TXT" />
+          <ScalarProperty Name="TOT_TO_PAY_AMT" ColumnName="TOT_TO_PAY_AMT" />
+          <ScalarProperty Name="TRANS_FEE_AMT_TXT_PROMO_CD" ColumnName="TRANS_FEE_AMT_TXT_PROMO_CD" />
+          <ScalarProperty Name="TRANS_FEE_AMT_PROMO_CD" ColumnName="TRANS_FEE_AMT_PROMO_CD" />
+          <ScalarProperty Name="TRANS_FEE_AMT_TXT" ColumnName="TRANS_FEE_AMT_TXT" />
+          <ScalarProperty Name="TRANS_FEE_AMT" ColumnName="TRANS_FEE_AMT" />
+          <ScalarProperty Name="FROM_TRANS_AMT_TXT" ColumnName="FROM_TRANS_AMT_TXT" />
+          <ScalarProperty Name="FROM_TRANS_AMT" ColumnName="FROM_TRANS_AMT" />
+          <ScalarProperty Name="SEND_RCPT_CD" ColumnName="SEND_RCPT_CD" />
+          <ScalarProperty Name="TO_CRCY_CD" ColumnName="TO_CRCY_CD" />
+          <ScalarProperty Name="FROM_CRCY_CD" ColumnName="FROM_CRCY_CD" />
+          <ScalarProperty Name="TO_CTRY_CD" ColumnName="TO_CTRY_CD" />
+          <ScalarProperty Name="FROM_CTRY_CD" ColumnName="FROM_CTRY_CD" />
+          <ScalarProperty Name="TO_SRVC_ID" ColumnName="TO_SRVC_ID" />
+          <ScalarProperty Name="FROM_SRVC_ID" ColumnName="FROM_SRVC_ID" />
+          <ScalarProperty Name="TRANS_SSN_SECR_ID" ColumnName="TRANS_SSN_SECR_ID" />
+          <ScalarProperty Name="TRANS_SSN_ID" ColumnName="TRANS_SSN_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TTRANS_TEMPO">
+      <EntityTypeMapping TypeName="paykapdevModel.TTRANS_TEMPO">
+        <MappingFragment StoreEntitySet="TTRANS_TEMPO">
+          <ScalarProperty Name="TO_TRANS_DESC" ColumnName="TO_TRANS_DESC" />
+          <ScalarProperty Name="TO_BNK_ACCT_ID" ColumnName="TO_BNK_ACCT_ID" />
+          <ScalarProperty Name="TO_PKP_ACCT_ID" ColumnName="TO_PKP_ACCT_ID" />
+          <ScalarProperty Name="TO_SRVC_IND" ColumnName="TO_SRVC_IND" />
+          <ScalarProperty Name="FROM_TRANS_DESC" ColumnName="FROM_TRANS_DESC" />
+          <ScalarProperty Name="FROM_PKP_ACCT_ID" ColumnName="FROM_PKP_ACCT_ID" />
+          <ScalarProperty Name="FROM_PKP_ACCT_IND" ColumnName="FROM_PKP_ACCT_IND" />
+          <ScalarProperty Name="TRANS_ID" ColumnName="TRANS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TTRANS_TRSF_CRDT_DBT">
+      <EntityTypeMapping TypeName="paykapdevModel.TTRANS_TRSF_CRDT_DBT">
+        <MappingFragment StoreEntitySet="TTRANS_TRSF_CRDT_DBT">
+          <ScalarProperty Name="TRANS_DESC" ColumnName="TRANS_DESC" />
+          <ScalarProperty Name="TRANS_TRSF_CRDT_DBT_TCD" ColumnName="TRANS_TRSF_CRDT_DBT_TCD" />
+          <ScalarProperty Name="RCPT_USR_BUS_ID" ColumnName="RCPT_USR_BUS_ID" />
+          <ScalarProperty Name="FROM_USR_NBR" ColumnName="FROM_USR_NBR" />
+          <ScalarProperty Name="TRANS_XDT" ColumnName="TRANS_XDT" />
+          <ScalarProperty Name="TRANS_PAID_DPST_DT" ColumnName="TRANS_PAID_DPST_DT" />
+          <ScalarProperty Name="TRANS_CDT" ColumnName="TRANS_CDT" />
+          <ScalarProperty Name="TRANS_SCD" ColumnName="TRANS_SCD" />
+          <ScalarProperty Name="TO_TRANS_AMT" ColumnName="TO_TRANS_AMT" />
+          <ScalarProperty Name="FROM_TOT_AMT" ColumnName="FROM_TOT_AMT" />
+          <ScalarProperty Name="FROM_FEE_AMT" ColumnName="FROM_FEE_AMT" />
+          <ScalarProperty Name="FROM_TRANS_AMT" ColumnName="FROM_TRANS_AMT" />
+          <ScalarProperty Name="CRCY_XCHG_RT" ColumnName="CRCY_XCHG_RT" />
+          <ScalarProperty Name="TO_CRCY_CD" ColumnName="TO_CRCY_CD" />
+          <ScalarProperty Name="FROM_CRCY_CD" ColumnName="FROM_CRCY_CD" />
+          <ScalarProperty Name="TO_CTRY_CD" ColumnName="TO_CTRY_CD" />
+          <ScalarProperty Name="FROM_CTRY_CD" ColumnName="FROM_CTRY_CD" />
+          <ScalarProperty Name="TO_TRSF_SERV_ID" ColumnName="TO_TRSF_SERV_ID" />
+          <ScalarProperty Name="FROM_TRSF_SERV_ID" ColumnName="FROM_TRSF_SERV_ID" />
+          <ScalarProperty Name="TRANS_ID" ColumnName="TRANS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TTRSF_FEE_SERV_CTRY">
+      <EntityTypeMapping TypeName="paykapdevModel.TTRSF_FEE_SERV_CTRY">
+        <MappingFragment StoreEntitySet="TTRSF_FEE_SERV_CTRY">
+          <ScalarProperty Name="TO_CTRY_CD" ColumnName="TO_CTRY_CD" />
+          <ScalarProperty Name="FROM_CTRY_CD" ColumnName="FROM_CTRY_CD" />
+          <ScalarProperty Name="TO_TRSF_SERV_ID" ColumnName="TO_TRSF_SERV_ID" />
+          <ScalarProperty Name="FROM_TRSF_SERV_ID" ColumnName="FROM_TRSF_SERV_ID" />
+          <ScalarProperty Name="TRANS_FEE_ID" ColumnName="TRANS_FEE_ID" />
+          <ScalarProperty Name="TRSF_FEE_SERV_CTRY_ID" ColumnName="TRSF_FEE_SERV_CTRY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TTRSF_SERV">
+      <EntityTypeMapping TypeName="paykapdevModel.TTRSF_SERV">
+        <MappingFragment StoreEntitySet="TTRSF_SERV">
+          <ScalarProperty Name="LGC_DEL_IND" ColumnName="LGC_DEL_IND" />
+          <ScalarProperty Name="ITA_TRSF_SERV_NM" ColumnName="ITA_TRSF_SERV_NM" />
+          <ScalarProperty Name="DEU_TRSF_SERV_NM" ColumnName="DEU_TRSF_SERV_NM" />
+          <ScalarProperty Name="RUS_TRSF_SERV_NM" ColumnName="RUS_TRSF_SERV_NM" />
+          <ScalarProperty Name="ZHO_TRSF_SERV_NM" ColumnName="ZHO_TRSF_SERV_NM" />
+          <ScalarProperty Name="POR_TRSF_SERV_NM" ColumnName="POR_TRSF_SERV_NM" />
+          <ScalarProperty Name="ARB_TRSF_SERV_NM" ColumnName="ARB_TRSF_SERV_NM" />
+          <ScalarProperty Name="SPA_TRSF_SERV_NM" ColumnName="SPA_TRSF_SERV_NM" />
+          <ScalarProperty Name="ENG_TRSF_SERV_NM" ColumnName="ENG_TRSF_SERV_NM" />
+          <ScalarProperty Name="FRA_TRSF_SERV_NM" ColumnName="FRA_TRSF_SERV_NM" />
+          <ScalarProperty Name="TRSF_SERV_ID" ColumnName="TRSF_SERV_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TTRSF_SERV_CTRY">
+      <EntityTypeMapping TypeName="paykapdevModel.TTRSF_SERV_CTRY">
+        <MappingFragment StoreEntitySet="TTRSF_SERV_CTRY">
+          <ScalarProperty Name="LAST_UPDT_DT" ColumnName="LAST_UPDT_DT" />
+          <ScalarProperty Name="TRSF_TCD" ColumnName="TRSF_TCD" />
+          <ScalarProperty Name="TRSF_SERV_ID" ColumnName="TRSF_SERV_ID" />
+          <ScalarProperty Name="PROV_CD" ColumnName="PROV_CD" />
+          <ScalarProperty Name="CTRY_CD" ColumnName="CTRY_CD" />
+          <ScalarProperty Name="TRSF_SERV_CTRY_ID" ColumnName="TRSF_SERV_CTRY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TUSR">
+      <EntityTypeMapping TypeName="paykapdevModel.TUSR">
+        <MappingFragment StoreEntitySet="TUSR">
+          <ScalarProperty Name="CTRY_CD" ColumnName="CTRY_CD" />
+          <ScalarProperty Name="CITY_CD" ColumnName="CITY_CD" />
+          <ScalarProperty Name="CITY_NM" ColumnName="CITY_NM" />
+          <ScalarProperty Name="EMAIL2_TXT" ColumnName="EMAIL2_TXT" />
+          <ScalarProperty Name="EMAIL1_TXT" ColumnName="EMAIL1_TXT" />
+          <ScalarProperty Name="PHN3_CTRY_CD_NBR_LGC_DEL_IND" ColumnName="PHN3_CTRY_CD_NBR_LGC_DEL_IND" />
+          <ScalarProperty Name="PHN3_CTRY_CD_NBR_LAST_VLDT_DT" ColumnName="PHN3_CTRY_CD_NBR_LAST_VLDT_DT" />
+          <ScalarProperty Name="PHN3_CTRY_CD_NBR_VLDT_IND" ColumnName="PHN3_CTRY_CD_NBR_VLDT_IND" />
+          <ScalarProperty Name="PHN3_CTRY_CD_NBR" ColumnName="PHN3_CTRY_CD_NBR" />
+          <ScalarProperty Name="PHN3_CTRY_CD" ColumnName="PHN3_CTRY_CD" />
+          <ScalarProperty Name="PHN3_NBR" ColumnName="PHN3_NBR" />
+          <ScalarProperty Name="PHN2_CTRY_CD_NBR_LGC_DEL_IND" ColumnName="PHN2_CTRY_CD_NBR_LGC_DEL_IND" />
+          <ScalarProperty Name="PHN2_CTRY_CD_NBR_LAST_VLDT_DT" ColumnName="PHN2_CTRY_CD_NBR_LAST_VLDT_DT" />
+          <ScalarProperty Name="PHN2_CTRY_CD_NBR_VLDT_IND" ColumnName="PHN2_CTRY_CD_NBR_VLDT_IND" />
+          <ScalarProperty Name="PHN2_CTRY_CD_NBR" ColumnName="PHN2_CTRY_CD_NBR" />
+          <ScalarProperty Name="PHN2_CTRY_CD" ColumnName="PHN2_CTRY_CD" />
+          <ScalarProperty Name="PHN2_NBR" ColumnName="PHN2_NBR" />
+          <ScalarProperty Name="PHN1_CTRY_CD_NBR_LGC_DEL_IND" ColumnName="PHN1_CTRY_CD_NBR_LGC_DEL_IND" />
+          <ScalarProperty Name="PHN1_CTRY_CD_NBR_LAST_VLDT_DT" ColumnName="PHN1_CTRY_CD_NBR_LAST_VLDT_DT" />
+          <ScalarProperty Name="PHN1_CTRY_CD_NBR_VLDT_IND" ColumnName="PHN1_CTRY_CD_NBR_VLDT_IND" />
+          <ScalarProperty Name="PHN1_CTRY_CD_NBR" ColumnName="PHN1_CTRY_CD_NBR" />
+          <ScalarProperty Name="PHN1_CTRY_CD" ColumnName="PHN1_CTRY_CD" />
+          <ScalarProperty Name="PHN1_NBR" ColumnName="PHN1_NBR" />
+          <ScalarProperty Name="ADDR_LN2_TXT" ColumnName="ADDR_LN2_TXT" />
+          <ScalarProperty Name="ADDR_LN1_TXT" ColumnName="ADDR_LN1_TXT" />
+          <ScalarProperty Name="USR_EMAIL_VRFT_DT" ColumnName="USR_EMAIL_VRFT_DT" />
+          <ScalarProperty Name="USR_EMAIL_VRFT_IND" ColumnName="USR_EMAIL_VRFT_IND" />
+          <ScalarProperty Name="USR_DFLT_EMAIL_IND" ColumnName="USR_DFLT_EMAIL_IND" />
+          <ScalarProperty Name="USR_DFLT_PWD_IND" ColumnName="USR_DFLT_PWD_IND" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="USR_MBRSHP_EDT" ColumnName="USR_MBRSHP_EDT" />
+          <ScalarProperty Name="USR_VERIF_IND" ColumnName="USR_VERIF_IND" />
+          <ScalarProperty Name="USR_99P_FRC_IND" ColumnName="USR_99P_FRC_IND" />
+          <ScalarProperty Name="USR_KTCT_ID" ColumnName="USR_KTCT_ID" />
+          <ScalarProperty Name="USR_PREF_LCD" ColumnName="USR_PREF_LCD" />
+          <ScalarProperty Name="USR_BRDAY" ColumnName="USR_BRDAY" />
+          <ScalarProperty Name="USR_GNDR" ColumnName="USR_GNDR" />
+          <ScalarProperty Name="USR_LNM" ColumnName="USR_LNM" />
+          <ScalarProperty Name="USR_FNM" ColumnName="USR_FNM" />
+          <ScalarProperty Name="USR_SCD" ColumnName="USR_SCD" />
+          <ScalarProperty Name="USR_TCD" ColumnName="USR_TCD" />
+          <ScalarProperty Name="USR_NBR" ColumnName="USR_NBR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TUSR_ID">
+      <EntityTypeMapping TypeName="paykapdevModel.TUSR_ID">
+        <MappingFragment StoreEntitySet="TUSR_ID">
+          <ScalarProperty Name="IDENT_DT" ColumnName="IDENT_DT" />
+          <ScalarProperty Name="USR_ID" ColumnName="USR_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TUSR_WHDRL_CRDT">
+      <EntityTypeMapping TypeName="paykapdevModel.TUSR_WHDRL_CRDT">
+        <MappingFragment StoreEntitySet="TUSR_WHDRL_CRDT">
+          <ScalarProperty Name="USR_WHDRL_CRDT_NBR" ColumnName="USR_WHDRL_CRDT_NBR" />
+          <ScalarProperty Name="USR_NBR" ColumnName="USR_NBR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ZTMNYT_FEE_EXPIRED">
+      <EntityTypeMapping TypeName="paykapdevModel.ZTMNYT_FEE_EXPIRED">
+        <MappingFragment StoreEntitySet="ZTMNYT_FEE_EXPIRED">
+          <ScalarProperty Name="LAST_UPDT_DT" ColumnName="LAST_UPDT_DT" />
+          <ScalarProperty Name="MNYT_FEE_TCD" ColumnName="MNYT_FEE_TCD" />
+          <ScalarProperty Name="FROM_CRCY_CD" ColumnName="FROM_CRCY_CD" />
+          <ScalarProperty Name="PRCNT_NO_99P_FRC_INV" ColumnName="PRCNT_NO_99P_FRC_INV" />
+          <ScalarProperty Name="PRCNT_FEE" ColumnName="PRCNT_FEE" />
+          <ScalarProperty Name="FIX_FEE_AMT" ColumnName="FIX_FEE_AMT" />
+          <ScalarProperty Name="TO_AMT" ColumnName="TO_AMT" />
+          <ScalarProperty Name="FROM_AMT" ColumnName="FROM_AMT" />
+          <ScalarProperty Name="MNYT_FEE_GRP_CD" ColumnName="MNYT_FEE_GRP_CD" />
+          <ScalarProperty Name="MNYT_FEE_ID" ColumnName="MNYT_FEE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="paykapdevModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="DeposDetails" FunctionName="paykapdevModel.Store.DeposDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="paykapdevModel.DeposDetails_Result">
+          <ScalarProperty Name="CLT_USR_NBR" ColumnName="CLT_USR_NBR" />
+          <ScalarProperty Name="CLT_FUL_NM" ColumnName="CLT_FUL_NM" />
+          <ScalarProperty Name="FEE_AMT" ColumnName="FEE_AMT" />
+          <ScalarProperty Name="AMT_TO_PAY" ColumnName="AMT_TO_PAY" />
+          <ScalarProperty Name="AMT_TO_DEPOSIT" ColumnName="AMT_TO_DEPOSIT" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetDeposDetails" FunctionName="paykapdevModel.Store.GetDeposDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="paykapdevModel.GetDeposDetails_Result">
+          <ScalarProperty Name="CLT_USR_NBR" ColumnName="CLT_USR_NBR" />
+          <ScalarProperty Name="CLT_FUL_NM" ColumnName="CLT_FUL_NM" />
+          <ScalarProperty Name="FEE_AMT" ColumnName="FEE_AMT" />
+          <ScalarProperty Name="AMT_TO_PAY" ColumnName="AMT_TO_PAY" />
+          <ScalarProperty Name="AMT_TO_DEPOSIT" ColumnName="AMT_TO_DEPOSIT" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetTransqtionDetails" FunctionName="paykapdevModel.Store.GetTransqtionDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="paykapdevModel.GetTransqtionDetails_Result">
+          <ScalarProperty Name="USR_FNM" ColumnName="USR_FNM" />
+          <ScalarProperty Name="USR_LNM" ColumnName="USR_LNM" />
+          <ScalarProperty Name="TRANS_ID" ColumnName="TRANS_ID" />
+          <ScalarProperty Name="RCPT_USR_BUS_NM" ColumnName="RCPT_USR_BUS_NM" />
+          <ScalarProperty Name="TRANS_SCD" ColumnName="TRANS_SCD" />
+          <ScalarProperty Name="TO_TRANS_AMT" ColumnName="TO_TRANS_AMT" />
+          <ScalarProperty Name="FRA_CTRY_NM" ColumnName="FRA_CTRY_NM" />
+          <ScalarProperty Name="TRANS_DESC" ColumnName="TRANS_DESC" />
+          <ScalarProperty Name="FRA_TRSF_SERV_NM" ColumnName="FRA_TRSF_SERV_NM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

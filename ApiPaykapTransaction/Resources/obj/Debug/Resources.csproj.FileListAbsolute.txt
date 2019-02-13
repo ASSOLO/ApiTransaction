@@ -1,0 +1,215 @@
+C:\Users\user\Documents\Paykap\pkpApp\Resources\bin\Debug\Resources.dll
+C:\Users\user\Documents\Paykap\pkpApp\Resources\bin\Debug\Resources.pdb
+C:\Users\user\Documents\Paykap\pkpApp\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Paykap\pkpApp\Resources\obj\Debug\Resources.Resources-en.resources
+C:\Users\user\Documents\Paykap\pkpApp\Resources\obj\Debug\Resources.Resources.resources
+C:\Users\user\Documents\Paykap\pkpApp\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+C:\Users\user\Documents\Paykap\pkpApp\Resources\obj\Debug\Resources.dll
+C:\Users\user\Documents\Paykap\pkpApp\Resources\obj\Debug\Resources.pdb
+C:\Users\inter\Documents\PayKap2016\pkpApp\Resources\bin\Debug\Resources.dll
+C:\Users\inter\Documents\PayKap2016\pkpApp\Resources\bin\Debug\Resources.pdb
+C:\Users\inter\Documents\PayKap2016\pkpApp\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+C:\Users\inter\Documents\PayKap2016\pkpApp\Resources\obj\Debug\Resources.Resources-en.resources
+C:\Users\inter\Documents\PayKap2016\pkpApp\Resources\obj\Debug\Resources.Resources.resources
+C:\Users\inter\Documents\PayKap2016\pkpApp\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+C:\Users\inter\Documents\PayKap2016\pkpApp\Resources\obj\Debug\Resources.dll
+C:\Users\inter\Documents\PayKap2016\pkpApp\Resources\obj\Debug\Resources.pdb
+C:\Users\inter\Documents\PayKap2017\pkpApp\Resources\bin\Debug\Resources.dll
+C:\Users\inter\Documents\PayKap2017\pkpApp\Resources\bin\Debug\Resources.pdb
+C:\Users\inter\Documents\PayKap2017\pkpApp\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+C:\Users\inter\Documents\PayKap2017\pkpApp\Resources\obj\Debug\Resources.Resources-en.resources
+C:\Users\inter\Documents\PayKap2017\pkpApp\Resources\obj\Debug\Resources.Resources.resources
+C:\Users\inter\Documents\PayKap2017\pkpApp\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+C:\Users\inter\Documents\PayKap2017\pkpApp\Resources\obj\Debug\Resources.dll
+C:\Users\inter\Documents\PayKap2017\pkpApp\Resources\obj\Debug\Resources.pdb
+C:\Users\inter\Documents\PayKap2017\Release 2017-08\pkpApp\Resources\bin\Debug\Resources.dll
+C:\Users\inter\Documents\PayKap2017\Release 2017-08\pkpApp\Resources\bin\Debug\Resources.pdb
+C:\Users\inter\Documents\PayKap2017\Release 2017-08\pkpApp\Resources\obj\Debug\Resources.Resources-en.resources
+C:\Users\inter\Documents\PayKap2017\Release 2017-08\pkpApp\Resources\obj\Debug\Resources.Resources.resources
+C:\Users\inter\Documents\PayKap2017\Release 2017-08\pkpApp\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+C:\Users\inter\Documents\PayKap2017\Release 2017-08\pkpApp\Resources\obj\Debug\Resources.dll
+C:\Users\inter\Documents\PayKap2017\Release 2017-08\pkpApp\Resources\obj\Debug\Resources.pdb
+C:\Users\inter\Documents\PayKap2017\Release 2017-08\pkpApp\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2017-08 Current PRD\pkpApp\Resources\bin\Debug\Resources.dll
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2017-08 Current PRD\pkpApp\Resources\bin\Debug\Resources.pdb
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2017-08 Current PRD\pkpApp\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2017-08 Current PRD\pkpApp\Resources\obj\Debug\Resources.Resources-en.resources
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2017-08 Current PRD\pkpApp\Resources\obj\Debug\Resources.Resources.resources
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2017-08 Current PRD\pkpApp\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2017-08 Current PRD\pkpApp\Resources\obj\Debug\Resources.dll
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2017-08 Current PRD\pkpApp\Resources\obj\Debug\Resources.pdb
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-03\pkpApp\Resources\bin\Debug\Resources.dll
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-03\pkpApp\Resources\bin\Debug\Resources.pdb
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-03\pkpApp\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-03\pkpApp\Resources\obj\Debug\Resources.Resources-en.resources
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-03\pkpApp\Resources\obj\Debug\Resources.Resources.resources
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-03\pkpApp\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-03\pkpApp\Resources\obj\Debug\Resources.dll
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-03\pkpApp\Resources\obj\Debug\Resources.pdb
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-06\Paykapwebsite\pkpApp\Resources\bin\Debug\Resources.dll
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-06\Paykapwebsite\pkpApp\Resources\bin\Debug\Resources.pdb
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-06\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-06\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources-en.resources
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-06\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.resources
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-06\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-06\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.dll
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-06\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.pdb
+E:\PROJETS\PAYKAP Projects\PayKapCanada\pkpApp\Resources\bin\Debug\Resources.dll
+E:\PROJETS\PAYKAP Projects\PayKapCanada\pkpApp\Resources\bin\Debug\Resources.pdb
+E:\PROJETS\PAYKAP Projects\PayKapCanada\pkpApp\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+E:\PROJETS\PAYKAP Projects\PayKapCanada\pkpApp\Resources\obj\Debug\Resources.Resources.resources
+E:\PROJETS\PAYKAP Projects\PayKapCanada\pkpApp\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+E:\PROJETS\PAYKAP Projects\PayKapCanada\pkpApp\Resources\obj\Debug\Resources.dll
+E:\PROJETS\PAYKAP Projects\PayKapCanada\pkpApp\Resources\obj\Debug\Resources.pdb
+E:\PROJETS\PAYKAP Projects\PayKapCanada\pkpApp\Resources\bin\Debug\en\Resources.resources.dll
+E:\PROJETS\PAYKAP Projects\PayKapCanada\pkpApp\Resources\obj\Debug\Resources.Resources.en.resources
+E:\PROJETS\PAYKAP Projects\PayKapCanada\pkpApp\Resources\obj\Debug\en\Resources.resources.dll
+E:\Paykap_Projects\Paykapwebsite\pkpApp\Resources\bin\Debug\Resources.dll
+E:\Paykap_Projects\Paykapwebsite\pkpApp\Resources\bin\Debug\Resources.pdb
+E:\Paykap_Projects\Paykapwebsite\pkpApp\Resources\bin\Debug\en\Resources.resources.dll
+E:\Paykap_Projects\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+E:\Paykap_Projects\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.resources
+E:\Paykap_Projects\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.en.resources
+E:\Paykap_Projects\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+E:\Paykap_Projects\Paykapwebsite\pkpApp\Resources\obj\Debug\en\Resources.resources.dll
+E:\Paykap_Projects\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.dll
+E:\Paykap_Projects\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.pdb
+F:\Paykap\PaykapInternationalize\Paykapwebsite\pkpApp\Resources\bin\Debug\Resources.dll
+F:\Paykap\PaykapInternationalize\Paykapwebsite\pkpApp\Resources\bin\Debug\Resources.pdb
+F:\Paykap\PaykapInternationalize\Paykapwebsite\pkpApp\Resources\bin\Debug\en\Resources.resources.dll
+F:\Paykap\PaykapInternationalize\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.resources
+F:\Paykap\PaykapInternationalize\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.en.resources
+F:\Paykap\PaykapInternationalize\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+F:\Paykap\PaykapInternationalize\Paykapwebsite\pkpApp\Resources\obj\Debug\en\Resources.resources.dll
+F:\Paykap\PaykapInternationalize\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.dll
+F:\Paykap\PaykapInternationalize\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.pdb
+F:\Paykap\PaykapInternationalize\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+F:\Paykap\PaykapInternationalize\Paykapwebsite\pkpApp\Resources\bin\Debug\es\Resources.resources.dll
+F:\Paykap\PaykapInternationalize\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resource.es.resources
+F:\Paykap\PaykapInternationalize\Paykapwebsite\pkpApp\Resources\obj\Debug\es\Resources.resources.dll
+E:\payKap\Paykapwebsite\pkpApp\Resources\bin\Debug\Resources.dll
+E:\payKap\Paykapwebsite\pkpApp\Resources\bin\Debug\Resources.pdb
+E:\payKap\Paykapwebsite\pkpApp\Resources\bin\Debug\es\Resources.resources.dll
+E:\payKap\Paykapwebsite\pkpApp\Resources\bin\Debug\en\Resources.resources.dll
+E:\payKap\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+E:\payKap\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.TemporyExclusif.resources
+E:\payKap\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.resources
+E:\payKap\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.es.resources
+E:\payKap\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.en.resources
+E:\payKap\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+E:\payKap\Paykapwebsite\pkpApp\Resources\obj\Debug\es\Resources.resources.dll
+E:\payKap\Paykapwebsite\pkpApp\Resources\obj\Debug\en\Resources.resources.dll
+E:\payKap\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.dll
+E:\payKap\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.pdb
+C:\Users\USER\Desktop\PayKap\Paykapwebsite\pkpApp\Resources\bin\Debug\Resources.dll
+C:\Users\USER\Desktop\PayKap\Paykapwebsite\pkpApp\Resources\bin\Debug\Resources.pdb
+C:\Users\USER\Desktop\PayKap\Paykapwebsite\pkpApp\Resources\bin\Debug\es\Resources.resources.dll
+C:\Users\USER\Desktop\PayKap\Paykapwebsite\pkpApp\Resources\bin\Debug\en\Resources.resources.dll
+C:\Users\USER\Desktop\PayKap\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+C:\Users\USER\Desktop\PayKap\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.TemporyExclusif.resources
+C:\Users\USER\Desktop\PayKap\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.resources
+C:\Users\USER\Desktop\PayKap\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.es.resources
+C:\Users\USER\Desktop\PayKap\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.en.resources
+C:\Users\USER\Desktop\PayKap\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+C:\Users\USER\Desktop\PayKap\Paykapwebsite\pkpApp\Resources\obj\Debug\es\Resources.resources.dll
+C:\Users\USER\Desktop\PayKap\Paykapwebsite\pkpApp\Resources\obj\Debug\en\Resources.resources.dll
+C:\Users\USER\Desktop\PayKap\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.dll
+C:\Users\USER\Desktop\PayKap\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.pdb
+E:\Paykap_Projects\Temp_Projects\PayKapThierry\Paykapwebsite\pkpApp\Resources\bin\Debug\Resources.dll
+E:\Paykap_Projects\Temp_Projects\PayKapThierry\Paykapwebsite\pkpApp\Resources\bin\Debug\Resources.pdb
+E:\Paykap_Projects\Temp_Projects\PayKapThierry\Paykapwebsite\pkpApp\Resources\bin\Debug\es\Resources.resources.dll
+E:\Paykap_Projects\Temp_Projects\PayKapThierry\Paykapwebsite\pkpApp\Resources\bin\Debug\en\Resources.resources.dll
+E:\Paykap_Projects\Temp_Projects\PayKapThierry\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+E:\Paykap_Projects\Temp_Projects\PayKapThierry\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.TemporyExclusif.resources
+E:\Paykap_Projects\Temp_Projects\PayKapThierry\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.resources
+E:\Paykap_Projects\Temp_Projects\PayKapThierry\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.es.resources
+E:\Paykap_Projects\Temp_Projects\PayKapThierry\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.en.resources
+E:\Paykap_Projects\Temp_Projects\PayKapThierry\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+E:\Paykap_Projects\Temp_Projects\PayKapThierry\Paykapwebsite\pkpApp\Resources\obj\Debug\es\Resources.resources.dll
+E:\Paykap_Projects\Temp_Projects\PayKapThierry\Paykapwebsite\pkpApp\Resources\obj\Debug\en\Resources.resources.dll
+E:\Paykap_Projects\Temp_Projects\PayKapThierry\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.dll
+E:\Paykap_Projects\Temp_Projects\PayKapThierry\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.pdb
+E:\Paykap_Projects\Temp_Projects\Paykapwebsite\Paykapwebsite\pkpApp\Resources\bin\Debug\Resources.dll
+E:\Paykap_Projects\Temp_Projects\Paykapwebsite\Paykapwebsite\pkpApp\Resources\bin\Debug\Resources.pdb
+E:\Paykap_Projects\Temp_Projects\Paykapwebsite\Paykapwebsite\pkpApp\Resources\bin\Debug\es\Resources.resources.dll
+E:\Paykap_Projects\Temp_Projects\Paykapwebsite\Paykapwebsite\pkpApp\Resources\bin\Debug\en\Resources.resources.dll
+E:\Paykap_Projects\Temp_Projects\Paykapwebsite\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+E:\Paykap_Projects\Temp_Projects\Paykapwebsite\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.TemporyExclusif.resources
+E:\Paykap_Projects\Temp_Projects\Paykapwebsite\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.resources
+E:\Paykap_Projects\Temp_Projects\Paykapwebsite\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.es.resources
+E:\Paykap_Projects\Temp_Projects\Paykapwebsite\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.en.resources
+E:\Paykap_Projects\Temp_Projects\Paykapwebsite\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+E:\Paykap_Projects\Temp_Projects\Paykapwebsite\Paykapwebsite\pkpApp\Resources\obj\Debug\es\Resources.resources.dll
+E:\Paykap_Projects\Temp_Projects\Paykapwebsite\Paykapwebsite\pkpApp\Resources\obj\Debug\en\Resources.resources.dll
+E:\Paykap_Projects\Temp_Projects\Paykapwebsite\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.dll
+E:\Paykap_Projects\Temp_Projects\Paykapwebsite\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.pdb
+E:\PaykapProject\Paykapwebsite\pkpApp\Resources\bin\Debug\Resources.dll
+E:\PaykapProject\Paykapwebsite\pkpApp\Resources\bin\Debug\Resources.pdb
+E:\PaykapProject\Paykapwebsite\pkpApp\Resources\bin\Debug\es\Resources.resources.dll
+E:\PaykapProject\Paykapwebsite\pkpApp\Resources\bin\Debug\en\Resources.resources.dll
+E:\PaykapProject\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+E:\PaykapProject\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.TemporyExclusif.resources
+E:\PaykapProject\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.resources
+E:\PaykapProject\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.es.resources
+E:\PaykapProject\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.Resources.en.resources
+E:\PaykapProject\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+E:\PaykapProject\Paykapwebsite\pkpApp\Resources\obj\Debug\es\Resources.resources.dll
+E:\PaykapProject\Paykapwebsite\pkpApp\Resources\obj\Debug\en\Resources.resources.dll
+E:\PaykapProject\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.dll
+E:\PaykapProject\Paykapwebsite\pkpApp\Resources\obj\Debug\Resources.pdb
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\Resources\bin\Debug\Resources.dll
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\Resources\bin\Debug\Resources.pdb
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\Resources\bin\Debug\es\Resources.resources.dll
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\Resources\bin\Debug\en\Resources.resources.dll
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\Resources\obj\Debug\Resources.Resources.TemporyExclusif.resources
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\Resources\obj\Debug\Resources.Resources.resources
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\Resources\obj\Debug\Resources.Resources.es.resources
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\Resources\obj\Debug\Resources.Resources.en.resources
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\Resources\obj\Debug\es\Resources.resources.dll
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\Resources\obj\Debug\en\Resources.resources.dll
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\Resources\obj\Debug\Resources.dll
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\Resources\obj\Debug\Resources.pdb
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\Resources\bin\Debug\Resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\Resources\bin\Debug\Resources.pdb
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\Resources\bin\Debug\es\Resources.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\Resources\bin\Debug\en\Resources.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\Resources\obj\Debug\Resources.Resources.TemporyExclusif.resources
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\Resources\obj\Debug\Resources.Resources.resources
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\Resources\obj\Debug\Resources.Resources.es.resources
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\Resources\obj\Debug\Resources.Resources.en.resources
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\Resources\obj\Debug\es\Resources.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\Resources\obj\Debug\en\Resources.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\Resources\obj\Debug\Resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\Resources\obj\Debug\Resources.pdb
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\Resources\bin\Debug\Resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\Resources\bin\Debug\Resources.pdb
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\Resources\bin\Debug\es\Resources.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\Resources\bin\Debug\en\Resources.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\Resources\obj\Debug\Resources.Resources.TemporyExclusif.resources
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\Resources\obj\Debug\Resources.Resources.resources
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\Resources\obj\Debug\Resources.Resources.es.resources
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\Resources\obj\Debug\Resources.Resources.en.resources
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\Resources\obj\Debug\es\Resources.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\Resources\obj\Debug\en\Resources.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\Resources\obj\Debug\Resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\Resources\obj\Debug\Resources.pdb
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\Resources\bin\Debug\Resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\Resources\bin\Debug\Resources.pdb
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\Resources\bin\Debug\es\Resources.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\Resources\bin\Debug\en\Resources.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\Resources\obj\Debug\Resources.Resources.TemporyExclusif.resources
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\Resources\obj\Debug\Resources.Resources.resources
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\Resources\obj\Debug\Resources.Resources.es.resources
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\Resources\obj\Debug\Resources.Resources.en.resources
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\Resources\obj\Debug\es\Resources.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\Resources\obj\Debug\en\Resources.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\Resources\obj\Debug\Resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\Resources\obj\Debug\Resources.pdb

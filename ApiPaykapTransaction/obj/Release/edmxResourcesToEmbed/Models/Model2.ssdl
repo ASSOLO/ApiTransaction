@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="paykapdevModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="GetTransactionDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TransqctionID" Type="int" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="USR_FNM" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="USR_LNM" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="FROM_USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="RCPT_USR_BUS_NM" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="TRANS_ID" Type="int" Nullable="false" />
+          <Property Name="TO_TRANS_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+          <Property Name="TRANS_DESC" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="FRA_TRSF_SERV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="TRANS_SCD" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="CITY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="ADDR_LN1_TXT" Type="varchar" MaxLength="255" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <EntityContainer Name="paykapdevModelStoreContainer" />
+</Schema>

@@ -1,0 +1,419 @@
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\obj\Debug\ApiPaykapTransaction.csprojResolveAssemblyReference.cache
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\roslyn\csc.exe
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\roslyn\vbc.exe
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\roslyn\VBCSCompiler.exe
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\ApiPaykapTransaction.dll.config
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\ApiPaykapTransaction.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\ApiPaykapTransaction.pdb
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Antlr3.Runtime.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\EntityFramework.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\EntityFramework.SqlServer.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.Owin.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.Owin.Security.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Newtonsoft.Json.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Owin.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\PaykapDataAccess.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Net.Http.Formatting.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.Helpers.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.Http.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.Http.Owin.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.Http.WebHost.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.Mvc.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.Optimization.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.Razor.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.WebPages.Deployment.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.WebPages.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.WebPages.Razor.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\WebGrease.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\PaykapDataAccess.pdb
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Resources.pdb
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Net.Http.Formatting.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.Http.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Newtonsoft.Json.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.Helpers.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.Http.WebHost.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.Mvc.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.Optimization.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.Razor.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.WebPages.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.WebPages.Deployment.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.WebPages.Razor.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Antlr3.Runtime.pdb
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\EntityFramework.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\EntityFramework.SqlServer.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.Owin.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.Owin.Security.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\System.Web.Http.Owin.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\en\Resources.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\es\Resources.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\System.Net.Http.Formatting.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\System.Web.Http.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\System.Web.Http.WebHost.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\System.Web.Optimization.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\System.Web.Razor.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\EntityFramework.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\bin\fr\System.Web.Http.Owin.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\obj\Debug\ApiPaykapTransaction.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction\ApiPaykapTransaction\obj\Debug\ApiPaykapTransaction.pdb
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\roslyn\csc.exe
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\roslyn\vbc.exe
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\roslyn\VBCSCompiler.exe
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\ApiPaykapTransaction.dll.config
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\ApiPaykapTransaction.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\ApiPaykapTransaction.pdb
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Antlr3.Runtime.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\EntityFramework.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\EntityFramework.SqlServer.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.Owin.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.Owin.Security.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Newtonsoft.Json.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Owin.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\PaykapDataAccess.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Net.Http.Formatting.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.Helpers.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.Http.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.Http.Owin.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.Http.WebHost.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.Mvc.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.Optimization.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.Razor.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.WebPages.Deployment.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.WebPages.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.WebPages.Razor.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\WebGrease.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\PaykapDataAccess.pdb
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Resources.pdb
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.Owin.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Net.Http.Formatting.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.Http.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.Http.Owin.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Newtonsoft.Json.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.Helpers.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.Http.WebHost.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.Mvc.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.Optimization.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.Razor.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.WebPages.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.WebPages.Deployment.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\System.Web.WebPages.Razor.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Antlr3.Runtime.pdb
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\EntityFramework.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\EntityFramework.SqlServer.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.Owin.Security.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\en\Resources.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\es\Resources.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\System.Net.Http.Formatting.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\System.Web.Http.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\System.Web.Http.Owin.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\System.Web.Http.WebHost.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\System.Web.Optimization.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\System.Web.Razor.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\EntityFramework.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\obj\Debug\ApiPaykapTransaction.csprojResolveAssemblyReference.cache
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\obj\Debug\ApiPaykapTransaction.dll
+C:\Users\hp\Documents\Visual Studio 2015\Projects\ApiPaykapTransaction-06-12-2018\ApiPaykapTransaction\obj\Debug\ApiPaykapTransaction.pdb
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\roslyn\csc.exe
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\roslyn\vbc.exe
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\roslyn\VBCSCompiler.exe
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\ApiPaykapTransaction.dll.config
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\ApiPaykapTransaction.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\ApiPaykapTransaction.pdb
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Antlr3.Runtime.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\EntityFramework.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\EntityFramework.SqlServer.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Newtonsoft.Json.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Owin.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\PaykapDataAccess.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Net.Http.Formatting.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.Helpers.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.Http.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.Http.Owin.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.Http.WebHost.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.Mvc.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.Optimization.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.Razor.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.WebPages.Deployment.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.WebPages.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.WebPages.Razor.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\WebGrease.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\PaykapDataAccess.pdb
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Resources.pdb
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Net.Http.Formatting.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.Http.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.Http.Owin.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Newtonsoft.Json.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.Helpers.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.Http.WebHost.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.Mvc.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.Optimization.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.Razor.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.WebPages.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.WebPages.Deployment.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\System.Web.WebPages.Razor.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Antlr3.Runtime.pdb
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\EntityFramework.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\EntityFramework.SqlServer.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\en\Resources.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\es\Resources.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\System.Net.Http.Formatting.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\System.Web.Http.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\System.Web.Http.Owin.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\System.Web.Http.WebHost.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\System.Web.Optimization.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\System.Web.Razor.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\EntityFramework.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\obj\Debug\ApiPaykapTransaction.csprojResolveAssemblyReference.cache
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\obj\Debug\ApiPaykapTransaction.dll
+C:\Users\hp\Desktop\Projet\ApiPaykapTransaction\obj\Debug\ApiPaykapTransaction.pdb
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\roslyn\csc.exe
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\roslyn\vbc.exe
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\roslyn\VBCSCompiler.exe
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\ApiPaykapTransaction.dll.config
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\ApiPaykapTransaction.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\ApiPaykapTransaction.pdb
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Antlr3.Runtime.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\EntityFramework.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\EntityFramework.SqlServer.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Newtonsoft.Json.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Owin.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\PaykapDataAccess.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Net.Http.Formatting.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.Cors.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.Helpers.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.Http.Cors.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.Http.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.Http.Owin.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.Http.WebHost.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.Mvc.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.Optimization.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.Razor.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.WebPages.Deployment.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.WebPages.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.WebPages.Razor.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\WebGrease.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\PaykapDataAccess.pdb
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Resources.pdb
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Net.Http.Formatting.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.Http.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.Http.Cors.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.Http.Owin.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Newtonsoft.Json.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.Helpers.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.Http.WebHost.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.Mvc.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.Optimization.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.Razor.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.WebPages.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.WebPages.Deployment.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\System.Web.WebPages.Razor.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Antlr3.Runtime.pdb
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\EntityFramework.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\EntityFramework.SqlServer.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\en\Resources.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\es\Resources.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\System.Net.Http.Formatting.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\System.Web.Http.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\System.Web.Http.Owin.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\System.Web.Http.WebHost.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\System.Web.Optimization.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\System.Web.Razor.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\EntityFramework.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\bin\fr\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\obj\Debug\ApiPaykapTransaction.csprojResolveAssemblyReference.cache
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\obj\Debug\ApiPaykapTransaction.dll
+C:\Users\AFDB\Documents\Visual Studio 2015\Projects\Projet\ApiPaykapTransaction\obj\Debug\ApiPaykapTransaction.pdb

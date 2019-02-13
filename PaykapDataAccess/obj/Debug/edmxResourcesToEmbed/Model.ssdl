@@ -1,0 +1,3547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="paykapdevModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ClaimType" Type="nvarchar(max)" />
+    <Property Name="ClaimValue" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogins">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ProviderKey" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar(max)" />
+    <Property Name="SecurityStamp" Type="nvarchar(max)" />
+    <Property Name="PhoneNumber" Type="nvarchar(max)" />
+    <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="datetime" />
+    <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TACCT">
+    <Key>
+      <PropertyRef Name="ACCT_ID" />
+    </Key>
+    <Property Name="ACCT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ACCT_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="ACCT_SCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="ACCT_NBR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ACCT_NAME" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ACCT_BAL" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+    <Property Name="ACCT_CLTR_INFO" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="ACCT_CDT" Type="datetime" Nullable="false" />
+    <Property Name="USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TACCT_BUS_AGNT_CMSN">
+    <Key>
+      <PropertyRef Name="ACCT_ID" />
+    </Key>
+    <Property Name="ACCT_ID" Type="int" Nullable="false" />
+    <Property Name="ACCT_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="ACCT_NBR" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="ACCT_BAL" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+    <Property Name="ACCT_CLTR_INFO" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="ACCT_SCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="BUS_AGNT_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="DPLY_ACCT_TO_SPNSR_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="SPNSR_CNTL_CMSN_ACCT_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TACCT_BUS_SRVC">
+    <Key>
+      <PropertyRef Name="ACCT_ID" />
+      <PropertyRef Name="ACCT_BUS_SRVC_CD" />
+    </Key>
+    <Property Name="ACCT_ID" Type="int" Nullable="false" />
+    <Property Name="ACCT_BUS_SRVC_CD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="ACCT_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="ACCT_NBR" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="ACCT_BAL" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+    <Property Name="ACCT_CLTR_INFO" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="ACCT_SCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="ACCT_OTH1_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="ACCT_OTH2_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TACCT_CRDT">
+    <Key>
+      <PropertyRef Name="ACCT_ID" />
+    </Key>
+    <Property Name="ACCT_ID" Type="int" Nullable="false" />
+    <Property Name="ACCT_CRDT_AMT" Type="decimal" Precision="15" Scale="2" Nullable="false" />
+    <Property Name="ACCT_CRDT_DT" Type="datetime" Nullable="false" />
+    <Property Name="ACCT_CRDT_CHCK_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TACCT_HIST">
+    <Key>
+      <PropertyRef Name="ACCT_HIST_ID" />
+    </Key>
+    <Property Name="ACCT_HIST_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ACCT_ID" Type="int" Nullable="false" />
+    <Property Name="TRANS_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="TRANS_PAY_SRC_CD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="TRANS_SRVC_TCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="BAL_AFTR_TRANS" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+    <Property Name="TRANS_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="TRANS_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="TRANS_DESC" Type="varchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TACCT_ID">
+    <Key>
+      <PropertyRef Name="ACCT_ID" />
+      <PropertyRef Name="IDENT_DT" />
+    </Key>
+    <Property Name="ACCT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDENT_DT" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TAGNT">
+    <Key>
+      <PropertyRef Name="AGNT_ID" />
+    </Key>
+    <Property Name="AGNT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AGNT_NM" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="AGNT_EXP_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="AGNT_EDT" Type="datetime" Nullable="false" />
+    <Property Name="AGNT_XDT" Type="datetime" Nullable="false" />
+    <Property Name="AGNT_USR_NBR" Type="char" MaxLength="10" />
+    <Property Name="AGNT_BUS_NBR" Type="int" />
+    <Property Name="AGNT_BUS_USR_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="AGNT_ACCT_ID" Type="int" Nullable="false" />
+    <Property Name="AGNT_TKN_CD" Type="char" MaxLength="8" Nullable="false" />
+    <Property Name="SPNSR_AGNT_ID" Type="int" />
+    <Property Name="SPNSR_AGNT_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TAGNT_CMSN">
+    <Key>
+      <PropertyRef Name="AGNT_CMSN_ID" />
+    </Key>
+    <Property Name="AGNT_CMSN_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AGNT_ID" Type="int" Nullable="false" />
+    <Property Name="SRVC_TCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="ONLN_AGCY_SRVC_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CTRY_CD" Type="char" MaxLength="3" />
+    <Property Name="PRTNSP_BN" Type="int" />
+    <Property Name="AGNT_CLT_PRTR_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="AGNT_FIX_CMSN_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="AGNT_PRCNT_CMSN_RT" Type="decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="SPNSR_FIX_CMSN_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="SPNSR_PRCNT_CMSN_RT" Type="decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="CMSN_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CMSN_CUR_APBL_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CMSN_CUR_APBL_EDT" Type="datetime" Nullable="false" />
+    <Property Name="CMSN_CUR_APBL_XDT" Type="datetime" Nullable="false" />
+    <Property Name="APLY_PRCNT_TRANS_FEE_PTNR_CMSN_CD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="APLY_SPNSR_CMSN_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TAGNT_PKP_CMSN">
+    <Key>
+      <PropertyRef Name="CMSN_ID" />
+    </Key>
+    <Property Name="CMSN_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SRVC_TCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="ONLN_AGCY_SRVC_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CTRY_CD" Type="char" MaxLength="3" />
+    <Property Name="CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="AGNT_FIX_CMSN_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="AGNT_PRCNT_CMSN_RT" Type="decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="SPNSR_FIX_CMSN_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="SPNSR_PRCNT_CMSN_RT" Type="decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="CMSN_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CMSN_CUR_APBL_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CMSN_CUR_APBL_EDT" Type="datetime" Nullable="false" />
+    <Property Name="CMSN_CUR_APBL_XDT" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TAGNT_SPNSRD">
+    <Key>
+      <PropertyRef Name="SPNSRD_USR_NBR" />
+    </Key>
+    <Property Name="SPNSRD_USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="SPNSRD_CRT_DT" Type="datetime" Nullable="false" />
+    <Property Name="SPNSRD_FUL_NM" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="AGNT_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TAGNT_TRANS_CMSN">
+    <Key>
+      <PropertyRef Name="AGNT_ID" />
+      <PropertyRef Name="AGNT_SPNSR_TCD" />
+      <PropertyRef Name="TRANS_ID" />
+    </Key>
+    <Property Name="AGNT_ID" Type="int" Nullable="false" />
+    <Property Name="AGNT_SPNSR_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="TRANS_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TRANS_CMSN_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="TRANS_CMSN_DT" Type="datetime" Nullable="false" />
+    <Property Name="TRANS_CMSN_CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="TRANS_CMSN_DESC" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="TRANS_SPNSRD_NBR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TRANS_SPNSRD_NM" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="TRANS_SPNSRD_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="SRVC_TCD" Type="char" MaxLength="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TAGNT_TRANS_CMSN_TEMPO">
+    <Key>
+      <PropertyRef Name="TRANS_ID" />
+    </Key>
+    <Property Name="TRANS_ID" Type="int" Nullable="false" />
+    <Property Name="NEW_TO_TRSF_SRVC_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="AGNT_TKN_CD" Type="char" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TAGNT_TRSF">
+    <Key>
+      <PropertyRef Name="AGNT_ID" />
+      <PropertyRef Name="AGNT_TRSF_ID" />
+    </Key>
+    <Property Name="AGNT_ID" Type="int" Nullable="false" />
+    <Property Name="AGNT_TRSF_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AGNT_TRSF_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="AGNT_TRSF_DT" Type="datetime" Nullable="false" />
+    <Property Name="CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBIL_PYMT_TRANS">
+    <Key>
+      <PropertyRef Name="TRANS_ID" />
+    </Key>
+    <Property Name="TRANS_ID" Type="int" Nullable="false" />
+    <Property Name="CLT_ACCT_NBR" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BIL_NBR" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BIL_PYMT_TRANS_DT" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBNK_TRANS">
+    <Key>
+      <PropertyRef Name="TRANS_ID" />
+      <PropertyRef Name="FROM_TO_USR_CD" />
+    </Key>
+    <Property Name="TRANS_ID" Type="int" Nullable="false" />
+    <Property Name="FROM_TO_USR_CD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="EXRL_ACCT_ID" Type="int" Nullable="false" />
+    <Property Name="TRANS_TRSF_CRDT_DBT_TCD" Type="char" MaxLength="2" />
+    <Property Name="BNK_TRANS_DT" Type="datetime" Nullable="false" />
+    <Property Name="EXRL_BNK_TRANS_ID" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="EXRL_BNK_TRANS_DT" Type="datetime" Nullable="false" />
+    <Property Name="EXRL_BNK_TRANS_DESC" Type="varchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBP">
+    <Key>
+      <PropertyRef Name="BP_ID" />
+    </Key>
+    <Property Name="BP_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BP_FRA_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="BP_ENG_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="BP_SPA_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="BP_ARB_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="BP_POR_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="BP_ZHO_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="BP_RUS_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="BP_DEU_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="BP_ITA_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBP_CTRCT">
+    <Key>
+      <PropertyRef Name="BP_CTRCT_NBR" />
+    </Key>
+    <Property Name="BP_CTRCT_NBR" Type="char" MaxLength="11" Nullable="false" />
+    <Property Name="BN" Type="int" Nullable="false" />
+    <Property Name="BP_ID" Type="int" Nullable="false" />
+    <Property Name="BP_CTRCT_EDT" Type="datetime" Nullable="false" />
+    <Property Name="BP_CTRCT_XDT" Type="datetime" Nullable="false" />
+    <Property Name="BP_CTRCT_CRT_USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBPCS">
+    <Key>
+      <PropertyRef Name="BPCS_NBR" />
+    </Key>
+    <Property Name="BPCS_NBR" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BPCS_BUS_ID" Type="char" MaxLength="64" Nullable="false" />
+    <Property Name="BPCS_BUS_NM" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="BPCS_CLT_ACCT_DESC" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="BPCS_URL_TXT" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="BPCS_URL_NEED_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="ACCT_ID" Type="int" Nullable="false" />
+    <Property Name="ACCT_CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="BN" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBUS">
+    <Key>
+      <PropertyRef Name="BN" />
+    </Key>
+    <Property Name="BN" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KTCT_ID" Type="int" Nullable="false" />
+    <Property Name="ACCT_ID" Type="int" Nullable="false" />
+    <Property Name="BUS_NM" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="BUS_SHORT_NM" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="BUS_AREA" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="CARD_ID" Type="int" />
+    <Property Name="BUS_SCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="DFLT_BUS_DSPL_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBUS_AGCY">
+    <Key>
+      <PropertyRef Name="BN" />
+      <PropertyRef Name="BUS_AGCY_NBR" />
+    </Key>
+    <Property Name="BN" Type="int" Nullable="false" />
+    <Property Name="BUS_AGCY_NBR" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="BUS_AGCY_NM" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="BUS_AGCY_KTCT_ID" Type="int" Nullable="false" />
+    <Property Name="BUS_AGCY_HDQRTR_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="BUS_AGCY_ACCT_ID" Type="int" Nullable="false" />
+    <Property Name="BUS_AGCY_INTRNT_CHK_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="BUS_AGCY_MXAMT_TO_WDRW_AMT" Type="decimal" Precision="14" Scale="2" Nullable="false" />
+    <Property Name="BUS_AGCY_AV_AMT" Type="decimal" Precision="14" Scale="2" Nullable="false" />
+    <Property Name="BUS_AGCY_OPNNG_HR" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="BUS_AGCY_NO_SRVC_AV_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBUS_AGCY_SRVC">
+    <Key>
+      <PropertyRef Name="BUS_AGCY_SRVC_ID" />
+    </Key>
+    <Property Name="BUS_AGCY_SRVC_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BN" Type="int" Nullable="false" />
+    <Property Name="BUS_AGCY_NBR" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="BUS_AGCY_SRVC_CD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBUS_CMSN">
+    <Key>
+      <PropertyRef Name="BUS_CMSN_ID" />
+    </Key>
+    <Property Name="BUS_CMSN_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FST_BUS_CMSN_ID" Type="int" Nullable="false" />
+    <Property Name="FROM_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="TO_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="BN" Type="int" Nullable="false" />
+    <Property Name="CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="FIX_CMSN_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="PRCNT_CMSN_RT" Type="decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="BUS_CMSN_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="BUS_CMSN_SCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="BUS_CMSN_DT" Type="datetime" Nullable="false" />
+    <Property Name="BUS_OFR_SRVC_TO_OWN_CLT_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBUS_CMSN_TRANS">
+    <Key>
+      <PropertyRef Name="BUS_CMSN_TRANS_ID" />
+    </Key>
+    <Property Name="BUS_CMSN_TRANS_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TRANS_ID" Type="int" Nullable="false" />
+    <Property Name="BUS_CMSN_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="BUS_USR_NBR" Type="int" Nullable="false" />
+    <Property Name="TRANS_TRSF_CRDT_DBT_TCD" Type="char" MaxLength="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBUS_CTRY_FEE">
+    <Key>
+      <PropertyRef Name="BUS_FEE_ID" />
+    </Key>
+    <Property Name="BUS_FEE_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="SRVC_TCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="FROM_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="TO_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="FIX_FEE_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="PRCNT_FEE_RT" Type="decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="BUS_FEE_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="BUS_FEE_DT" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBUS_INTRN_TRSF_TRANS">
+    <Key>
+      <PropertyRef Name="TRANS_ID" />
+    </Key>
+    <Property Name="TRANS_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FROM_BUS_USR_NBR" Type="int" Nullable="false" />
+    <Property Name="FROM_BUS_USR_NM" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="TO_BUS_USR_NBR" Type="int" Nullable="false" />
+    <Property Name="TO_BUS_USR_NM" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="FROM_ACCT_NBR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TO_ACCT_NBR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="FROM_CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="TO_CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="CRCY_XCHG_RT" Type="decimal" Precision="13" Scale="6" Nullable="false" />
+    <Property Name="FROM_TRANS_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="TO_TRANS_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="TRANS_SCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="TRANS_DT" Type="datetime" Nullable="false" />
+    <Property Name="TRANS_TCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="TRANS_DESC" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBUS_TY">
+    <Key>
+      <PropertyRef Name="BUS_TCD" />
+      <PropertyRef Name="BN" />
+    </Key>
+    <Property Name="BUS_TCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="BN" Type="int" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBUS_USR">
+    <Key>
+      <PropertyRef Name="BUS_USR_NBR" />
+    </Key>
+    <Property Name="BUS_USR_NBR" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BN" Type="int" Nullable="false" />
+    <Property Name="BUS_AGCY_NBR" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="BUS_ACCT_ID" Type="int" Nullable="false" />
+    <Property Name="BUS_USR_EDT" Type="datetime" Nullable="false" />
+    <Property Name="BUS_USR_TCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="BUS_AV_CAMT" Type="decimal" Precision="14" Scale="2" Nullable="false" />
+    <Property Name="BUS_EMPE_USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="BUS_USR_SCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="BUS_EMPE_IS_PKP_CLT_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBUS_USR_EXCP_ROL">
+    <Key>
+      <PropertyRef Name="BUS_USR_EXCP_ROL_ID" />
+    </Key>
+    <Property Name="BUS_USR_EXCP_ROL_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BUS_USR_NBR" Type="int" Nullable="false" />
+    <Property Name="BN" Type="int" Nullable="false" />
+    <Property Name="BUS_AGCY_NBR" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="BUS_USR_EXCP_ROL_EXPY_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="BUS_USR_EXCP_ROL_EDT" Type="datetime" Nullable="false" />
+    <Property Name="BUS_USR_EXCP_ROL_XDT" Type="datetime" Nullable="false" />
+    <Property Name="TRANS_TRSF_CRDT_DBT_TCD" Type="char" MaxLength="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TCAL_CTRY">
+    <Key>
+      <PropertyRef Name="CTRY_CD" />
+    </Key>
+    <Property Name="CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="CAL_CTRY_CD" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="CTRY_PHN_NBR_LNGH_CNT" Type="smallint" Nullable="false" />
+    <Property Name="CTRY_PHN_NBR_LNGH_LST_UPD_DT" Type="datetime" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TCARD">
+    <Key>
+      <PropertyRef Name="CARD_ID" />
+    </Key>
+    <Property Name="CARD_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CARD_OWNR_FNM" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="CARD_NBR" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CARD_CVV_CD" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CARD_PIN" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CARD_EDT" Type="datetime" Nullable="false" />
+    <Property Name="CARD_XDT" Type="datetime" Nullable="false" />
+    <Property Name="CARD_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CARD_SCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="CARD_CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="CARD_CDT" Type="datetime" Nullable="false" />
+    <Property Name="USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="DFLT_PIN_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="PHYS_CARD_SCD" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TCARD_ID">
+    <Key>
+      <PropertyRef Name="CARD_ID" />
+      <PropertyRef Name="IDENT_DT" />
+    </Key>
+    <Property Name="CARD_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDENT_DT" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TCITY">
+    <Key>
+      <PropertyRef Name="CITY_CD" />
+    </Key>
+    <Property Name="CITY_CD" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FRA_CITY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ENG_CITY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SPA_CITY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ARB_CITY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="POR_CITY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ZHO_CITY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="RUS_CITY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DEU_CITY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ITA_CITY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TCLT_IN_BUS">
+    <Key>
+      <PropertyRef Name="USR_NBR" />
+    </Key>
+    <Property Name="USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="CARD_ID" Type="int" Nullable="false" />
+    <Property Name="ACCT_ID" Type="int" Nullable="false" />
+    <Property Name="BN" Type="int" Nullable="false" />
+    <Property Name="BUS_USR_NBR" Type="int" Nullable="false" />
+    <Property Name="SEND_MNY_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="WDRW_MNY_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="WDRW_MNY_WTT_PIN_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="BNK_DPST_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="RST_PWD_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="RST_CARD_PIN_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="MNGE_AGNT_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CLT_IN_BUS_EDT" Type="datetime" Nullable="false" />
+    <Property Name="CLT_IN_BUS_XDT" Type="datetime" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="OTH1_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="OTH2_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="OTH3_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="OTH4_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="OTH5_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TCNX_LOG">
+    <Key>
+      <PropertyRef Name="USR_NBR" />
+    </Key>
+    <Property Name="USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="QUES1" Type="int" Nullable="false" />
+    <Property Name="RESP1" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="QUES2" Type="int" Nullable="false" />
+    <Property Name="RESP2" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="QUES3" Type="int" Nullable="false" />
+    <Property Name="RESP3" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CNX_SCTY_QUES_SEQ_NBR" Type="int" Nullable="false" />
+    <Property Name="CNX_SCTY_QUES_CHKED" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="IP_ADDR_NBR" Type="varchar" MaxLength="39" Nullable="false" />
+    <Property Name="IP_VERS_TCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="LAST_CNX_DTTM" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TCRCY">
+    <Key>
+      <PropertyRef Name="CRCY_CD" />
+    </Key>
+    <Property Name="CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="CRCY_FRA_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CRCY_ENG_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CRCY_SPA_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CRCY_ARB_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CRCY_POR_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CRCY_ZHO_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CRCY_RUS_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CRCY_DEU_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CRCY_ITA_NM" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TCRCY_XCHG_PRCNT">
+    <Key>
+      <PropertyRef Name="CRCY_XCHG_PRCNT_ID" />
+    </Key>
+    <Property Name="CRCY_XCHG_PRCNT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IVSTR_CRCY_XCHG_PRCNT_RT" Type="decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="NIVSTR_CRCY_XCHG_PRCNT_RT" Type="decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="CRCY_XCHG_PRCNT_DT" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TCRCY_XCHG_RT">
+    <Key>
+      <PropertyRef Name="CRCY_XCHG_RT_ID" />
+    </Key>
+    <Property Name="CRCY_XCHG_RT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FROM_CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="TO_CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="CRCY_XCHG_RT" Type="decimal" Precision="18" Scale="10" Nullable="false" />
+    <Property Name="CRCY_XCHG_RT_UPD_DT" Type="datetime" Nullable="false" />
+    <Property Name="USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TCTRY">
+    <Key>
+      <PropertyRef Name="CTRY_CD" />
+    </Key>
+    <Property Name="CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="FRA_CTRY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ENG_CTRY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SPA_CTRY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ARB_CTRY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="POR_CTRY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ZHO_CTRY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="RUS_CTRY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DEU_CTRY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ITA_CTRY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CTRY_LTR_CD" Type="char" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="TCTRY_CRCY">
+    <Key>
+      <PropertyRef Name="CTRY_CRCY_ID" />
+    </Key>
+    <Property Name="CTRY_CRCY_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="LANG_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="CRCY_CLTR_INFO" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="CTRY_CRCY_CDT" Type="datetime" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TEXCEPT_TRANS">
+    <Key>
+      <PropertyRef Name="TRANS_ID" />
+    </Key>
+    <Property Name="TRANS_ID" Type="int" Nullable="false" />
+    <Property Name="EXCEPT_TRANS_RCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="TRANS_AUTH_KTCT_CD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="TRANS_AUTH_KTCT_PHN" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ACTION_TAKEN_DESC" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="USR_NBR" Type="char" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TEXRL_TRANS">
+    <Key>
+      <PropertyRef Name="EXRL_TRANS_ID" />
+    </Key>
+    <Property Name="EXRL_TRANS_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PKP_TRANS_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PRTR_TRANS_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PRTR_TRANS_RCD" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EXRL_TRANS_NSS_ID" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="EXRL_TRANS_OTH_DTL_TXT" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="PYMT_PRTR_ID" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="EXRL_TRANS_DT" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TFI">
+    <Key>
+      <PropertyRef Name="FI_ID" />
+    </Key>
+    <Property Name="FI_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FI_FRA_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_ENG_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_SPA_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_ARB_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_POR_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_ZHO_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_RUS_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_DEU_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_ITA_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TFI_CTRY">
+    <Key>
+      <PropertyRef Name="FI_CTRY_ID" />
+    </Key>
+    <Property Name="FI_CTRY_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FI_CTRY_FRA_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_CTRY_ENG_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_CTRY_SPA_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_CTRY_ARB_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_CTRY_POR_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_CTRY_ZHO_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_CTRY_RUS_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_CTRY_DEU_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_CTRY_ITA_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="FI_ID" Type="int" Nullable="false" />
+    <Property Name="FI_TCD" Type="int" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TFI_EXRL_ACCT">
+    <Key>
+      <PropertyRef Name="EXRL_ACCT_ID" />
+    </Key>
+    <Property Name="EXRL_ACCT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EXRL_ACCT_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="EXRL_ACCT_NBR" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="EXRL_ACCT_TCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="EXRL_ACCT_PRT1_NBR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="EXRL_ACCT_PRT2_NBR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="EXRL_ACCT_PRT3_NBR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="EXRL_ACCT_PRT4_NBR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="EXRL_ACCT_PRT5_NBR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="EXRL_ACCT_PRT_NBR" Type="int" Nullable="false" />
+    <Property Name="EXRL_ACCT_VLDT_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="EXRL_ACCT_DT" Type="datetime" Nullable="false" />
+    <Property Name="FI_CTRY_ID" Type="int" Nullable="false" />
+    <Property Name="CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="EXRL_ACCT_USR_NBR" Type="char" MaxLength="10" />
+    <Property Name="EXRL_ACCT_BUS_NBR" Type="int" />
+    <Property Name="EXRL_ACCT_USR_BUS_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="EXRL_ACCT_FOR_CURT_USR_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TFI_EXRL_ACCT_DESC">
+    <Key>
+      <PropertyRef Name="EXRL_ACCT_DESC_ID" />
+    </Key>
+    <Property Name="EXRL_ACCT_DESC_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EXRL_ACCT_PRT1_DESC" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="EXRL_ACCT_PRT2_DESC" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="EXRL_ACCT_PRT3_DESC" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="EXRL_ACCT_PRT4_DESC" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="EXRL_ACCT_PRT5_DESC" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="EXRL_ACCT_DESC_DT" Type="datetime" Nullable="false" />
+    <Property Name="CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TFI_TY">
+    <Key>
+      <PropertyRef Name="FI_TCD" />
+    </Key>
+    <Property Name="FI_TCD" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FI_TY_FRA_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_TY_ENG_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_TY_SPA_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_TY_ARB_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_TY_POR_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_TY_ZHO_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_TY_RUS_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_TY_DEU_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FI_TY_ITA_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TID_DOC">
+    <Key>
+      <PropertyRef Name="ID_DOC_ID" />
+    </Key>
+    <Property Name="ID_DOC_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FRA_ID_DOC_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ENG_ID_DOC_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SPA_ID_DOC_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ARB_ID_DOC_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="POR_ID_DOC_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ZHO_ID_DOC_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="RUS_ID_DOC_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DEU_ID_DOC_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ITA_ID_DOC_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TIP_ADDR">
+    <Key>
+      <PropertyRef Name="IP_ADDR_NBR" />
+    </Key>
+    <Property Name="IP_ADDR_NBR" Type="varchar" MaxLength="39" Nullable="false" />
+    <Property Name="IP_VERS_TCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="IP_ADDR_DESC" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="BN" Type="int" />
+    <Property Name="BUS_AGCY_NBR" Type="char" MaxLength="5" />
+    <Property Name="IP_ADDR_CRT_DT" Type="datetime" Nullable="false" />
+    <Property Name="IP_ADDR_CRT_UPD_USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TKTCT">
+    <Key>
+      <PropertyRef Name="KTCT_ID" />
+    </Key>
+    <Property Name="KTCT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ADDR_LN1_TXT" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="ADDR_LN2_TXT" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="PHN1_NBR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PHN2_NBR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="EM_ADDR1_TXT" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="EM_ADDR2_TXT" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="WEBSITE_TXT" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="KTCT_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CITY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="CITY_CD" Type="int" />
+  </EntityType>
+  <EntityType Name="TLANG">
+    <Key>
+      <PropertyRef Name="LANG_CD" />
+    </Key>
+    <Property Name="LANG_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="FRA_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ENG_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SPA_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ARB_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="POR_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ZHO_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="RUS_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DEU_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ITA_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TMNYT_AUTH_LMIT">
+    <Key>
+      <PropertyRef Name="CTRY_CD" />
+      <PropertyRef Name="CRCY_CD" />
+      <PropertyRef Name="MNYT_TCD" />
+    </Key>
+    <Property Name="CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="MNYT_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="TRANS_AUTH_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="DLY_AUTH_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="WKLY_AUTH_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="MTHLY_AUTH_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="LAST_UPDT_DT" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TMNYT_RSN">
+    <Key>
+      <PropertyRef Name="MNYT_RSN_ID" />
+    </Key>
+    <Property Name="MNYT_RSN_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FRA_MNYT_RSN_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ENG_MNYT_RSN_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SPA_MNYT_RSN_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ARB_MNYT_RSN_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="POR_MNYT_RSN_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ZHO_MNYT_RSN_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="RUS_MNYT_RSN_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DEU_MNYT_RSN_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ITA_MNYT_RSN_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TONBHLF_CLT_CMSN">
+    <Key>
+      <PropertyRef Name="CMSN_ID" />
+    </Key>
+    <Property Name="CMSN_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="SRVC_TCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="FIX_CMSN_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="PRCNT_CMSN_RT" Type="decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="CMSN_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TONBHLF_CLT_TRANS">
+    <Key>
+      <PropertyRef Name="TRANS_ID" />
+    </Key>
+    <Property Name="TRANS_ID" Type="int" Nullable="false" />
+    <Property Name="USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="CMSN_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="TRANS_SCD" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TPKP_TRCK_CMSN_FEE">
+    <Key>
+      <PropertyRef Name="PKP_TRCK_CMSN_FEE_ID" />
+    </Key>
+    <Property Name="PKP_TRCK_CMSN_FEE_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TRANS_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TRANS_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="TRANS_CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="TRANS_US_AMT" Type="decimal" Precision="13" Scale="8" Nullable="false" />
+    <Property Name="BUS_AGNT_NBR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="BUS_AGNT_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="TRANS_DT" Type="datetime" Nullable="false" />
+    <Property Name="SRVC_TCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="CMSN_FEE_TCD" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TPROV">
+    <Key>
+      <PropertyRef Name="PROV_CD" />
+    </Key>
+    <Property Name="PROV_CD" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FRA_PROV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ENG_PROV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SPA_PROV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ARB_PROV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="POR_PROV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ZHO_PROV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="RUS_PROV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DEU_PROV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ITA_PROV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TPYMT_PRTR">
+    <Key>
+      <PropertyRef Name="PYMT_PRTR_ID" />
+    </Key>
+    <Property Name="PYMT_PRTR_ID" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="PYMT_PRTR_NM" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="PYMT_PRTR_EDT" Type="datetime" Nullable="false" />
+    <Property Name="PYMT_PRTR_XDT" Type="datetime" Nullable="false" />
+    <Property Name="PYMT_PRTR_DESC" Type="varchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TRCPT_EXRL_ACCT_FOR_BUS">
+    <Key>
+      <PropertyRef Name="RCPT_EXRL_ACCT_FOR_BUS_ID" />
+    </Key>
+    <Property Name="RCPT_EXRL_ACCT_FOR_BUS_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EXRL_ACCT_ID" Type="int" />
+    <Property Name="RCPT_USR_BUS_ID" Type="int" />
+    <Property Name="BN" Type="int" Nullable="false" />
+    <Property Name="RCPT_EXRL_ACCT_FOR_BUS_TCD" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TRCPT_USR_BUS">
+    <Key>
+      <PropertyRef Name="RCPT_USR_BUS_ID" />
+    </Key>
+    <Property Name="RCPT_USR_BUS_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ACCT_ID" Type="int" Nullable="false" />
+    <Property Name="ACCT_NBR" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="RCPT_USR_BUS1_UIN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RCPT_USR_BUS2_UIN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RCPT_USR_BUS3_UIN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RCPT_USR_BUS_NM" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="RCPT_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="RCPT_USR_NBR" Type="char" MaxLength="10" />
+    <Property Name="RCPT_BUS_NBR" Type="int" />
+    <Property Name="RCPT_USR_BUS_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="RCPT_USR_BUS_EDT" Type="datetime" Nullable="false" />
+    <Property Name="USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="ACTVT_TCD" Type="char" MaxLength="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TSCTY_QUES_LIST">
+    <Key>
+      <PropertyRef Name="SCTY_QUES_ID" />
+    </Key>
+    <Property Name="SCTY_QUES_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SCTY_QUES_FRA" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SCTY_QUES_ENG" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SCTY_QUES_SPA" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SCTY_QUES_ARB" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SCTY_QUES_POR" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SCTY_QUES_ZHO" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SCTY_QUES_RUS" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SCTY_QUES_DEU" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SCTY_QUES_ITA" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TTAX">
+    <Key>
+      <PropertyRef Name="CASH_TRANS_CNBR" />
+    </Key>
+    <Property Name="CASH_TRANS_CNBR" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TRANS_SRVC_TCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="TRANS_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="TAX_AMT" Type="decimal" Precision="10" Scale="4" Nullable="false" />
+    <Property Name="TRANS_DTTM" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TTAX_RT_CTRY">
+    <Key>
+      <PropertyRef Name="TAX_RT_CTRY_ID" />
+    </Key>
+    <Property Name="TAX_RT_CTRY_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="TAX_RT" Type="decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="LAST_UPDT_DT" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TTRANS_FEE">
+    <Key>
+      <PropertyRef Name="TRANS_FEE_ID" />
+    </Key>
+    <Property Name="TRANS_FEE_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PROV_CD" Type="int" />
+    <Property Name="FROM_CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="TO_CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="FROM_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="TO_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="IVSTR_FIX_FEE_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="IVSTR_PRCNT_FEE_RT" Type="decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="NIVSTR_FIX_FEE_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="NIVSTR_PRCNT_FEE_RT" Type="decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="CRCY_XCHG_PRCNT_ID" Type="int" Nullable="false" />
+    <Property Name="TRANS_FEE_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="TRANS_FEE_DT" Type="datetime" Nullable="false" />
+    <Property Name="TRANS_FEE_GRP_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="TRANS_FEE_GRP_ID" Type="int" Nullable="false" />
+    <Property Name="TRANS_FEE_GRP_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TTRANS_ID_DOC">
+    <Key>
+      <PropertyRef Name="TRANS_ID" />
+    </Key>
+    <Property Name="TRANS_ID" Type="int" Nullable="false" />
+    <Property Name="ID_DOC_ID" Type="int" Nullable="false" />
+    <Property Name="ID_DOC_NBR" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ID_DOC_XDT" Type="datetime" Nullable="false" />
+    <Property Name="BUS_USR_NBR" Type="int" Nullable="false" />
+    <Property Name="CLT_USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="CLT_ID_DOC_BRDAY" Type="datetime" Nullable="false" />
+    <Property Name="TRANS_ID_DOC_DT" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TTRANS_SSN">
+    <Key>
+      <PropertyRef Name="TRANS_SSN_ID" />
+    </Key>
+    <Property Name="TRANS_SSN_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TRANS_SSN_SECR_ID" Type="char" MaxLength="32" Nullable="false" />
+    <Property Name="TRANS_SSN_AMT" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="TRANS_SSN_AMT_TXT" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="TRANS_SSN_CUST_AMT_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="TRANS_SSN_EDTTM" Type="datetime" Nullable="false" />
+    <Property Name="TRANS_SSN_XDTTM" Type="datetime" Nullable="false" />
+    <Property Name="TRANS_SSN_BPC_ID" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="BPCS_NBR" Type="int" Nullable="false" />
+    <Property Name="USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="CLT_ACCT_NBR" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CLT_ACCT_NBR_NEED_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="BIL_NBR" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BIL_NBR_NEED_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TTRANS_START_XSSN_TEMPO">
+    <Key>
+      <PropertyRef Name="TRANS_SSN_ID" />
+    </Key>
+    <Property Name="TRANS_SSN_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TRANS_SSN_SECR_ID" Type="char" MaxLength="64" Nullable="false" />
+    <Property Name="FROM_SRVC_ID" Type="int" Nullable="false" />
+    <Property Name="TO_SRVC_ID" Type="int" Nullable="false" />
+    <Property Name="FROM_CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="TO_CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="FROM_CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="TO_CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="SEND_RCPT_CD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="FROM_TRANS_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="FROM_TRANS_AMT_TXT" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TRANS_FEE_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="TRANS_FEE_AMT_TXT" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TRANS_FEE_AMT_PROMO_CD" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="TRANS_FEE_AMT_TXT_PROMO_CD" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TOT_TO_PAY_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="TOT_TO_PAY_AMT_TXT" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TOT_TO_PAY_AMT_PROMO_CD" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="TOT_TO_PAY_AMT_TXT_PROMO_CD" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TO_TRANS_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="TO_TRANS_AMT_TXT" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CRCY_XCHG_RT" Type="decimal" Precision="18" Scale="10" Nullable="false" />
+    <Property Name="CRCY_XCHG_RT_TXT" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DPLY_CRCY_XCHG_RT_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="ADJUST_XCHG_RT" Type="decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="TRANS_EDTTM" Type="datetime" Nullable="false" />
+    <Property Name="TRANS_XDTTM" Type="datetime" Nullable="false" />
+    <Property Name="CLT_USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="TRANS_OTH1_TXT" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="TRANS_OTH2_TXT" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="TRANS_OTH3_TXT" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="TRANS_OTH4_TXT" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="TRANS_OTH5_TXT" Type="varchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TTRANS_TEMPO">
+    <Key>
+      <PropertyRef Name="TRANS_ID" />
+    </Key>
+    <Property Name="TRANS_ID" Type="int" Nullable="false" />
+    <Property Name="FROM_PKP_ACCT_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="FROM_PKP_ACCT_ID" Type="int" Nullable="false" />
+    <Property Name="FROM_TRANS_DESC" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="TO_SRVC_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="TO_PKP_ACCT_ID" Type="int" Nullable="false" />
+    <Property Name="TO_BNK_ACCT_ID" Type="int" Nullable="false" />
+    <Property Name="TO_TRANS_DESC" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TTRANS_TRSF_CRDT_DBT">
+    <Key>
+      <PropertyRef Name="TRANS_ID" />
+    </Key>
+    <Property Name="TRANS_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FROM_TRSF_SERV_ID" Type="int" Nullable="false" />
+    <Property Name="TO_TRSF_SERV_ID" Type="int" Nullable="false" />
+    <Property Name="FROM_CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="TO_CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="FROM_CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="TO_CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="CRCY_XCHG_RT" Type="decimal" Precision="13" Scale="6" Nullable="false" />
+    <Property Name="FROM_TRANS_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="FROM_FEE_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="FROM_TOT_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="TO_TRANS_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="TRANS_SCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="TRANS_CDT" Type="datetime" Nullable="false" />
+    <Property Name="TRANS_PAID_DPST_DT" Type="datetime" Nullable="false" />
+    <Property Name="TRANS_XDT" Type="datetime" Nullable="false" />
+    <Property Name="FROM_USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="RCPT_USR_BUS_ID" Type="int" Nullable="false" />
+    <Property Name="TRANS_TRSF_CRDT_DBT_TCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="TRANS_DESC" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TTRSF_FEE_SERV_CTRY">
+    <Key>
+      <PropertyRef Name="TRSF_FEE_SERV_CTRY_ID" />
+    </Key>
+    <Property Name="TRSF_FEE_SERV_CTRY_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TRANS_FEE_ID" Type="int" Nullable="false" />
+    <Property Name="FROM_TRSF_SERV_ID" Type="int" Nullable="false" />
+    <Property Name="TO_TRSF_SERV_ID" Type="int" Nullable="false" />
+    <Property Name="FROM_CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="TO_CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TTRSF_SERV">
+    <Key>
+      <PropertyRef Name="TRSF_SERV_ID" />
+    </Key>
+    <Property Name="TRSF_SERV_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FRA_TRSF_SERV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ENG_TRSF_SERV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SPA_TRSF_SERV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ARB_TRSF_SERV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="POR_TRSF_SERV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ZHO_TRSF_SERV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="RUS_TRSF_SERV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DEU_TRSF_SERV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ITA_TRSF_SERV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TTRSF_SERV_CTRY">
+    <Key>
+      <PropertyRef Name="TRSF_SERV_CTRY_ID" />
+    </Key>
+    <Property Name="TRSF_SERV_CTRY_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="PROV_CD" Type="int" Nullable="false" />
+    <Property Name="TRSF_SERV_ID" Type="int" Nullable="false" />
+    <Property Name="TRSF_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="LAST_UPDT_DT" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TUSR">
+    <Key>
+      <PropertyRef Name="USR_NBR" />
+    </Key>
+    <Property Name="USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="USR_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="USR_SCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="USR_FNM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="USR_LNM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="USR_GNDR" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="USR_BRDAY" Type="datetime" Nullable="false" />
+    <Property Name="USR_PREF_LCD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="USR_KTCT_ID" Type="int" Nullable="false" />
+    <Property Name="USR_99P_FRC_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="USR_VERIF_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="USR_MBRSHP_EDT" Type="datetime" Nullable="false" />
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="USR_DFLT_PWD_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="USR_DFLT_EMAIL_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="USR_EMAIL_VRFT_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="USR_EMAIL_VRFT_DT" Type="datetime" Nullable="false" />
+    <Property Name="ADDR_LN1_TXT" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="ADDR_LN2_TXT" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="PHN1_NBR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PHN1_CTRY_CD" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="PHN1_CTRY_CD_NBR" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="PHN1_CTRY_CD_NBR_VLDT_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="PHN1_CTRY_CD_NBR_LAST_VLDT_DT" Type="datetime" Nullable="false" />
+    <Property Name="PHN1_CTRY_CD_NBR_LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="PHN2_NBR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PHN2_CTRY_CD" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="PHN2_CTRY_CD_NBR" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="PHN2_CTRY_CD_NBR_VLDT_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="PHN2_CTRY_CD_NBR_LAST_VLDT_DT" Type="datetime" Nullable="false" />
+    <Property Name="PHN2_CTRY_CD_NBR_LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="PHN3_NBR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PHN3_CTRY_CD" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="PHN3_CTRY_CD_NBR" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="PHN3_CTRY_CD_NBR_VLDT_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="PHN3_CTRY_CD_NBR_LAST_VLDT_DT" Type="datetime" Nullable="false" />
+    <Property Name="PHN3_CTRY_CD_NBR_LGC_DEL_IND" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="EMAIL1_TXT" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="EMAIL2_TXT" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="CITY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CITY_CD" Type="int" />
+    <Property Name="CTRY_CD" Type="char" MaxLength="3" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TUSR_ID">
+    <Key>
+      <PropertyRef Name="USR_ID" />
+      <PropertyRef Name="IDENT_DT" />
+    </Key>
+    <Property Name="USR_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDENT_DT" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TUSR_WHDRL_CRDT">
+    <Key>
+      <PropertyRef Name="USR_NBR" />
+    </Key>
+    <Property Name="USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="USR_WHDRL_CRDT_NBR" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ZTMNYT_FEE_EXPIRED">
+    <Key>
+      <PropertyRef Name="MNYT_FEE_ID" />
+      <PropertyRef Name="MNYT_FEE_GRP_CD" />
+    </Key>
+    <Property Name="MNYT_FEE_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MNYT_FEE_GRP_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="FROM_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="TO_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="FIX_FEE_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="PRCNT_FEE" Type="decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="PRCNT_NO_99P_FRC_INV" Type="decimal" Precision="6" Scale="4" Nullable="false" />
+    <Property Name="FROM_CRCY_CD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="MNYT_FEE_TCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="LAST_UPDT_DT" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="constraintFKCITY_CD">
+    <End Role="TCITY" Type="Self.TCITY" Multiplicity="0..1" />
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCITY">
+        <PropertyRef Name="CITY_CD" />
+      </Principal>
+      <Dependent Role="TUSR">
+        <PropertyRef Name="CITY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="constraintFKCTRY_CD">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="1" />
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TUSR">
+        <PropertyRef Name="CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_101">
+    <End Role="TCRCY" Type="Self.TCRCY" Multiplicity="1" />
+    <End Role="TCRCY_XCHG_RT" Type="Self.TCRCY_XCHG_RT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCRCY">
+        <PropertyRef Name="CRCY_CD" />
+      </Principal>
+      <Dependent Role="TCRCY_XCHG_RT">
+        <PropertyRef Name="FROM_CRCY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_102">
+    <End Role="TCRCY" Type="Self.TCRCY" Multiplicity="1" />
+    <End Role="TCRCY_XCHG_RT" Type="Self.TCRCY_XCHG_RT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCRCY">
+        <PropertyRef Name="CRCY_CD" />
+      </Principal>
+      <Dependent Role="TCRCY_XCHG_RT">
+        <PropertyRef Name="TO_CRCY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_103">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="1" />
+    <End Role="TCRCY_XCHG_RT" Type="Self.TCRCY_XCHG_RT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TCRCY_XCHG_RT">
+        <PropertyRef Name="USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_104">
+    <End Role="TCRCY" Type="Self.TCRCY" Multiplicity="1" />
+    <End Role="TACCT" Type="Self.TACCT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCRCY">
+        <PropertyRef Name="CRCY_CD" />
+      </Principal>
+      <Dependent Role="TACCT">
+        <PropertyRef Name="CRCY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_132">
+    <End Role="TCRCY" Type="Self.TCRCY" Multiplicity="1" />
+    <End Role="TTRANS_TRSF_CRDT_DBT" Type="Self.TTRANS_TRSF_CRDT_DBT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCRCY">
+        <PropertyRef Name="CRCY_CD" />
+      </Principal>
+      <Dependent Role="TTRANS_TRSF_CRDT_DBT">
+        <PropertyRef Name="FROM_CRCY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_133">
+    <End Role="TCRCY" Type="Self.TCRCY" Multiplicity="1" />
+    <End Role="TTRANS_TRSF_CRDT_DBT" Type="Self.TTRANS_TRSF_CRDT_DBT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCRCY">
+        <PropertyRef Name="CRCY_CD" />
+      </Principal>
+      <Dependent Role="TTRANS_TRSF_CRDT_DBT">
+        <PropertyRef Name="TO_CRCY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_194">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TUSR">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_203">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="1" />
+    <End Role="TCNX_LOG" Type="Self.TCNX_LOG" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TCNX_LOG">
+        <PropertyRef Name="USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_214">
+    <End Role="TACCT" Type="Self.TACCT" Multiplicity="1" />
+    <End Role="TACCT_HIST" Type="Self.TACCT_HIST" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TACCT">
+        <PropertyRef Name="ACCT_ID" />
+      </Principal>
+      <Dependent Role="TACCT_HIST">
+        <PropertyRef Name="ACCT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_242">
+    <End Role="TKTCT" Type="Self.TKTCT" Multiplicity="1" />
+    <End Role="TBUS_AGCY" Type="Self.TBUS_AGCY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TKTCT">
+        <PropertyRef Name="KTCT_ID" />
+      </Principal>
+      <Dependent Role="TBUS_AGCY">
+        <PropertyRef Name="BUS_AGCY_KTCT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_258">
+    <End Role="TTRANS_TRSF_CRDT_DBT" Type="Self.TTRANS_TRSF_CRDT_DBT" Multiplicity="1" />
+    <End Role="TEXCEPT_TRANS" Type="Self.TEXCEPT_TRANS" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TTRANS_TRSF_CRDT_DBT">
+        <PropertyRef Name="TRANS_ID" />
+      </Principal>
+      <Dependent Role="TEXCEPT_TRANS">
+        <PropertyRef Name="TRANS_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_261">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="0..1" />
+    <End Role="TEXCEPT_TRANS" Type="Self.TEXCEPT_TRANS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TEXCEPT_TRANS">
+        <PropertyRef Name="USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_267">
+    <End Role="TLANG" Type="Self.TLANG" Multiplicity="1" />
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TLANG">
+        <PropertyRef Name="LANG_CD" />
+      </Principal>
+      <Dependent Role="TUSR">
+        <PropertyRef Name="USR_PREF_LCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_274">
+    <End Role="TSCTY_QUES_LIST" Type="Self.TSCTY_QUES_LIST" Multiplicity="1" />
+    <End Role="TCNX_LOG" Type="Self.TCNX_LOG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TSCTY_QUES_LIST">
+        <PropertyRef Name="SCTY_QUES_ID" />
+      </Principal>
+      <Dependent Role="TCNX_LOG">
+        <PropertyRef Name="QUES1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_275">
+    <End Role="TSCTY_QUES_LIST" Type="Self.TSCTY_QUES_LIST" Multiplicity="1" />
+    <End Role="TCNX_LOG" Type="Self.TCNX_LOG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TSCTY_QUES_LIST">
+        <PropertyRef Name="SCTY_QUES_ID" />
+      </Principal>
+      <Dependent Role="TCNX_LOG">
+        <PropertyRef Name="QUES2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_276">
+    <End Role="TSCTY_QUES_LIST" Type="Self.TSCTY_QUES_LIST" Multiplicity="1" />
+    <End Role="TCNX_LOG" Type="Self.TCNX_LOG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TSCTY_QUES_LIST">
+        <PropertyRef Name="SCTY_QUES_ID" />
+      </Principal>
+      <Dependent Role="TCNX_LOG">
+        <PropertyRef Name="QUES3" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_282">
+    <End Role="TACCT" Type="Self.TACCT" Multiplicity="1" />
+    <End Role="TACCT_CRDT" Type="Self.TACCT_CRDT" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TACCT">
+        <PropertyRef Name="ACCT_ID" />
+      </Principal>
+      <Dependent Role="TACCT_CRDT">
+        <PropertyRef Name="ACCT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_29">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="1" />
+    <End Role="TCARD" Type="Self.TCARD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TCARD">
+        <PropertyRef Name="CARD_CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_293">
+    <End Role="TBUS" Type="Self.TBUS" Multiplicity="1" />
+    <End Role="TBP_CTRCT" Type="Self.TBP_CTRCT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS">
+        <PropertyRef Name="BN" />
+      </Principal>
+      <Dependent Role="TBP_CTRCT">
+        <PropertyRef Name="BN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_295">
+    <End Role="TBP" Type="Self.TBP" Multiplicity="1" />
+    <End Role="TBP_CTRCT" Type="Self.TBP_CTRCT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBP">
+        <PropertyRef Name="BP_ID" />
+      </Principal>
+      <Dependent Role="TBP_CTRCT">
+        <PropertyRef Name="BP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_297">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="1" />
+    <End Role="TBP_CTRCT" Type="Self.TBP_CTRCT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TBP_CTRCT">
+        <PropertyRef Name="BP_CTRCT_CRT_USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_305">
+    <End Role="TTRANS_TRSF_CRDT_DBT" Type="Self.TTRANS_TRSF_CRDT_DBT" Multiplicity="1" />
+    <End Role="TBUS_CMSN_TRANS" Type="Self.TBUS_CMSN_TRANS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TTRANS_TRSF_CRDT_DBT">
+        <PropertyRef Name="TRANS_ID" />
+      </Principal>
+      <Dependent Role="TBUS_CMSN_TRANS">
+        <PropertyRef Name="TRANS_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_361">
+    <End Role="TACCT" Type="Self.TACCT" Multiplicity="1" />
+    <End Role="TRCPT_USR_BUS" Type="Self.TRCPT_USR_BUS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TACCT">
+        <PropertyRef Name="ACCT_ID" />
+      </Principal>
+      <Dependent Role="TRCPT_USR_BUS">
+        <PropertyRef Name="ACCT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_372">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="0..1" />
+    <End Role="TRCPT_USR_BUS" Type="Self.TRCPT_USR_BUS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TRCPT_USR_BUS">
+        <PropertyRef Name="RCPT_USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_39">
+    <End Role="TKTCT" Type="Self.TKTCT" Multiplicity="1" />
+    <End Role="TBUS" Type="Self.TBUS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TKTCT">
+        <PropertyRef Name="KTCT_ID" />
+      </Principal>
+      <Dependent Role="TBUS">
+        <PropertyRef Name="KTCT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_393">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="1" />
+    <End Role="TTAX_RT_CTRY" Type="Self.TTAX_RT_CTRY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TTAX_RT_CTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_417">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="1" />
+    <End Role="TKTCT" Type="Self.TKTCT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TKTCT">
+        <PropertyRef Name="CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_421">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="1" />
+    <End Role="TCITY" Type="Self.TCITY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TCITY">
+        <PropertyRef Name="CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_424">
+    <End Role="TACCT" Type="Self.TACCT" Multiplicity="1" />
+    <End Role="TBUS_USR" Type="Self.TBUS_USR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TACCT">
+        <PropertyRef Name="ACCT_ID" />
+      </Principal>
+      <Dependent Role="TBUS_USR">
+        <PropertyRef Name="BUS_ACCT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_425">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="1" />
+    <End Role="TBUS_USR" Type="Self.TBUS_USR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TBUS_USR">
+        <PropertyRef Name="BUS_EMPE_USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_435">
+    <End Role="TCRCY" Type="Self.TCRCY" Multiplicity="1" />
+    <End Role="ZTMNYT_FEE_EXPIRED" Type="Self.ZTMNYT_FEE_EXPIRED" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCRCY">
+        <PropertyRef Name="CRCY_CD" />
+      </Principal>
+      <Dependent Role="ZTMNYT_FEE_EXPIRED">
+        <PropertyRef Name="FROM_CRCY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_443">
+    <End Role="TBUS" Type="Self.TBUS" Multiplicity="1" />
+    <End Role="TBUS_CMSN" Type="Self.TBUS_CMSN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS">
+        <PropertyRef Name="BN" />
+      </Principal>
+      <Dependent Role="TBUS_CMSN">
+        <PropertyRef Name="BN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_445">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="1" />
+    <End Role="TBUS_CMSN" Type="Self.TBUS_CMSN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TBUS_CMSN">
+        <PropertyRef Name="CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_446">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="1" />
+    <End Role="TTRANS_TRSF_CRDT_DBT" Type="Self.TTRANS_TRSF_CRDT_DBT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TTRANS_TRSF_CRDT_DBT">
+        <PropertyRef Name="FROM_CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_447">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="1" />
+    <End Role="TTRANS_TRSF_CRDT_DBT" Type="Self.TTRANS_TRSF_CRDT_DBT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TTRANS_TRSF_CRDT_DBT">
+        <PropertyRef Name="TO_CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_448">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="1" />
+    <End Role="TMNYT_AUTH_LMIT" Type="Self.TMNYT_AUTH_LMIT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TMNYT_AUTH_LMIT">
+        <PropertyRef Name="CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_449">
+    <End Role="TCRCY" Type="Self.TCRCY" Multiplicity="1" />
+    <End Role="TMNYT_AUTH_LMIT" Type="Self.TMNYT_AUTH_LMIT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCRCY">
+        <PropertyRef Name="CRCY_CD" />
+      </Principal>
+      <Dependent Role="TMNYT_AUTH_LMIT">
+        <PropertyRef Name="CRCY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_457">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="0..1" />
+    <End Role="TFI_EXRL_ACCT" Type="Self.TFI_EXRL_ACCT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TFI_EXRL_ACCT">
+        <PropertyRef Name="EXRL_ACCT_USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_465">
+    <End Role="TCRCY" Type="Self.TCRCY" Multiplicity="1" />
+    <End Role="TFI_EXRL_ACCT" Type="Self.TFI_EXRL_ACCT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCRCY">
+        <PropertyRef Name="CRCY_CD" />
+      </Principal>
+      <Dependent Role="TFI_EXRL_ACCT">
+        <PropertyRef Name="CRCY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_47">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="1" />
+    <End Role="TCARD" Type="Self.TCARD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TCARD">
+        <PropertyRef Name="USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_476">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="1" />
+    <End Role="TPROV" Type="Self.TPROV" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TPROV">
+        <PropertyRef Name="CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_492">
+    <End Role="TCRCY" Type="Self.TCRCY" Multiplicity="1" />
+    <End Role="TTRANS_FEE" Type="Self.TTRANS_FEE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCRCY">
+        <PropertyRef Name="CRCY_CD" />
+      </Principal>
+      <Dependent Role="TTRANS_FEE">
+        <PropertyRef Name="FROM_CRCY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_493">
+    <End Role="TCRCY" Type="Self.TCRCY" Multiplicity="1" />
+    <End Role="TTRANS_FEE" Type="Self.TTRANS_FEE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCRCY">
+        <PropertyRef Name="CRCY_CD" />
+      </Principal>
+      <Dependent Role="TTRANS_FEE">
+        <PropertyRef Name="TO_CRCY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_500">
+    <End Role="TPROV" Type="Self.TPROV" Multiplicity="0..1" />
+    <End Role="TTRANS_FEE" Type="Self.TTRANS_FEE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROV">
+        <PropertyRef Name="PROV_CD" />
+      </Principal>
+      <Dependent Role="TTRANS_FEE">
+        <PropertyRef Name="PROV_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_501">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="1" />
+    <End Role="TTRSF_SERV_CTRY" Type="Self.TTRSF_SERV_CTRY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TTRSF_SERV_CTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_502">
+    <End Role="TTRSF_SERV" Type="Self.TTRSF_SERV" Multiplicity="1" />
+    <End Role="TTRSF_SERV_CTRY" Type="Self.TTRSF_SERV_CTRY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TTRSF_SERV">
+        <PropertyRef Name="TRSF_SERV_ID" />
+      </Principal>
+      <Dependent Role="TTRSF_SERV_CTRY">
+        <PropertyRef Name="TRSF_SERV_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_504">
+    <End Role="TPROV" Type="Self.TPROV" Multiplicity="1" />
+    <End Role="TTRSF_SERV_CTRY" Type="Self.TTRSF_SERV_CTRY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPROV">
+        <PropertyRef Name="PROV_CD" />
+      </Principal>
+      <Dependent Role="TTRSF_SERV_CTRY">
+        <PropertyRef Name="PROV_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_506">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="1" />
+    <End Role="TFI_CTRY" Type="Self.TFI_CTRY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TFI_CTRY">
+        <PropertyRef Name="FI_CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_512">
+    <End Role="TFI_CTRY" Type="Self.TFI_CTRY" Multiplicity="1" />
+    <End Role="TFI_EXRL_ACCT" Type="Self.TFI_EXRL_ACCT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TFI_CTRY">
+        <PropertyRef Name="FI_CTRY_ID" />
+      </Principal>
+      <Dependent Role="TFI_EXRL_ACCT">
+        <PropertyRef Name="FI_CTRY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_515">
+    <End Role="TFI_TY" Type="Self.TFI_TY" Multiplicity="1" />
+    <End Role="TFI_CTRY" Type="Self.TFI_CTRY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TFI_TY">
+        <PropertyRef Name="FI_TCD" />
+      </Principal>
+      <Dependent Role="TFI_CTRY">
+        <PropertyRef Name="FI_TCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_516">
+    <End Role="TKTCT" Type="Self.TKTCT" Multiplicity="1" />
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TKTCT">
+        <PropertyRef Name="KTCT_ID" />
+      </Principal>
+      <Dependent Role="TUSR">
+        <PropertyRef Name="USR_KTCT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_517">
+    <End Role="TACCT" Type="Self.TACCT" Multiplicity="1" />
+    <End Role="TBUS_AGCY" Type="Self.TBUS_AGCY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TACCT">
+        <PropertyRef Name="ACCT_ID" />
+      </Principal>
+      <Dependent Role="TBUS_AGCY">
+        <PropertyRef Name="BUS_AGCY_ACCT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_518">
+    <End Role="TACCT" Type="Self.TACCT" Multiplicity="1" />
+    <End Role="TBUS" Type="Self.TBUS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TACCT">
+        <PropertyRef Name="ACCT_ID" />
+      </Principal>
+      <Dependent Role="TBUS">
+        <PropertyRef Name="ACCT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_520">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="1" />
+    <End Role="TIP_ADDR" Type="Self.TIP_ADDR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TIP_ADDR">
+        <PropertyRef Name="IP_ADDR_CRT_UPD_USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_521">
+    <End Role="TBUS_AGCY" Type="Self.TBUS_AGCY" Multiplicity="0..1" />
+    <End Role="TIP_ADDR" Type="Self.TIP_ADDR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS_AGCY">
+        <PropertyRef Name="BUS_AGCY_NBR" />
+        <PropertyRef Name="BN" />
+      </Principal>
+      <Dependent Role="TIP_ADDR">
+        <PropertyRef Name="BUS_AGCY_NBR" />
+        <PropertyRef Name="BN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_522">
+    <End Role="TCITY" Type="Self.TCITY" Multiplicity="0..1" />
+    <End Role="TKTCT" Type="Self.TKTCT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCITY">
+        <PropertyRef Name="CITY_CD" />
+      </Principal>
+      <Dependent Role="TKTCT">
+        <PropertyRef Name="CITY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_523">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="1" />
+    <End Role="TFI_EXRL_ACCT_DESC" Type="Self.TFI_EXRL_ACCT_DESC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TFI_EXRL_ACCT_DESC">
+        <PropertyRef Name="CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_524">
+    <End Role="TBUS" Type="Self.TBUS" Multiplicity="0..1" />
+    <End Role="TRCPT_USR_BUS" Type="Self.TRCPT_USR_BUS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS">
+        <PropertyRef Name="BN" />
+      </Principal>
+      <Dependent Role="TRCPT_USR_BUS">
+        <PropertyRef Name="RCPT_BUS_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_526">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="1" />
+    <End Role="TRCPT_USR_BUS" Type="Self.TRCPT_USR_BUS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TRCPT_USR_BUS">
+        <PropertyRef Name="USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_527">
+    <End Role="TBUS" Type="Self.TBUS" Multiplicity="0..1" />
+    <End Role="TFI_EXRL_ACCT" Type="Self.TFI_EXRL_ACCT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS">
+        <PropertyRef Name="BN" />
+      </Principal>
+      <Dependent Role="TFI_EXRL_ACCT">
+        <PropertyRef Name="EXRL_ACCT_BUS_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_530">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="1" />
+    <End Role="TFI_EXRL_ACCT" Type="Self.TFI_EXRL_ACCT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TFI_EXRL_ACCT">
+        <PropertyRef Name="USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_531">
+    <End Role="TCRCY_XCHG_PRCNT" Type="Self.TCRCY_XCHG_PRCNT" Multiplicity="1" />
+    <End Role="TTRANS_FEE" Type="Self.TTRANS_FEE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCRCY_XCHG_PRCNT">
+        <PropertyRef Name="CRCY_XCHG_PRCNT_ID" />
+      </Principal>
+      <Dependent Role="TTRANS_FEE">
+        <PropertyRef Name="CRCY_XCHG_PRCNT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_532">
+    <End Role="TTRANS_FEE" Type="Self.TTRANS_FEE" Multiplicity="1" />
+    <End Role="TTRSF_FEE_SERV_CTRY" Type="Self.TTRSF_FEE_SERV_CTRY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TTRANS_FEE">
+        <PropertyRef Name="TRANS_FEE_ID" />
+      </Principal>
+      <Dependent Role="TTRSF_FEE_SERV_CTRY">
+        <PropertyRef Name="TRANS_FEE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_535">
+    <End Role="TTRSF_SERV" Type="Self.TTRSF_SERV" Multiplicity="1" />
+    <End Role="TTRSF_FEE_SERV_CTRY" Type="Self.TTRSF_FEE_SERV_CTRY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TTRSF_SERV">
+        <PropertyRef Name="TRSF_SERV_ID" />
+      </Principal>
+      <Dependent Role="TTRSF_FEE_SERV_CTRY">
+        <PropertyRef Name="FROM_TRSF_SERV_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_536">
+    <End Role="TTRSF_SERV" Type="Self.TTRSF_SERV" Multiplicity="1" />
+    <End Role="TTRSF_FEE_SERV_CTRY" Type="Self.TTRSF_FEE_SERV_CTRY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TTRSF_SERV">
+        <PropertyRef Name="TRSF_SERV_ID" />
+      </Principal>
+      <Dependent Role="TTRSF_FEE_SERV_CTRY">
+        <PropertyRef Name="TO_TRSF_SERV_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_537">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="1" />
+    <End Role="TTRSF_FEE_SERV_CTRY" Type="Self.TTRSF_FEE_SERV_CTRY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TTRSF_FEE_SERV_CTRY">
+        <PropertyRef Name="FROM_CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_538">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="1" />
+    <End Role="TTRSF_FEE_SERV_CTRY" Type="Self.TTRSF_FEE_SERV_CTRY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TTRSF_FEE_SERV_CTRY">
+        <PropertyRef Name="TO_CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_539">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="1" />
+    <End Role="TTRANS_TRSF_CRDT_DBT" Type="Self.TTRANS_TRSF_CRDT_DBT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TTRANS_TRSF_CRDT_DBT">
+        <PropertyRef Name="FROM_USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_540">
+    <End Role="TRCPT_USR_BUS" Type="Self.TRCPT_USR_BUS" Multiplicity="1" />
+    <End Role="TTRANS_TRSF_CRDT_DBT" Type="Self.TTRANS_TRSF_CRDT_DBT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TRCPT_USR_BUS">
+        <PropertyRef Name="RCPT_USR_BUS_ID" />
+      </Principal>
+      <Dependent Role="TTRANS_TRSF_CRDT_DBT">
+        <PropertyRef Name="RCPT_USR_BUS_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_541">
+    <End Role="TFI_EXRL_ACCT" Type="Self.TFI_EXRL_ACCT" Multiplicity="1" />
+    <End Role="TBNK_TRANS" Type="Self.TBNK_TRANS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TFI_EXRL_ACCT">
+        <PropertyRef Name="EXRL_ACCT_ID" />
+      </Principal>
+      <Dependent Role="TBNK_TRANS">
+        <PropertyRef Name="EXRL_ACCT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_542">
+    <End Role="TTRANS_TRSF_CRDT_DBT" Type="Self.TTRANS_TRSF_CRDT_DBT" Multiplicity="1" />
+    <End Role="TBNK_TRANS" Type="Self.TBNK_TRANS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TTRANS_TRSF_CRDT_DBT">
+        <PropertyRef Name="TRANS_ID" />
+      </Principal>
+      <Dependent Role="TBNK_TRANS">
+        <PropertyRef Name="TRANS_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_545">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="1" />
+    <End Role="TUSR_WHDRL_CRDT" Type="Self.TUSR_WHDRL_CRDT" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TUSR_WHDRL_CRDT">
+        <PropertyRef Name="USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_548">
+    <End Role="TBUS_USR" Type="Self.TBUS_USR" Multiplicity="1" />
+    <End Role="TBUS_CMSN_TRANS" Type="Self.TBUS_CMSN_TRANS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS_USR">
+        <PropertyRef Name="BUS_USR_NBR" />
+      </Principal>
+      <Dependent Role="TBUS_CMSN_TRANS">
+        <PropertyRef Name="BUS_USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_551">
+    <End Role="TCRCY" Type="Self.TCRCY" Multiplicity="1" />
+    <End Role="TBUS_CMSN" Type="Self.TBUS_CMSN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCRCY">
+        <PropertyRef Name="CRCY_CD" />
+      </Principal>
+      <Dependent Role="TBUS_CMSN">
+        <PropertyRef Name="CRCY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_553">
+    <End Role="TCRCY" Type="Self.TCRCY" Multiplicity="1" />
+    <End Role="TBUS_CMSN_TRANS" Type="Self.TBUS_CMSN_TRANS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCRCY">
+        <PropertyRef Name="CRCY_CD" />
+      </Principal>
+      <Dependent Role="TBUS_CMSN_TRANS">
+        <PropertyRef Name="CRCY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_554">
+    <End Role="TACCT" Type="Self.TACCT" Multiplicity="1" />
+    <End Role="TBPCS" Type="Self.TBPCS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TACCT">
+        <PropertyRef Name="ACCT_ID" />
+      </Principal>
+      <Dependent Role="TBPCS">
+        <PropertyRef Name="ACCT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_555">
+    <End Role="TBUS" Type="Self.TBUS" Multiplicity="1" />
+    <End Role="TBPCS" Type="Self.TBPCS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS">
+        <PropertyRef Name="BN" />
+      </Principal>
+      <Dependent Role="TBPCS">
+        <PropertyRef Name="BN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_556">
+    <End Role="TBPCS" Type="Self.TBPCS" Multiplicity="1" />
+    <End Role="TTRANS_SSN" Type="Self.TTRANS_SSN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBPCS">
+        <PropertyRef Name="BPCS_NBR" />
+      </Principal>
+      <Dependent Role="TTRANS_SSN">
+        <PropertyRef Name="BPCS_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_557">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="1" />
+    <End Role="TTRANS_SSN" Type="Self.TTRANS_SSN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TTRANS_SSN">
+        <PropertyRef Name="USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_558">
+    <End Role="TTRANS_TRSF_CRDT_DBT" Type="Self.TTRANS_TRSF_CRDT_DBT" Multiplicity="1" />
+    <End Role="TBIL_PYMT_TRANS" Type="Self.TBIL_PYMT_TRANS" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TTRANS_TRSF_CRDT_DBT">
+        <PropertyRef Name="TRANS_ID" />
+      </Principal>
+      <Dependent Role="TBIL_PYMT_TRANS">
+        <PropertyRef Name="TRANS_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_559">
+    <End Role="TPYMT_PRTR" Type="Self.TPYMT_PRTR" Multiplicity="1" />
+    <End Role="TEXRL_TRANS" Type="Self.TEXRL_TRANS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPYMT_PRTR">
+        <PropertyRef Name="PYMT_PRTR_ID" />
+      </Principal>
+      <Dependent Role="TEXRL_TRANS">
+        <PropertyRef Name="PYMT_PRTR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_560">
+    <End Role="TTRANS_TRSF_CRDT_DBT" Type="Self.TTRANS_TRSF_CRDT_DBT" Multiplicity="1" />
+    <End Role="TTRANS_TEMPO" Type="Self.TTRANS_TEMPO" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TTRANS_TRSF_CRDT_DBT">
+        <PropertyRef Name="TRANS_ID" />
+      </Principal>
+      <Dependent Role="TTRANS_TEMPO">
+        <PropertyRef Name="TRANS_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_561">
+    <End Role="TFI_EXRL_ACCT" Type="Self.TFI_EXRL_ACCT" Multiplicity="0..1" />
+    <End Role="TRCPT_EXRL_ACCT_FOR_BUS" Type="Self.TRCPT_EXRL_ACCT_FOR_BUS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TFI_EXRL_ACCT">
+        <PropertyRef Name="EXRL_ACCT_ID" />
+      </Principal>
+      <Dependent Role="TRCPT_EXRL_ACCT_FOR_BUS">
+        <PropertyRef Name="EXRL_ACCT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_562">
+    <End Role="TRCPT_USR_BUS" Type="Self.TRCPT_USR_BUS" Multiplicity="0..1" />
+    <End Role="TRCPT_EXRL_ACCT_FOR_BUS" Type="Self.TRCPT_EXRL_ACCT_FOR_BUS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TRCPT_USR_BUS">
+        <PropertyRef Name="RCPT_USR_BUS_ID" />
+      </Principal>
+      <Dependent Role="TRCPT_EXRL_ACCT_FOR_BUS">
+        <PropertyRef Name="RCPT_USR_BUS_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_564">
+    <End Role="TBUS" Type="Self.TBUS" Multiplicity="1" />
+    <End Role="TRCPT_EXRL_ACCT_FOR_BUS" Type="Self.TRCPT_EXRL_ACCT_FOR_BUS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS">
+        <PropertyRef Name="BN" />
+      </Principal>
+      <Dependent Role="TRCPT_EXRL_ACCT_FOR_BUS">
+        <PropertyRef Name="BN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_565">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="1" />
+    <End Role="TCTRY_CRCY" Type="Self.TCTRY_CRCY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TCTRY_CRCY">
+        <PropertyRef Name="CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_566">
+    <End Role="TCRCY" Type="Self.TCRCY" Multiplicity="1" />
+    <End Role="TCTRY_CRCY" Type="Self.TCTRY_CRCY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCRCY">
+        <PropertyRef Name="CRCY_CD" />
+      </Principal>
+      <Dependent Role="TCTRY_CRCY">
+        <PropertyRef Name="CRCY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_567">
+    <End Role="TLANG" Type="Self.TLANG" Multiplicity="1" />
+    <End Role="TCTRY_CRCY" Type="Self.TCTRY_CRCY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TLANG">
+        <PropertyRef Name="LANG_CD" />
+      </Principal>
+      <Dependent Role="TCTRY_CRCY">
+        <PropertyRef Name="LANG_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_568">
+    <End Role="TBUS_USR" Type="Self.TBUS_USR" Multiplicity="1" />
+    <End Role="TBUS_USR_EXCP_ROL" Type="Self.TBUS_USR_EXCP_ROL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS_USR">
+        <PropertyRef Name="BUS_USR_NBR" />
+      </Principal>
+      <Dependent Role="TBUS_USR_EXCP_ROL">
+        <PropertyRef Name="BUS_USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_569">
+    <End Role="TBUS_AGCY" Type="Self.TBUS_AGCY" Multiplicity="1" />
+    <End Role="TBUS_USR_EXCP_ROL" Type="Self.TBUS_USR_EXCP_ROL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS_AGCY">
+        <PropertyRef Name="BUS_AGCY_NBR" />
+        <PropertyRef Name="BN" />
+      </Principal>
+      <Dependent Role="TBUS_USR_EXCP_ROL">
+        <PropertyRef Name="BUS_AGCY_NBR" />
+        <PropertyRef Name="BN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_571">
+    <End Role="TTRANS_TRSF_CRDT_DBT" Type="Self.TTRANS_TRSF_CRDT_DBT" Multiplicity="1" />
+    <End Role="TTRANS_ID_DOC" Type="Self.TTRANS_ID_DOC" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TTRANS_TRSF_CRDT_DBT">
+        <PropertyRef Name="TRANS_ID" />
+      </Principal>
+      <Dependent Role="TTRANS_ID_DOC">
+        <PropertyRef Name="TRANS_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_572">
+    <End Role="TID_DOC" Type="Self.TID_DOC" Multiplicity="1" />
+    <End Role="TTRANS_ID_DOC" Type="Self.TTRANS_ID_DOC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TID_DOC">
+        <PropertyRef Name="ID_DOC_ID" />
+      </Principal>
+      <Dependent Role="TTRANS_ID_DOC">
+        <PropertyRef Name="ID_DOC_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_573">
+    <End Role="TBUS_USR" Type="Self.TBUS_USR" Multiplicity="1" />
+    <End Role="TTRANS_ID_DOC" Type="Self.TTRANS_ID_DOC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS_USR">
+        <PropertyRef Name="BUS_USR_NBR" />
+      </Principal>
+      <Dependent Role="TTRANS_ID_DOC">
+        <PropertyRef Name="BUS_USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_574">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="1" />
+    <End Role="TTRANS_ID_DOC" Type="Self.TTRANS_ID_DOC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TTRANS_ID_DOC">
+        <PropertyRef Name="CLT_USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_575">
+    <End Role="TBUS_USR" Type="Self.TBUS_USR" Multiplicity="1" />
+    <End Role="TBUS_INTRN_TRSF_TRANS" Type="Self.TBUS_INTRN_TRSF_TRANS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS_USR">
+        <PropertyRef Name="BUS_USR_NBR" />
+      </Principal>
+      <Dependent Role="TBUS_INTRN_TRSF_TRANS">
+        <PropertyRef Name="FROM_BUS_USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_576">
+    <End Role="TBUS_USR" Type="Self.TBUS_USR" Multiplicity="1" />
+    <End Role="TBUS_INTRN_TRSF_TRANS" Type="Self.TBUS_INTRN_TRSF_TRANS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS_USR">
+        <PropertyRef Name="BUS_USR_NBR" />
+      </Principal>
+      <Dependent Role="TBUS_INTRN_TRSF_TRANS">
+        <PropertyRef Name="TO_BUS_USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_577">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="1" />
+    <End Role="TBUS_CTRY_FEE" Type="Self.TBUS_CTRY_FEE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TBUS_CTRY_FEE">
+        <PropertyRef Name="CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_580">
+    <End Role="TCRCY" Type="Self.TCRCY" Multiplicity="1" />
+    <End Role="TBUS_CTRY_FEE" Type="Self.TBUS_CTRY_FEE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCRCY">
+        <PropertyRef Name="CRCY_CD" />
+      </Principal>
+      <Dependent Role="TBUS_CTRY_FEE">
+        <PropertyRef Name="CRCY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_596">
+    <End Role="TBUS" Type="Self.TBUS" Multiplicity="0..1" />
+    <End Role="TAGNT_CMSN" Type="Self.TAGNT_CMSN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS">
+        <PropertyRef Name="BN" />
+      </Principal>
+      <Dependent Role="TAGNT_CMSN">
+        <PropertyRef Name="PRTNSP_BN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_598">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="0..1" />
+    <End Role="TAGNT_CMSN" Type="Self.TAGNT_CMSN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TAGNT_CMSN">
+        <PropertyRef Name="CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_600">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="0..1" />
+    <End Role="TAGNT_PKP_CMSN" Type="Self.TAGNT_PKP_CMSN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TAGNT_PKP_CMSN">
+        <PropertyRef Name="CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_601">
+    <End Role="TCRCY" Type="Self.TCRCY" Multiplicity="1" />
+    <End Role="TAGNT_PKP_CMSN" Type="Self.TAGNT_PKP_CMSN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCRCY">
+        <PropertyRef Name="CRCY_CD" />
+      </Principal>
+      <Dependent Role="TAGNT_PKP_CMSN">
+        <PropertyRef Name="CRCY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_603">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="1" />
+    <End Role="TAGNT_SPNSRD" Type="Self.TAGNT_SPNSRD" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TAGNT_SPNSRD">
+        <PropertyRef Name="SPNSRD_USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_606">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="0..1" />
+    <End Role="TAGNT" Type="Self.TAGNT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TAGNT">
+        <PropertyRef Name="AGNT_USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_607">
+    <End Role="TBUS" Type="Self.TBUS" Multiplicity="0..1" />
+    <End Role="TAGNT" Type="Self.TAGNT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS">
+        <PropertyRef Name="BN" />
+      </Principal>
+      <Dependent Role="TAGNT">
+        <PropertyRef Name="AGNT_BUS_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_609">
+    <End Role="TAGNT" Type="Self.TAGNT" Multiplicity="1" />
+    <End Role="TAGNT_CMSN" Type="Self.TAGNT_CMSN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAGNT">
+        <PropertyRef Name="AGNT_ID" />
+      </Principal>
+      <Dependent Role="TAGNT_CMSN">
+        <PropertyRef Name="AGNT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_612">
+    <End Role="TAGNT" Type="Self.TAGNT" Multiplicity="1" />
+    <End Role="TAGNT_TRANS_CMSN" Type="Self.TAGNT_TRANS_CMSN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAGNT">
+        <PropertyRef Name="AGNT_ID" />
+      </Principal>
+      <Dependent Role="TAGNT_TRANS_CMSN">
+        <PropertyRef Name="AGNT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_613">
+    <End Role="TAGNT" Type="Self.TAGNT" Multiplicity="1" />
+    <End Role="TAGNT_SPNSRD" Type="Self.TAGNT_SPNSRD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAGNT">
+        <PropertyRef Name="AGNT_ID" />
+      </Principal>
+      <Dependent Role="TAGNT_SPNSRD">
+        <PropertyRef Name="AGNT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_618">
+    <End Role="TAGNT" Type="Self.TAGNT" Multiplicity="0..1" />
+    <End Role="TAGNT1" Type="Self.TAGNT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAGNT">
+        <PropertyRef Name="AGNT_ID" />
+      </Principal>
+      <Dependent Role="TAGNT1">
+        <PropertyRef Name="SPNSR_AGNT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_620">
+    <End Role="TAGNT" Type="Self.TAGNT" Multiplicity="1" />
+    <End Role="TAGNT_TRSF" Type="Self.TAGNT_TRSF" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAGNT">
+        <PropertyRef Name="AGNT_ID" />
+      </Principal>
+      <Dependent Role="TAGNT_TRSF">
+        <PropertyRef Name="AGNT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_621">
+    <End Role="TACCT" Type="Self.TACCT" Multiplicity="1" />
+    <End Role="TACCT_BUS_AGNT_CMSN" Type="Self.TACCT_BUS_AGNT_CMSN" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TACCT">
+        <PropertyRef Name="ACCT_ID" />
+      </Principal>
+      <Dependent Role="TACCT_BUS_AGNT_CMSN">
+        <PropertyRef Name="ACCT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_622">
+    <End Role="TACCT_BUS_AGNT_CMSN" Type="Self.TACCT_BUS_AGNT_CMSN" Multiplicity="1" />
+    <End Role="TAGNT" Type="Self.TAGNT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TACCT_BUS_AGNT_CMSN">
+        <PropertyRef Name="ACCT_ID" />
+      </Principal>
+      <Dependent Role="TAGNT">
+        <PropertyRef Name="AGNT_ACCT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_63">
+    <End Role="TBUS" Type="Self.TBUS" Multiplicity="1" />
+    <End Role="TBUS_AGCY" Type="Self.TBUS_AGCY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS">
+        <PropertyRef Name="BN" />
+      </Principal>
+      <Dependent Role="TBUS_AGCY">
+        <PropertyRef Name="BN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_632">
+    <End Role="TTRANS_TRSF_CRDT_DBT" Type="Self.TTRANS_TRSF_CRDT_DBT" Multiplicity="1" />
+    <End Role="TAGNT_TRANS_CMSN_TEMPO" Type="Self.TAGNT_TRANS_CMSN_TEMPO" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TTRANS_TRSF_CRDT_DBT">
+        <PropertyRef Name="TRANS_ID" />
+      </Principal>
+      <Dependent Role="TAGNT_TRANS_CMSN_TEMPO">
+        <PropertyRef Name="TRANS_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_645">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="1" />
+    <End Role="TCLT_IN_BUS" Type="Self.TCLT_IN_BUS" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TCLT_IN_BUS">
+        <PropertyRef Name="USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_646">
+    <End Role="TCARD" Type="Self.TCARD" Multiplicity="1" />
+    <End Role="TCLT_IN_BUS" Type="Self.TCLT_IN_BUS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCARD">
+        <PropertyRef Name="CARD_ID" />
+      </Principal>
+      <Dependent Role="TCLT_IN_BUS">
+        <PropertyRef Name="CARD_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_647">
+    <End Role="TACCT" Type="Self.TACCT" Multiplicity="1" />
+    <End Role="TCLT_IN_BUS" Type="Self.TCLT_IN_BUS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TACCT">
+        <PropertyRef Name="ACCT_ID" />
+      </Principal>
+      <Dependent Role="TCLT_IN_BUS">
+        <PropertyRef Name="ACCT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_648">
+    <End Role="TBUS" Type="Self.TBUS" Multiplicity="1" />
+    <End Role="TCLT_IN_BUS" Type="Self.TCLT_IN_BUS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS">
+        <PropertyRef Name="BN" />
+      </Principal>
+      <Dependent Role="TCLT_IN_BUS">
+        <PropertyRef Name="BN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_649">
+    <End Role="TBUS_USR" Type="Self.TBUS_USR" Multiplicity="1" />
+    <End Role="TCLT_IN_BUS" Type="Self.TCLT_IN_BUS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS_USR">
+        <PropertyRef Name="BUS_USR_NBR" />
+      </Principal>
+      <Dependent Role="TCLT_IN_BUS">
+        <PropertyRef Name="BUS_USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_65">
+    <End Role="TBUS_AGCY" Type="Self.TBUS_AGCY" Multiplicity="1" />
+    <End Role="TBUS_USR" Type="Self.TBUS_USR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS_AGCY">
+        <PropertyRef Name="BUS_AGCY_NBR" />
+        <PropertyRef Name="BN" />
+      </Principal>
+      <Dependent Role="TBUS_USR">
+        <PropertyRef Name="BUS_AGCY_NBR" />
+        <PropertyRef Name="BN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_650">
+    <End Role="TTRANS_TRSF_CRDT_DBT" Type="Self.TTRANS_TRSF_CRDT_DBT" Multiplicity="1" />
+    <End Role="TONBHLF_CLT_TRANS" Type="Self.TONBHLF_CLT_TRANS" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TTRANS_TRSF_CRDT_DBT">
+        <PropertyRef Name="TRANS_ID" />
+      </Principal>
+      <Dependent Role="TONBHLF_CLT_TRANS">
+        <PropertyRef Name="TRANS_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_651">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="1" />
+    <End Role="TONBHLF_CLT_TRANS" Type="Self.TONBHLF_CLT_TRANS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TONBHLF_CLT_TRANS">
+        <PropertyRef Name="USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_652">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="1" />
+    <End Role="TONBHLF_CLT_CMSN" Type="Self.TONBHLF_CLT_CMSN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TONBHLF_CLT_CMSN">
+        <PropertyRef Name="USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_654">
+    <End Role="TCTRY" Type="Self.TCTRY" Multiplicity="1" />
+    <End Role="TONBHLF_CLT_CMSN" Type="Self.TONBHLF_CLT_CMSN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCTRY">
+        <PropertyRef Name="CTRY_CD" />
+      </Principal>
+      <Dependent Role="TONBHLF_CLT_CMSN">
+        <PropertyRef Name="CTRY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_655">
+    <End Role="TCRCY" Type="Self.TCRCY" Multiplicity="1" />
+    <End Role="TONBHLF_CLT_CMSN" Type="Self.TONBHLF_CLT_CMSN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCRCY">
+        <PropertyRef Name="CRCY_CD" />
+      </Principal>
+      <Dependent Role="TONBHLF_CLT_CMSN">
+        <PropertyRef Name="CRCY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_656">
+    <End Role="TCRCY" Type="Self.TCRCY" Multiplicity="1" />
+    <End Role="TONBHLF_CLT_TRANS" Type="Self.TONBHLF_CLT_TRANS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCRCY">
+        <PropertyRef Name="CRCY_CD" />
+      </Principal>
+      <Dependent Role="TONBHLF_CLT_TRANS">
+        <PropertyRef Name="CRCY_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_702">
+    <End Role="TACCT" Type="Self.TACCT" Multiplicity="1" />
+    <End Role="TACCT_BUS_SRVC" Type="Self.TACCT_BUS_SRVC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TACCT">
+        <PropertyRef Name="ACCT_ID" />
+      </Principal>
+      <Dependent Role="TACCT_BUS_SRVC">
+        <PropertyRef Name="ACCT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_725">
+    <End Role="TBUS_AGCY" Type="Self.TBUS_AGCY" Multiplicity="1" />
+    <End Role="TBUS_AGCY_SRVC" Type="Self.TBUS_AGCY_SRVC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS_AGCY">
+        <PropertyRef Name="BUS_AGCY_NBR" />
+        <PropertyRef Name="BN" />
+      </Principal>
+      <Dependent Role="TBUS_AGCY_SRVC">
+        <PropertyRef Name="BUS_AGCY_NBR" />
+        <PropertyRef Name="BN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_727">
+    <End Role="TBUS" Type="Self.TBUS" Multiplicity="1" />
+    <End Role="TBUS_TY" Type="Self.TBUS_TY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBUS">
+        <PropertyRef Name="BN" />
+      </Principal>
+      <Dependent Role="TBUS_TY">
+        <PropertyRef Name="BN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_729">
+    <End Role="TCARD" Type="Self.TCARD" Multiplicity="0..1" />
+    <End Role="TBUS" Type="Self.TBUS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCARD">
+        <PropertyRef Name="CARD_ID" />
+      </Principal>
+      <Dependent Role="TBUS">
+        <PropertyRef Name="CARD_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_97">
+    <End Role="TUSR" Type="Self.TUSR" Multiplicity="1" />
+    <End Role="TACCT" Type="Self.TACCT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUSR">
+        <PropertyRef Name="USR_NBR" />
+      </Principal>
+      <Dependent Role="TACCT">
+        <PropertyRef Name="USR_NBR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="DeposDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="montant" Type="decimal" Mode="In" />
+    <Parameter Name="phoneNumber" Type="nvarchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="CLT_USR_NBR" Type="nvarchar" MaxLength="10" />
+          <Property Name="CLT_FUL_NM" Type="nvarchar" MaxLength="60" />
+          <Property Name="FEE_AMT" Type="decimal" Precision="14" Scale="4" />
+          <Property Name="AMT_TO_PAY" Type="decimal" Precision="14" Scale="4" />
+          <Property Name="AMT_TO_DEPOSIT" Type="decimal" Precision="14" Scale="4" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="GetDeposDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="montant" Type="decimal" Mode="In" />
+    <Parameter Name="phoneNumber" Type="nvarchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="CLT_USR_NBR" Type="nvarchar" MaxLength="10" />
+          <Property Name="CLT_FUL_NM" Type="nvarchar" MaxLength="60" />
+          <Property Name="FEE_AMT" Type="decimal" Precision="14" Scale="4" />
+          <Property Name="AMT_TO_PAY" Type="decimal" Precision="14" Scale="4" />
+          <Property Name="AMT_TO_DEPOSIT" Type="decimal" Precision="14" Scale="4" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="GetTransactionDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TransqctionID" Type="int" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="USR_FNM" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="USR_LNM" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="FROM_USR_NBR" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="RCPT_USR_BUS_NM" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="TRANS_ID" Type="int" Nullable="false" />
+          <Property Name="TO_TRANS_AMT" Type="decimal" Precision="14" Scale="4" Nullable="false" />
+          <Property Name="TRANS_DESC" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="FRA_TRSF_SERV_NM" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="TRANS_SCD" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="CITY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="ADDR_LN1_TXT" Type="varchar" MaxLength="255" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="LastInsertedTransID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="TRANS_ID" Type="int" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="RetraitDetails2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="montant" Type="decimal" Mode="In" />
+    <Parameter Name="phoneNumber" Type="nvarchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="CLT_USR_NBR" Type="nvarchar" MaxLength="10" />
+          <Property Name="CLT_FUL_NM" Type="nvarchar" MaxLength="60" />
+          <Property Name="FEE_AMT" Type="decimal" Precision="14" Scale="4" />
+          <Property Name="TOT_AMT_TO_PAY" Type="decimal" Precision="14" Scale="4" />
+          <Property Name="AMT_TO_RECEIVE" Type="decimal" Precision="14" Scale="4" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <EntityContainer Name="paykapdevModelStoreContainer">
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TACCT" EntityType="Self.TACCT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TACCT_BUS_AGNT_CMSN" EntityType="Self.TACCT_BUS_AGNT_CMSN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TACCT_BUS_SRVC" EntityType="Self.TACCT_BUS_SRVC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TACCT_CRDT" EntityType="Self.TACCT_CRDT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TACCT_HIST" EntityType="Self.TACCT_HIST" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TACCT_ID" EntityType="Self.TACCT_ID" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAGNT" EntityType="Self.TAGNT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAGNT_CMSN" EntityType="Self.TAGNT_CMSN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAGNT_PKP_CMSN" EntityType="Self.TAGNT_PKP_CMSN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAGNT_SPNSRD" EntityType="Self.TAGNT_SPNSRD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAGNT_TRANS_CMSN" EntityType="Self.TAGNT_TRANS_CMSN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAGNT_TRANS_CMSN_TEMPO" EntityType="Self.TAGNT_TRANS_CMSN_TEMPO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAGNT_TRSF" EntityType="Self.TAGNT_TRSF" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBIL_PYMT_TRANS" EntityType="Self.TBIL_PYMT_TRANS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBNK_TRANS" EntityType="Self.TBNK_TRANS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBP" EntityType="Self.TBP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBP_CTRCT" EntityType="Self.TBP_CTRCT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBPCS" EntityType="Self.TBPCS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBUS" EntityType="Self.TBUS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBUS_AGCY" EntityType="Self.TBUS_AGCY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBUS_AGCY_SRVC" EntityType="Self.TBUS_AGCY_SRVC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBUS_CMSN" EntityType="Self.TBUS_CMSN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBUS_CMSN_TRANS" EntityType="Self.TBUS_CMSN_TRANS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBUS_CTRY_FEE" EntityType="Self.TBUS_CTRY_FEE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBUS_INTRN_TRSF_TRANS" EntityType="Self.TBUS_INTRN_TRSF_TRANS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBUS_TY" EntityType="Self.TBUS_TY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBUS_USR" EntityType="Self.TBUS_USR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBUS_USR_EXCP_ROL" EntityType="Self.TBUS_USR_EXCP_ROL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TCAL_CTRY" EntityType="Self.TCAL_CTRY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TCARD" EntityType="Self.TCARD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TCARD_ID" EntityType="Self.TCARD_ID" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TCITY" EntityType="Self.TCITY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TCLT_IN_BUS" EntityType="Self.TCLT_IN_BUS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TCNX_LOG" EntityType="Self.TCNX_LOG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TCRCY" EntityType="Self.TCRCY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TCRCY_XCHG_PRCNT" EntityType="Self.TCRCY_XCHG_PRCNT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TCRCY_XCHG_RT" EntityType="Self.TCRCY_XCHG_RT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TCTRY" EntityType="Self.TCTRY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TCTRY_CRCY" EntityType="Self.TCTRY_CRCY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TEXCEPT_TRANS" EntityType="Self.TEXCEPT_TRANS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TEXRL_TRANS" EntityType="Self.TEXRL_TRANS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TFI" EntityType="Self.TFI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TFI_CTRY" EntityType="Self.TFI_CTRY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TFI_EXRL_ACCT" EntityType="Self.TFI_EXRL_ACCT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TFI_EXRL_ACCT_DESC" EntityType="Self.TFI_EXRL_ACCT_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TFI_TY" EntityType="Self.TFI_TY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TID_DOC" EntityType="Self.TID_DOC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TIP_ADDR" EntityType="Self.TIP_ADDR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TKTCT" EntityType="Self.TKTCT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TLANG" EntityType="Self.TLANG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TMNYT_AUTH_LMIT" EntityType="Self.TMNYT_AUTH_LMIT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TMNYT_RSN" EntityType="Self.TMNYT_RSN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TONBHLF_CLT_CMSN" EntityType="Self.TONBHLF_CLT_CMSN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TONBHLF_CLT_TRANS" EntityType="Self.TONBHLF_CLT_TRANS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TPKP_TRCK_CMSN_FEE" EntityType="Self.TPKP_TRCK_CMSN_FEE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TPROV" EntityType="Self.TPROV" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TPYMT_PRTR" EntityType="Self.TPYMT_PRTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TRCPT_EXRL_ACCT_FOR_BUS" EntityType="Self.TRCPT_EXRL_ACCT_FOR_BUS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TRCPT_USR_BUS" EntityType="Self.TRCPT_USR_BUS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TSCTY_QUES_LIST" EntityType="Self.TSCTY_QUES_LIST" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TTAX" EntityType="Self.TTAX" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TTAX_RT_CTRY" EntityType="Self.TTAX_RT_CTRY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TTRANS_FEE" EntityType="Self.TTRANS_FEE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TTRANS_ID_DOC" EntityType="Self.TTRANS_ID_DOC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TTRANS_SSN" EntityType="Self.TTRANS_SSN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TTRANS_START_XSSN_TEMPO" EntityType="Self.TTRANS_START_XSSN_TEMPO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TTRANS_TEMPO" EntityType="Self.TTRANS_TEMPO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TTRANS_TRSF_CRDT_DBT" EntityType="Self.TTRANS_TRSF_CRDT_DBT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TTRSF_FEE_SERV_CTRY" EntityType="Self.TTRSF_FEE_SERV_CTRY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TTRSF_SERV" EntityType="Self.TTRSF_SERV" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TTRSF_SERV_CTRY" EntityType="Self.TTRSF_SERV_CTRY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TUSR" EntityType="Self.TUSR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TUSR_ID" EntityType="Self.TUSR_ID" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TUSR_WHDRL_CRDT" EntityType="Self.TUSR_WHDRL_CRDT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ZTMNYT_FEE_EXPIRED" EntityType="Self.ZTMNYT_FEE_EXPIRED" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="constraintFKCITY_CD" Association="Self.constraintFKCITY_CD">
+      <End Role="TCITY" EntitySet="TCITY" />
+      <End Role="TUSR" EntitySet="TUSR" />
+    </AssociationSet>
+    <AssociationSet Name="constraintFKCTRY_CD" Association="Self.constraintFKCTRY_CD">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TUSR" EntitySet="TUSR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="R_101" Association="Self.R_101">
+      <End Role="TCRCY" EntitySet="TCRCY" />
+      <End Role="TCRCY_XCHG_RT" EntitySet="TCRCY_XCHG_RT" />
+    </AssociationSet>
+    <AssociationSet Name="R_102" Association="Self.R_102">
+      <End Role="TCRCY" EntitySet="TCRCY" />
+      <End Role="TCRCY_XCHG_RT" EntitySet="TCRCY_XCHG_RT" />
+    </AssociationSet>
+    <AssociationSet Name="R_103" Association="Self.R_103">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TCRCY_XCHG_RT" EntitySet="TCRCY_XCHG_RT" />
+    </AssociationSet>
+    <AssociationSet Name="R_104" Association="Self.R_104">
+      <End Role="TCRCY" EntitySet="TCRCY" />
+      <End Role="TACCT" EntitySet="TACCT" />
+    </AssociationSet>
+    <AssociationSet Name="R_132" Association="Self.R_132">
+      <End Role="TCRCY" EntitySet="TCRCY" />
+      <End Role="TTRANS_TRSF_CRDT_DBT" EntitySet="TTRANS_TRSF_CRDT_DBT" />
+    </AssociationSet>
+    <AssociationSet Name="R_133" Association="Self.R_133">
+      <End Role="TCRCY" EntitySet="TCRCY" />
+      <End Role="TTRANS_TRSF_CRDT_DBT" EntitySet="TTRANS_TRSF_CRDT_DBT" />
+    </AssociationSet>
+    <AssociationSet Name="R_194" Association="Self.R_194">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="TUSR" EntitySet="TUSR" />
+    </AssociationSet>
+    <AssociationSet Name="R_203" Association="Self.R_203">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TCNX_LOG" EntitySet="TCNX_LOG" />
+    </AssociationSet>
+    <AssociationSet Name="R_214" Association="Self.R_214">
+      <End Role="TACCT" EntitySet="TACCT" />
+      <End Role="TACCT_HIST" EntitySet="TACCT_HIST" />
+    </AssociationSet>
+    <AssociationSet Name="R_242" Association="Self.R_242">
+      <End Role="TKTCT" EntitySet="TKTCT" />
+      <End Role="TBUS_AGCY" EntitySet="TBUS_AGCY" />
+    </AssociationSet>
+    <AssociationSet Name="R_258" Association="Self.R_258">
+      <End Role="TTRANS_TRSF_CRDT_DBT" EntitySet="TTRANS_TRSF_CRDT_DBT" />
+      <End Role="TEXCEPT_TRANS" EntitySet="TEXCEPT_TRANS" />
+    </AssociationSet>
+    <AssociationSet Name="R_261" Association="Self.R_261">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TEXCEPT_TRANS" EntitySet="TEXCEPT_TRANS" />
+    </AssociationSet>
+    <AssociationSet Name="R_267" Association="Self.R_267">
+      <End Role="TLANG" EntitySet="TLANG" />
+      <End Role="TUSR" EntitySet="TUSR" />
+    </AssociationSet>
+    <AssociationSet Name="R_274" Association="Self.R_274">
+      <End Role="TSCTY_QUES_LIST" EntitySet="TSCTY_QUES_LIST" />
+      <End Role="TCNX_LOG" EntitySet="TCNX_LOG" />
+    </AssociationSet>
+    <AssociationSet Name="R_275" Association="Self.R_275">
+      <End Role="TSCTY_QUES_LIST" EntitySet="TSCTY_QUES_LIST" />
+      <End Role="TCNX_LOG" EntitySet="TCNX_LOG" />
+    </AssociationSet>
+    <AssociationSet Name="R_276" Association="Self.R_276">
+      <End Role="TSCTY_QUES_LIST" EntitySet="TSCTY_QUES_LIST" />
+      <End Role="TCNX_LOG" EntitySet="TCNX_LOG" />
+    </AssociationSet>
+    <AssociationSet Name="R_282" Association="Self.R_282">
+      <End Role="TACCT" EntitySet="TACCT" />
+      <End Role="TACCT_CRDT" EntitySet="TACCT_CRDT" />
+    </AssociationSet>
+    <AssociationSet Name="R_29" Association="Self.R_29">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TCARD" EntitySet="TCARD" />
+    </AssociationSet>
+    <AssociationSet Name="R_293" Association="Self.R_293">
+      <End Role="TBUS" EntitySet="TBUS" />
+      <End Role="TBP_CTRCT" EntitySet="TBP_CTRCT" />
+    </AssociationSet>
+    <AssociationSet Name="R_295" Association="Self.R_295">
+      <End Role="TBP" EntitySet="TBP" />
+      <End Role="TBP_CTRCT" EntitySet="TBP_CTRCT" />
+    </AssociationSet>
+    <AssociationSet Name="R_297" Association="Self.R_297">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TBP_CTRCT" EntitySet="TBP_CTRCT" />
+    </AssociationSet>
+    <AssociationSet Name="R_305" Association="Self.R_305">
+      <End Role="TTRANS_TRSF_CRDT_DBT" EntitySet="TTRANS_TRSF_CRDT_DBT" />
+      <End Role="TBUS_CMSN_TRANS" EntitySet="TBUS_CMSN_TRANS" />
+    </AssociationSet>
+    <AssociationSet Name="R_361" Association="Self.R_361">
+      <End Role="TACCT" EntitySet="TACCT" />
+      <End Role="TRCPT_USR_BUS" EntitySet="TRCPT_USR_BUS" />
+    </AssociationSet>
+    <AssociationSet Name="R_372" Association="Self.R_372">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TRCPT_USR_BUS" EntitySet="TRCPT_USR_BUS" />
+    </AssociationSet>
+    <AssociationSet Name="R_39" Association="Self.R_39">
+      <End Role="TKTCT" EntitySet="TKTCT" />
+      <End Role="TBUS" EntitySet="TBUS" />
+    </AssociationSet>
+    <AssociationSet Name="R_393" Association="Self.R_393">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TTAX_RT_CTRY" EntitySet="TTAX_RT_CTRY" />
+    </AssociationSet>
+    <AssociationSet Name="R_417" Association="Self.R_417">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TKTCT" EntitySet="TKTCT" />
+    </AssociationSet>
+    <AssociationSet Name="R_421" Association="Self.R_421">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TCITY" EntitySet="TCITY" />
+    </AssociationSet>
+    <AssociationSet Name="R_424" Association="Self.R_424">
+      <End Role="TACCT" EntitySet="TACCT" />
+      <End Role="TBUS_USR" EntitySet="TBUS_USR" />
+    </AssociationSet>
+    <AssociationSet Name="R_425" Association="Self.R_425">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TBUS_USR" EntitySet="TBUS_USR" />
+    </AssociationSet>
+    <AssociationSet Name="R_435" Association="Self.R_435">
+      <End Role="TCRCY" EntitySet="TCRCY" />
+      <End Role="ZTMNYT_FEE_EXPIRED" EntitySet="ZTMNYT_FEE_EXPIRED" />
+    </AssociationSet>
+    <AssociationSet Name="R_443" Association="Self.R_443">
+      <End Role="TBUS" EntitySet="TBUS" />
+      <End Role="TBUS_CMSN" EntitySet="TBUS_CMSN" />
+    </AssociationSet>
+    <AssociationSet Name="R_445" Association="Self.R_445">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TBUS_CMSN" EntitySet="TBUS_CMSN" />
+    </AssociationSet>
+    <AssociationSet Name="R_446" Association="Self.R_446">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TTRANS_TRSF_CRDT_DBT" EntitySet="TTRANS_TRSF_CRDT_DBT" />
+    </AssociationSet>
+    <AssociationSet Name="R_447" Association="Self.R_447">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TTRANS_TRSF_CRDT_DBT" EntitySet="TTRANS_TRSF_CRDT_DBT" />
+    </AssociationSet>
+    <AssociationSet Name="R_448" Association="Self.R_448">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TMNYT_AUTH_LMIT" EntitySet="TMNYT_AUTH_LMIT" />
+    </AssociationSet>
+    <AssociationSet Name="R_449" Association="Self.R_449">
+      <End Role="TCRCY" EntitySet="TCRCY" />
+      <End Role="TMNYT_AUTH_LMIT" EntitySet="TMNYT_AUTH_LMIT" />
+    </AssociationSet>
+    <AssociationSet Name="R_457" Association="Self.R_457">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TFI_EXRL_ACCT" EntitySet="TFI_EXRL_ACCT" />
+    </AssociationSet>
+    <AssociationSet Name="R_465" Association="Self.R_465">
+      <End Role="TCRCY" EntitySet="TCRCY" />
+      <End Role="TFI_EXRL_ACCT" EntitySet="TFI_EXRL_ACCT" />
+    </AssociationSet>
+    <AssociationSet Name="R_47" Association="Self.R_47">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TCARD" EntitySet="TCARD" />
+    </AssociationSet>
+    <AssociationSet Name="R_476" Association="Self.R_476">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TPROV" EntitySet="TPROV" />
+    </AssociationSet>
+    <AssociationSet Name="R_492" Association="Self.R_492">
+      <End Role="TCRCY" EntitySet="TCRCY" />
+      <End Role="TTRANS_FEE" EntitySet="TTRANS_FEE" />
+    </AssociationSet>
+    <AssociationSet Name="R_493" Association="Self.R_493">
+      <End Role="TCRCY" EntitySet="TCRCY" />
+      <End Role="TTRANS_FEE" EntitySet="TTRANS_FEE" />
+    </AssociationSet>
+    <AssociationSet Name="R_500" Association="Self.R_500">
+      <End Role="TPROV" EntitySet="TPROV" />
+      <End Role="TTRANS_FEE" EntitySet="TTRANS_FEE" />
+    </AssociationSet>
+    <AssociationSet Name="R_501" Association="Self.R_501">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TTRSF_SERV_CTRY" EntitySet="TTRSF_SERV_CTRY" />
+    </AssociationSet>
+    <AssociationSet Name="R_502" Association="Self.R_502">
+      <End Role="TTRSF_SERV" EntitySet="TTRSF_SERV" />
+      <End Role="TTRSF_SERV_CTRY" EntitySet="TTRSF_SERV_CTRY" />
+    </AssociationSet>
+    <AssociationSet Name="R_504" Association="Self.R_504">
+      <End Role="TPROV" EntitySet="TPROV" />
+      <End Role="TTRSF_SERV_CTRY" EntitySet="TTRSF_SERV_CTRY" />
+    </AssociationSet>
+    <AssociationSet Name="R_506" Association="Self.R_506">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TFI_CTRY" EntitySet="TFI_CTRY" />
+    </AssociationSet>
+    <AssociationSet Name="R_512" Association="Self.R_512">
+      <End Role="TFI_CTRY" EntitySet="TFI_CTRY" />
+      <End Role="TFI_EXRL_ACCT" EntitySet="TFI_EXRL_ACCT" />
+    </AssociationSet>
+    <AssociationSet Name="R_515" Association="Self.R_515">
+      <End Role="TFI_TY" EntitySet="TFI_TY" />
+      <End Role="TFI_CTRY" EntitySet="TFI_CTRY" />
+    </AssociationSet>
+    <AssociationSet Name="R_516" Association="Self.R_516">
+      <End Role="TKTCT" EntitySet="TKTCT" />
+      <End Role="TUSR" EntitySet="TUSR" />
+    </AssociationSet>
+    <AssociationSet Name="R_517" Association="Self.R_517">
+      <End Role="TACCT" EntitySet="TACCT" />
+      <End Role="TBUS_AGCY" EntitySet="TBUS_AGCY" />
+    </AssociationSet>
+    <AssociationSet Name="R_518" Association="Self.R_518">
+      <End Role="TACCT" EntitySet="TACCT" />
+      <End Role="TBUS" EntitySet="TBUS" />
+    </AssociationSet>
+    <AssociationSet Name="R_520" Association="Self.R_520">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TIP_ADDR" EntitySet="TIP_ADDR" />
+    </AssociationSet>
+    <AssociationSet Name="R_521" Association="Self.R_521">
+      <End Role="TBUS_AGCY" EntitySet="TBUS_AGCY" />
+      <End Role="TIP_ADDR" EntitySet="TIP_ADDR" />
+    </AssociationSet>
+    <AssociationSet Name="R_522" Association="Self.R_522">
+      <End Role="TCITY" EntitySet="TCITY" />
+      <End Role="TKTCT" EntitySet="TKTCT" />
+    </AssociationSet>
+    <AssociationSet Name="R_523" Association="Self.R_523">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TFI_EXRL_ACCT_DESC" EntitySet="TFI_EXRL_ACCT_DESC" />
+    </AssociationSet>
+    <AssociationSet Name="R_524" Association="Self.R_524">
+      <End Role="TBUS" EntitySet="TBUS" />
+      <End Role="TRCPT_USR_BUS" EntitySet="TRCPT_USR_BUS" />
+    </AssociationSet>
+    <AssociationSet Name="R_526" Association="Self.R_526">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TRCPT_USR_BUS" EntitySet="TRCPT_USR_BUS" />
+    </AssociationSet>
+    <AssociationSet Name="R_527" Association="Self.R_527">
+      <End Role="TBUS" EntitySet="TBUS" />
+      <End Role="TFI_EXRL_ACCT" EntitySet="TFI_EXRL_ACCT" />
+    </AssociationSet>
+    <AssociationSet Name="R_530" Association="Self.R_530">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TFI_EXRL_ACCT" EntitySet="TFI_EXRL_ACCT" />
+    </AssociationSet>
+    <AssociationSet Name="R_531" Association="Self.R_531">
+      <End Role="TCRCY_XCHG_PRCNT" EntitySet="TCRCY_XCHG_PRCNT" />
+      <End Role="TTRANS_FEE" EntitySet="TTRANS_FEE" />
+    </AssociationSet>
+    <AssociationSet Name="R_532" Association="Self.R_532">
+      <End Role="TTRANS_FEE" EntitySet="TTRANS_FEE" />
+      <End Role="TTRSF_FEE_SERV_CTRY" EntitySet="TTRSF_FEE_SERV_CTRY" />
+    </AssociationSet>
+    <AssociationSet Name="R_535" Association="Self.R_535">
+      <End Role="TTRSF_SERV" EntitySet="TTRSF_SERV" />
+      <End Role="TTRSF_FEE_SERV_CTRY" EntitySet="TTRSF_FEE_SERV_CTRY" />
+    </AssociationSet>
+    <AssociationSet Name="R_536" Association="Self.R_536">
+      <End Role="TTRSF_SERV" EntitySet="TTRSF_SERV" />
+      <End Role="TTRSF_FEE_SERV_CTRY" EntitySet="TTRSF_FEE_SERV_CTRY" />
+    </AssociationSet>
+    <AssociationSet Name="R_537" Association="Self.R_537">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TTRSF_FEE_SERV_CTRY" EntitySet="TTRSF_FEE_SERV_CTRY" />
+    </AssociationSet>
+    <AssociationSet Name="R_538" Association="Self.R_538">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TTRSF_FEE_SERV_CTRY" EntitySet="TTRSF_FEE_SERV_CTRY" />
+    </AssociationSet>
+    <AssociationSet Name="R_539" Association="Self.R_539">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TTRANS_TRSF_CRDT_DBT" EntitySet="TTRANS_TRSF_CRDT_DBT" />
+    </AssociationSet>
+    <AssociationSet Name="R_540" Association="Self.R_540">
+      <End Role="TRCPT_USR_BUS" EntitySet="TRCPT_USR_BUS" />
+      <End Role="TTRANS_TRSF_CRDT_DBT" EntitySet="TTRANS_TRSF_CRDT_DBT" />
+    </AssociationSet>
+    <AssociationSet Name="R_541" Association="Self.R_541">
+      <End Role="TFI_EXRL_ACCT" EntitySet="TFI_EXRL_ACCT" />
+      <End Role="TBNK_TRANS" EntitySet="TBNK_TRANS" />
+    </AssociationSet>
+    <AssociationSet Name="R_542" Association="Self.R_542">
+      <End Role="TTRANS_TRSF_CRDT_DBT" EntitySet="TTRANS_TRSF_CRDT_DBT" />
+      <End Role="TBNK_TRANS" EntitySet="TBNK_TRANS" />
+    </AssociationSet>
+    <AssociationSet Name="R_545" Association="Self.R_545">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TUSR_WHDRL_CRDT" EntitySet="TUSR_WHDRL_CRDT" />
+    </AssociationSet>
+    <AssociationSet Name="R_548" Association="Self.R_548">
+      <End Role="TBUS_USR" EntitySet="TBUS_USR" />
+      <End Role="TBUS_CMSN_TRANS" EntitySet="TBUS_CMSN_TRANS" />
+    </AssociationSet>
+    <AssociationSet Name="R_551" Association="Self.R_551">
+      <End Role="TCRCY" EntitySet="TCRCY" />
+      <End Role="TBUS_CMSN" EntitySet="TBUS_CMSN" />
+    </AssociationSet>
+    <AssociationSet Name="R_553" Association="Self.R_553">
+      <End Role="TCRCY" EntitySet="TCRCY" />
+      <End Role="TBUS_CMSN_TRANS" EntitySet="TBUS_CMSN_TRANS" />
+    </AssociationSet>
+    <AssociationSet Name="R_554" Association="Self.R_554">
+      <End Role="TACCT" EntitySet="TACCT" />
+      <End Role="TBPCS" EntitySet="TBPCS" />
+    </AssociationSet>
+    <AssociationSet Name="R_555" Association="Self.R_555">
+      <End Role="TBUS" EntitySet="TBUS" />
+      <End Role="TBPCS" EntitySet="TBPCS" />
+    </AssociationSet>
+    <AssociationSet Name="R_556" Association="Self.R_556">
+      <End Role="TBPCS" EntitySet="TBPCS" />
+      <End Role="TTRANS_SSN" EntitySet="TTRANS_SSN" />
+    </AssociationSet>
+    <AssociationSet Name="R_557" Association="Self.R_557">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TTRANS_SSN" EntitySet="TTRANS_SSN" />
+    </AssociationSet>
+    <AssociationSet Name="R_558" Association="Self.R_558">
+      <End Role="TTRANS_TRSF_CRDT_DBT" EntitySet="TTRANS_TRSF_CRDT_DBT" />
+      <End Role="TBIL_PYMT_TRANS" EntitySet="TBIL_PYMT_TRANS" />
+    </AssociationSet>
+    <AssociationSet Name="R_559" Association="Self.R_559">
+      <End Role="TPYMT_PRTR" EntitySet="TPYMT_PRTR" />
+      <End Role="TEXRL_TRANS" EntitySet="TEXRL_TRANS" />
+    </AssociationSet>
+    <AssociationSet Name="R_560" Association="Self.R_560">
+      <End Role="TTRANS_TRSF_CRDT_DBT" EntitySet="TTRANS_TRSF_CRDT_DBT" />
+      <End Role="TTRANS_TEMPO" EntitySet="TTRANS_TEMPO" />
+    </AssociationSet>
+    <AssociationSet Name="R_561" Association="Self.R_561">
+      <End Role="TFI_EXRL_ACCT" EntitySet="TFI_EXRL_ACCT" />
+      <End Role="TRCPT_EXRL_ACCT_FOR_BUS" EntitySet="TRCPT_EXRL_ACCT_FOR_BUS" />
+    </AssociationSet>
+    <AssociationSet Name="R_562" Association="Self.R_562">
+      <End Role="TRCPT_USR_BUS" EntitySet="TRCPT_USR_BUS" />
+      <End Role="TRCPT_EXRL_ACCT_FOR_BUS" EntitySet="TRCPT_EXRL_ACCT_FOR_BUS" />
+    </AssociationSet>
+    <AssociationSet Name="R_564" Association="Self.R_564">
+      <End Role="TBUS" EntitySet="TBUS" />
+      <End Role="TRCPT_EXRL_ACCT_FOR_BUS" EntitySet="TRCPT_EXRL_ACCT_FOR_BUS" />
+    </AssociationSet>
+    <AssociationSet Name="R_565" Association="Self.R_565">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TCTRY_CRCY" EntitySet="TCTRY_CRCY" />
+    </AssociationSet>
+    <AssociationSet Name="R_566" Association="Self.R_566">
+      <End Role="TCRCY" EntitySet="TCRCY" />
+      <End Role="TCTRY_CRCY" EntitySet="TCTRY_CRCY" />
+    </AssociationSet>
+    <AssociationSet Name="R_567" Association="Self.R_567">
+      <End Role="TLANG" EntitySet="TLANG" />
+      <End Role="TCTRY_CRCY" EntitySet="TCTRY_CRCY" />
+    </AssociationSet>
+    <AssociationSet Name="R_568" Association="Self.R_568">
+      <End Role="TBUS_USR" EntitySet="TBUS_USR" />
+      <End Role="TBUS_USR_EXCP_ROL" EntitySet="TBUS_USR_EXCP_ROL" />
+    </AssociationSet>
+    <AssociationSet Name="R_569" Association="Self.R_569">
+      <End Role="TBUS_AGCY" EntitySet="TBUS_AGCY" />
+      <End Role="TBUS_USR_EXCP_ROL" EntitySet="TBUS_USR_EXCP_ROL" />
+    </AssociationSet>
+    <AssociationSet Name="R_571" Association="Self.R_571">
+      <End Role="TTRANS_TRSF_CRDT_DBT" EntitySet="TTRANS_TRSF_CRDT_DBT" />
+      <End Role="TTRANS_ID_DOC" EntitySet="TTRANS_ID_DOC" />
+    </AssociationSet>
+    <AssociationSet Name="R_572" Association="Self.R_572">
+      <End Role="TID_DOC" EntitySet="TID_DOC" />
+      <End Role="TTRANS_ID_DOC" EntitySet="TTRANS_ID_DOC" />
+    </AssociationSet>
+    <AssociationSet Name="R_573" Association="Self.R_573">
+      <End Role="TBUS_USR" EntitySet="TBUS_USR" />
+      <End Role="TTRANS_ID_DOC" EntitySet="TTRANS_ID_DOC" />
+    </AssociationSet>
+    <AssociationSet Name="R_574" Association="Self.R_574">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TTRANS_ID_DOC" EntitySet="TTRANS_ID_DOC" />
+    </AssociationSet>
+    <AssociationSet Name="R_575" Association="Self.R_575">
+      <End Role="TBUS_USR" EntitySet="TBUS_USR" />
+      <End Role="TBUS_INTRN_TRSF_TRANS" EntitySet="TBUS_INTRN_TRSF_TRANS" />
+    </AssociationSet>
+    <AssociationSet Name="R_576" Association="Self.R_576">
+      <End Role="TBUS_USR" EntitySet="TBUS_USR" />
+      <End Role="TBUS_INTRN_TRSF_TRANS" EntitySet="TBUS_INTRN_TRSF_TRANS" />
+    </AssociationSet>
+    <AssociationSet Name="R_577" Association="Self.R_577">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TBUS_CTRY_FEE" EntitySet="TBUS_CTRY_FEE" />
+    </AssociationSet>
+    <AssociationSet Name="R_580" Association="Self.R_580">
+      <End Role="TCRCY" EntitySet="TCRCY" />
+      <End Role="TBUS_CTRY_FEE" EntitySet="TBUS_CTRY_FEE" />
+    </AssociationSet>
+    <AssociationSet Name="R_596" Association="Self.R_596">
+      <End Role="TBUS" EntitySet="TBUS" />
+      <End Role="TAGNT_CMSN" EntitySet="TAGNT_CMSN" />
+    </AssociationSet>
+    <AssociationSet Name="R_598" Association="Self.R_598">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TAGNT_CMSN" EntitySet="TAGNT_CMSN" />
+    </AssociationSet>
+    <AssociationSet Name="R_600" Association="Self.R_600">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TAGNT_PKP_CMSN" EntitySet="TAGNT_PKP_CMSN" />
+    </AssociationSet>
+    <AssociationSet Name="R_601" Association="Self.R_601">
+      <End Role="TCRCY" EntitySet="TCRCY" />
+      <End Role="TAGNT_PKP_CMSN" EntitySet="TAGNT_PKP_CMSN" />
+    </AssociationSet>
+    <AssociationSet Name="R_603" Association="Self.R_603">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TAGNT_SPNSRD" EntitySet="TAGNT_SPNSRD" />
+    </AssociationSet>
+    <AssociationSet Name="R_606" Association="Self.R_606">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TAGNT" EntitySet="TAGNT" />
+    </AssociationSet>
+    <AssociationSet Name="R_607" Association="Self.R_607">
+      <End Role="TBUS" EntitySet="TBUS" />
+      <End Role="TAGNT" EntitySet="TAGNT" />
+    </AssociationSet>
+    <AssociationSet Name="R_609" Association="Self.R_609">
+      <End Role="TAGNT" EntitySet="TAGNT" />
+      <End Role="TAGNT_CMSN" EntitySet="TAGNT_CMSN" />
+    </AssociationSet>
+    <AssociationSet Name="R_612" Association="Self.R_612">
+      <End Role="TAGNT" EntitySet="TAGNT" />
+      <End Role="TAGNT_TRANS_CMSN" EntitySet="TAGNT_TRANS_CMSN" />
+    </AssociationSet>
+    <AssociationSet Name="R_613" Association="Self.R_613">
+      <End Role="TAGNT" EntitySet="TAGNT" />
+      <End Role="TAGNT_SPNSRD" EntitySet="TAGNT_SPNSRD" />
+    </AssociationSet>
+    <AssociationSet Name="R_618" Association="Self.R_618">
+      <End Role="TAGNT" EntitySet="TAGNT" />
+      <End Role="TAGNT1" EntitySet="TAGNT" />
+    </AssociationSet>
+    <AssociationSet Name="R_620" Association="Self.R_620">
+      <End Role="TAGNT" EntitySet="TAGNT" />
+      <End Role="TAGNT_TRSF" EntitySet="TAGNT_TRSF" />
+    </AssociationSet>
+    <AssociationSet Name="R_621" Association="Self.R_621">
+      <End Role="TACCT" EntitySet="TACCT" />
+      <End Role="TACCT_BUS_AGNT_CMSN" EntitySet="TACCT_BUS_AGNT_CMSN" />
+    </AssociationSet>
+    <AssociationSet Name="R_622" Association="Self.R_622">
+      <End Role="TACCT_BUS_AGNT_CMSN" EntitySet="TACCT_BUS_AGNT_CMSN" />
+      <End Role="TAGNT" EntitySet="TAGNT" />
+    </AssociationSet>
+    <AssociationSet Name="R_63" Association="Self.R_63">
+      <End Role="TBUS" EntitySet="TBUS" />
+      <End Role="TBUS_AGCY" EntitySet="TBUS_AGCY" />
+    </AssociationSet>
+    <AssociationSet Name="R_632" Association="Self.R_632">
+      <End Role="TTRANS_TRSF_CRDT_DBT" EntitySet="TTRANS_TRSF_CRDT_DBT" />
+      <End Role="TAGNT_TRANS_CMSN_TEMPO" EntitySet="TAGNT_TRANS_CMSN_TEMPO" />
+    </AssociationSet>
+    <AssociationSet Name="R_645" Association="Self.R_645">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TCLT_IN_BUS" EntitySet="TCLT_IN_BUS" />
+    </AssociationSet>
+    <AssociationSet Name="R_646" Association="Self.R_646">
+      <End Role="TCARD" EntitySet="TCARD" />
+      <End Role="TCLT_IN_BUS" EntitySet="TCLT_IN_BUS" />
+    </AssociationSet>
+    <AssociationSet Name="R_647" Association="Self.R_647">
+      <End Role="TACCT" EntitySet="TACCT" />
+      <End Role="TCLT_IN_BUS" EntitySet="TCLT_IN_BUS" />
+    </AssociationSet>
+    <AssociationSet Name="R_648" Association="Self.R_648">
+      <End Role="TBUS" EntitySet="TBUS" />
+      <End Role="TCLT_IN_BUS" EntitySet="TCLT_IN_BUS" />
+    </AssociationSet>
+    <AssociationSet Name="R_649" Association="Self.R_649">
+      <End Role="TBUS_USR" EntitySet="TBUS_USR" />
+      <End Role="TCLT_IN_BUS" EntitySet="TCLT_IN_BUS" />
+    </AssociationSet>
+    <AssociationSet Name="R_65" Association="Self.R_65">
+      <End Role="TBUS_AGCY" EntitySet="TBUS_AGCY" />
+      <End Role="TBUS_USR" EntitySet="TBUS_USR" />
+    </AssociationSet>
+    <AssociationSet Name="R_650" Association="Self.R_650">
+      <End Role="TTRANS_TRSF_CRDT_DBT" EntitySet="TTRANS_TRSF_CRDT_DBT" />
+      <End Role="TONBHLF_CLT_TRANS" EntitySet="TONBHLF_CLT_TRANS" />
+    </AssociationSet>
+    <AssociationSet Name="R_651" Association="Self.R_651">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TONBHLF_CLT_TRANS" EntitySet="TONBHLF_CLT_TRANS" />
+    </AssociationSet>
+    <AssociationSet Name="R_652" Association="Self.R_652">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TONBHLF_CLT_CMSN" EntitySet="TONBHLF_CLT_CMSN" />
+    </AssociationSet>
+    <AssociationSet Name="R_654" Association="Self.R_654">
+      <End Role="TCTRY" EntitySet="TCTRY" />
+      <End Role="TONBHLF_CLT_CMSN" EntitySet="TONBHLF_CLT_CMSN" />
+    </AssociationSet>
+    <AssociationSet Name="R_655" Association="Self.R_655">
+      <End Role="TCRCY" EntitySet="TCRCY" />
+      <End Role="TONBHLF_CLT_CMSN" EntitySet="TONBHLF_CLT_CMSN" />
+    </AssociationSet>
+    <AssociationSet Name="R_656" Association="Self.R_656">
+      <End Role="TCRCY" EntitySet="TCRCY" />
+      <End Role="TONBHLF_CLT_TRANS" EntitySet="TONBHLF_CLT_TRANS" />
+    </AssociationSet>
+    <AssociationSet Name="R_702" Association="Self.R_702">
+      <End Role="TACCT" EntitySet="TACCT" />
+      <End Role="TACCT_BUS_SRVC" EntitySet="TACCT_BUS_SRVC" />
+    </AssociationSet>
+    <AssociationSet Name="R_725" Association="Self.R_725">
+      <End Role="TBUS_AGCY" EntitySet="TBUS_AGCY" />
+      <End Role="TBUS_AGCY_SRVC" EntitySet="TBUS_AGCY_SRVC" />
+    </AssociationSet>
+    <AssociationSet Name="R_727" Association="Self.R_727">
+      <End Role="TBUS" EntitySet="TBUS" />
+      <End Role="TBUS_TY" EntitySet="TBUS_TY" />
+    </AssociationSet>
+    <AssociationSet Name="R_729" Association="Self.R_729">
+      <End Role="TCARD" EntitySet="TCARD" />
+      <End Role="TBUS" EntitySet="TBUS" />
+    </AssociationSet>
+    <AssociationSet Name="R_97" Association="Self.R_97">
+      <End Role="TUSR" EntitySet="TUSR" />
+      <End Role="TACCT" EntitySet="TACCT" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

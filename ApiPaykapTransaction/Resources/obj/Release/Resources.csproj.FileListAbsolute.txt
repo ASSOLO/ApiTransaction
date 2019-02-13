@@ -1,0 +1,31 @@
+C:\Users\inter\Documents\PayKap2016\pkpApp\Resources\bin\Release\Resources.dll
+C:\Users\inter\Documents\PayKap2016\pkpApp\Resources\bin\Release\Resources.pdb
+C:\Users\inter\Documents\PayKap2016\pkpApp\Resources\obj\Release\Resources.Resources-en.resources
+C:\Users\inter\Documents\PayKap2016\pkpApp\Resources\obj\Release\Resources.Resources.resources
+C:\Users\inter\Documents\PayKap2016\pkpApp\Resources\obj\Release\Resources.csproj.GenerateResource.Cache
+C:\Users\inter\Documents\PayKap2016\pkpApp\Resources\obj\Release\Resources.dll
+C:\Users\inter\Documents\PayKap2016\pkpApp\Resources\obj\Release\Resources.pdb
+C:\Users\inter\Documents\PayKap2017\pkpApp\Resources\bin\Release\Resources.dll
+C:\Users\inter\Documents\PayKap2017\pkpApp\Resources\bin\Release\Resources.pdb
+C:\Users\inter\Documents\PayKap2017\pkpApp\Resources\obj\Release\Resources.csprojResolveAssemblyReference.cache
+C:\Users\inter\Documents\PayKap2017\pkpApp\Resources\obj\Release\Resources.Resources-en.resources
+C:\Users\inter\Documents\PayKap2017\pkpApp\Resources\obj\Release\Resources.Resources.resources
+C:\Users\inter\Documents\PayKap2017\pkpApp\Resources\obj\Release\Resources.csproj.GenerateResource.Cache
+C:\Users\inter\Documents\PayKap2017\pkpApp\Resources\obj\Release\Resources.dll
+C:\Users\inter\Documents\PayKap2017\pkpApp\Resources\obj\Release\Resources.pdb
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2017-08 Current PRD\pkpApp\Resources\bin\Release\Resources.dll
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2017-08 Current PRD\pkpApp\Resources\bin\Release\Resources.pdb
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2017-08 Current PRD\pkpApp\Resources\obj\Release\Resources.csprojResolveAssemblyReference.cache
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2017-08 Current PRD\pkpApp\Resources\obj\Release\Resources.Resources-en.resources
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2017-08 Current PRD\pkpApp\Resources\obj\Release\Resources.Resources.resources
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2017-08 Current PRD\pkpApp\Resources\obj\Release\Resources.csproj.GenerateResource.Cache
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2017-08 Current PRD\pkpApp\Resources\obj\Release\Resources.dll
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2017-08 Current PRD\pkpApp\Resources\obj\Release\Resources.pdb
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-03\pkpApp\Resources\bin\Release\Resources.dll
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-03\pkpApp\Resources\bin\Release\Resources.pdb
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-03\pkpApp\Resources\obj\Release\Resources.csprojResolveAssemblyReference.cache
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-03\pkpApp\Resources\obj\Release\Resources.Resources-en.resources
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-03\pkpApp\Resources\obj\Release\Resources.Resources.resources
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-03\pkpApp\Resources\obj\Release\Resources.csproj.GenerateResource.Cache
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-03\pkpApp\Resources\obj\Release\Resources.dll
+C:\Users\PayKap International\Documents\PayKap\PayKap App\Release 2018-03\pkpApp\Resources\obj\Release\Resources.pdb

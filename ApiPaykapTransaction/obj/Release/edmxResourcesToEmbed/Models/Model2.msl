@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="paykapdevModelStoreContainer" CdmEntityContainer="DataModel">
+    <FunctionImportMapping FunctionName="paykapdevModel.Store.GetTransactionDetails" FunctionImportName="GetTransactionDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="paykapdevModel.GetTransactionDetails_Result">
+          <ScalarProperty Name="USR_FNM" ColumnName="USR_FNM" />
+          <ScalarProperty Name="USR_LNM" ColumnName="USR_LNM" />
+          <ScalarProperty Name="FROM_USR_NBR" ColumnName="FROM_USR_NBR" />
+          <ScalarProperty Name="RCPT_USR_BUS_NM" ColumnName="RCPT_USR_BUS_NM" />
+          <ScalarProperty Name="TRANS_ID" ColumnName="TRANS_ID" />
+          <ScalarProperty Name="TO_TRANS_AMT" ColumnName="TO_TRANS_AMT" />
+          <ScalarProperty Name="TRANS_DESC" ColumnName="TRANS_DESC" />
+          <ScalarProperty Name="FRA_TRSF_SERV_NM" ColumnName="FRA_TRSF_SERV_NM" />
+          <ScalarProperty Name="TRANS_SCD" ColumnName="TRANS_SCD" />
+          <ScalarProperty Name="CITY_NM" ColumnName="CITY_NM" />
+          <ScalarProperty Name="ADDR_LN1_TXT" ColumnName="ADDR_LN1_TXT" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

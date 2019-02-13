@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="A_00EBENEZER_DONT_WRITE_HERE_" xml:space="preserve">
+    <value>SERA SUPPRIMER A LA FIN DES OPERATIONS</value>
+    <comment> TU NE FAIS QUE DES COPIES DANS CETTE RESOURCE</comment>
+  </data>
+  <data name="z3CardController1_" xml:space="preserve">
+    <value />
+    <comment>Votre NIP actuel n'est pas valide.</comment>
+  </data>
+  <data name="z3CardController2_" xml:space="preserve">
+    <value />
+    <comment>L'ancien et le nouveau codes secrets ou NIPs doivent être differents.</comment>
+  </data>
+  <data name="z3ClientAgentController10_" xml:space="preserve">
+    <value />
+    <comment>Le compte de commission n'a pas suffisamment d'argent pour complèter cette transaction.</comment>
+  </data>
+  <data name="z3ClientAgentController11_" xml:space="preserve">
+    <value />
+    <comment>Le transfert a été effectué avec succès de votre compte de commission au compte PayKap courant.</comment>
+  </data>
+  <data name="z3ClientAgentController12_" xml:space="preserve">
+    <value />
+    <comment>Numéro du compte agent</comment>
+  </data>
+  <data name="z3ClientAgentController13_" xml:space="preserve">
+    <value />
+    <comment>Pays et Devise du compte agent</comment>
+  </data>
+  <data name="z3ClientAgentController14_" xml:space="preserve">
+    <value />
+    <comment>Solde du compte agent</comment>
+  </data>
+  <data name="z3ClientAgentController1_" xml:space="preserve">
+    <value />
+    <comment>Chosir que vous avez un parrain ou non est obligatoire.</comment>
+  </data>
+  <data name="z3ClientAgentController2_" xml:space="preserve">
+    <value />
+    <comment>Le ID PayKap de l'individu ou de l'orgnisation est obligatoire.</comment>
+  </data>
+  <data name="z3ClientAgentController3_" xml:space="preserve">
+    <value />
+    <comment>Vous ne pouvez pas déclarer que vous n'avez pas de parrain et avoir une valeur dans ce champ. Laissez le vide.</comment>
+  </data>
+  <data name="z3ClientAgentController4_" xml:space="preserve">
+    <value />
+    <comment>Le ID PayKap de l'individu n'est pas valide.</comment>
+  </data>
+  <data name="z3ClientAgentController5_" xml:space="preserve">
+    <value />
+    <comment>Le ID PayKap de l'organisation n'est pas valide.</comment>
+  </data>
+  <data name="z3ClientAgentController6_" xml:space="preserve">
+    <value />
+    <comment>Vous ne pouvez pas vous parrainer vous même.</comment>
+  </data>
+  <data name="z3ClientAgentController7_" xml:space="preserve">
+    <value />
+    <comment>Vous êtes déjà un agent PayKap.</comment>
+  </data>
+  <data name="z3ClientAgentController8_" xml:space="preserve">
+    <value />
+    <comment>Le ID du parrain n'est pas valide ou le parrain n'est pas un agent. Choississez l'option 'Pas de parrain' si vous n'avez pas un ID valide.</comment>
+  </data>
+  <data name="z3ClientAgentController9_" xml:space="preserve">
+    <value />
+    <comment>Le ID PayKap de l'individu ou de l'organisation doit être uniquement des chiffres de longueur 10 et 9 respectivement.</comment>
+  </data>
+  <data name="z3ManageController1_" xml:space="preserve">
+    <value />
+    <comment>Votre mot de passe a été changé.</comment>
+  </data>
+  <data name="z3ManageController2_" xml:space="preserve">
+    <value />
+    <comment>Votre mot de passe a été défini.</comment>
+  </data>
+  <data name="z3ManageController3_" xml:space="preserve">
+    <value />
+    <comment>Votre fournisseur d'authentification à 2 facteurs a été défini.</comment>
+  </data>
+  <data name="z3ManageController4_" xml:space="preserve">
+    <value />
+    <comment>Une erreur s'est produite.</comment>
+  </data>
+  <data name="z3ManageController5_" xml:space="preserve">
+    <value />
+    <comment>Votre numéro de téléphone a été ajouté.</comment>
+  </data>
+  <data name="z3ManageController6_" xml:space="preserve">
+    <value />
+    <comment>Votre numéro de téléphone a été supprimé.</comment>
+  </data>
+  <data name="z3ManageController7_" xml:space="preserve">
+    <value />
+    <comment>La connexion externe a été supprimée.</comment>
+  </data>
+  <data name="z3ManageController8_" xml:space="preserve">
+    <value />
+    <comment>Une erreur s'est produite.</comment>
+  </data>
+  <data name="z3OnBehalfClientCommController1_" xml:space="preserve">
+    <value />
+    <comment>Ce client est a déjà des commissions dans le pays sélectionné.</comment>
+  </data>
+  <data name="z3PKPCController10_" xml:space="preserve">
+    <value />
+    <comment>Le moyen de paiement par le compte bancaire n'est pas encore accepté dans votre pays.</comment>
+  </data>
+  <data name="z3PKPCController11_" xml:space="preserve">
+    <value />
+    <comment>Carte de crédit</comment>
+  </data>
+  <data name="z3PKPCController12_" xml:space="preserve">
+    <value />
+    <comment>Le paiement ou le transfert de l'argent dans le pays du bénéficiaire n'est pas encore activé. Revenez dans un futur proche.</comment>
+  </data>
+  <data name="z3PKPCController13_" xml:space="preserve">
+    <value />
+    <comment>PayKap n'autorise pas les transactions dont le compte départ et le compte destinataire sont identiques.</comment>
+  </data>
+  <data name="z3PKPCController14_" xml:space="preserve">
+    <value />
+    <comment>La reception ou le dépôt de l'argent dans un compte bancaire n'est pas encore accepté dans le pays du bénéficiaire.</comment>
+  </data>
+  <data name="z3PKPCController15_" xml:space="preserve">
+    <value />
+    <comment>Il se pourrait que PayKap n'a pas de service de transfert dans le pays selectionné.</comment>
+  </data>
+  <data name="z3PKPCController16_" xml:space="preserve">
+    <value />
+    <comment>Le montant de la transaction est supérieur à la limite autorisée (</comment>
+  </data>
+  <data name="z3PKPCController17_" xml:space="preserve">
+    <value />
+    <comment>) dans votre pays.</comment>
+  </data>
+  <data name="z3PKPCController18_" xml:space="preserve">
+    <value />
+    <comment>Choisir le moyen de payer votre facture est obligatoire.</comment>
+  </data>
+  <data name="z3PKPCController19_" xml:space="preserve">
+    <value />
+    <comment>Choisir l'entreprise bénéficiaire est obligatoire.</comment>
+  </data>
+  <data name="z3PKPCController1_" xml:space="preserve">
+    <value />
+    <comment>expiry</comment>
+  </data>
+  <data name="z3PKPCController2_" xml:space="preserve">
+    <value />
+    <comment>Solde</comment>
+  </data>
+  <data name="z3PKPCController3_" xml:space="preserve">
+    <value />
+    <comment>Choisir le compte PayKap du bénéficiaire est obligatoire.</comment>
+  </data>
+  <data name="z3PKPCController4_" xml:space="preserve">
+    <value />
+    <comment>Choisir un moyen de paiement est obligatoire.</comment>
+  </data>
+  <data name="z3PKPCController5_" xml:space="preserve">
+    <value />
+    <comment>Choisir un type de bénéficiaire est obligatoire.</comment>
+  </data>
+  <data name="z3PKPCController6_" xml:space="preserve">
+    <value />
+    <comment>Choisir un type de service est obligatoire.</comment>
+  </data>
+  <data name="z3PKPCController7_" xml:space="preserve">
+    <value />
+    <comment>Choisir votre compte PayKap ou bancaire est obligatoire.</comment>
+  </data>
+  <data name="z3PKPCController8_" xml:space="preserve">
+    <value />
+    <comment>Choisir l'autre moyen de paiement est obligatoire.</comment>
+  </data>
+  <data name="z3PKPCController9_" xml:space="preserve">
+    <value />
+    <comment>Il se peut que votre profil soit incomplet. Complèter votre profil avec un numéro de téléphone valide que nous pouvons utiliser pour vous joindre facilement avant de complèter une transaction.</comment>
+  </data>
+  <data name="z3PKPController10_" xml:space="preserve">
+    <value />
+    <comment>Vous avez choissi le dépôt bancaire, donc choisir une institution financière est obligatoire.</comment>
+  </data>
+  <data name="z3PKPController11_" xml:space="preserve">
+    <value />
+    <comment>Le montant de la transaction ne peut être inférieur à 1</comment>
+  </data>
+  <data name="z3PKPController12_" xml:space="preserve">
+    <value />
+    <comment>Tous les champs sont obligatoires. Vérifiez tous les champs et continuez.</comment>
+  </data>
+  <data name="z3PKPController13_" xml:space="preserve">
+    <value />
+    <comment>Vous devez choisir le moyen de paiement avant de continuer.</comment>
+  </data>
+  <data name="z3PKPController14_" xml:space="preserve">
+    <value />
+    <comment>Le code de vérification n'est pas valide. Vérifiez le ou envoyez un nouveau code en cliquant sur le lien ci-dessous.</comment>
+  </data>
+  <data name="z3PKPController15_" xml:space="preserve">
+    <value />
+    <comment>Le numéro de téléphone PayKap est obligatoire.</comment>
+  </data>
+  <data name="z3PKPController16_" xml:space="preserve">
+    <value />
+    <comment>Vous ne pouvez pas envoyer de l'argent au nom de votre propre nom. Vous devez cliquer sur le lien &lt;&lt;Transférer de l'argent en un clic&gt;&gt;.</comment>
+  </data>
+  <data name="z3PKPController17_" xml:space="preserve">
+    <value />
+    <comment>Vous devez choisir un bénéficiaire existant Ou entrer le numéro PayKap du bénéficiaire, pas les deux à la fois.</comment>
+  </data>
+  <data name="z3PKPController18_" xml:space="preserve">
+    <value />
+    <comment>Vous ne pouvez pas envoyer de l'argent de votre compte à ce même compte.</comment>
+  </data>
+  <data name="z3PKPController1_" xml:space="preserve">
+    <value />
+    <comment>Le texte du message est obligatoire</comment>
+  </data>
+  <data name="z3PKPController2_" xml:space="preserve">
+    <value />
+    <comment>Le texte ne peut pas dépasser 500 caractères</comment>
+  </data>
+  <data name="z3PKPController3_" xml:space="preserve">
+    <value />
+    <comment>Votre message n'a pas été envoyé.</comment>
+  </data>
+  <data name="z3PKPController4_" xml:space="preserve">
+    <value />
+    <comment>Nouveau message de</comment>
+  </data>
+  <data name="z3PKPController5_" xml:space="preserve">
+    <value />
+    <comment>Le pays d'envoi est obligatoire.</comment>
+  </data>
+  <data name="z3PKPController6_" xml:space="preserve">
+    <value />
+    <comment>Le pays de réception est obligatoire.</comment>
+  </data>
+  <data name="z3PKPController7_" xml:space="preserve">
+    <value />
+    <comment>Le service est obligatoire.</comment>
+  </data>
+  <data name="z3PKPController8_" xml:space="preserve">
+    <value />
+    <comment>Le moyen de paiement de votre transaction est obligatoire.</comment>
+  </data>
+  <data name="z3PKPController9_" xml:space="preserve">
+    <value />
+    <comment>Le montant de la transaction est obligatoire.</comment>
+  </data>
+  <data name="z3PKPEController1_" xml:space="preserve">
+    <value />
+    <comment>Choisir le type de recherche est obligatoire</comment>
+  </data>
+  <data name="z3PKPEController2_" xml:space="preserve">
+    <value />
+    <comment>Oups! PayKap accepte actuellement seulement le numéro de téléphone PayKap comme type de recherche.</comment>
+  </data>
+  <data name="z3PKPEController3_" xml:space="preserve">
+    <value />
+    <comment>Cet utilisateur a été supprimé avec succès.</comment>
+  </data>
+  <data name="z3PKPEController4_" xml:space="preserve">
+    <value />
+    <comment>Cet email n'est pas valide. Vérifiez le et recommencer.</comment>
+  </data>
+  <data name="z3PKPEController5_" xml:space="preserve">
+    <value />
+    <comment>Le mot de passe de cet utilisateur a été réinitialisé.</comment>
+  </data>
+  <data name="z3PKPMController10_" xml:space="preserve">
+    <value />
+    <comment>Le type d'agent est obligatoire.</comment>
+  </data>
+  <data name="z3PKPMController11_" xml:space="preserve">
+    <value />
+    <comment>Le pays de l'agent est obligatoire.</comment>
+  </data>
+  <data name="z3PKPMController12_" xml:space="preserve">
+    <value />
+    <comment>Le ID de l'individu ou de l'orgnisation est obligatoire.</comment>
+  </data>
+  <data name="z3PKPMController13_" xml:space="preserve">
+    <value />
+    <comment>Le ID de l'individu (parrain) n'est pas valide.</comment>
+  </data>
+  <data name="z3PKPMController14_" xml:space="preserve">
+    <value />
+    <comment>Le ID PayKap de l'organisation (parrain) n'est pas valide.</comment>
+  </data>
+  <data name="z3PKPMController15_" xml:space="preserve">
+    <value />
+    <comment>Le parrain et l'agent ne peuvent pas être la même personne.</comment>
+  </data>
+  <data name="z3PKPMController16_" xml:space="preserve">
+    <value />
+    <comment>Le ID du parrain n'est pas valide. Choississez l'option 'Pas de parrain' si vous n'avez pas un ID valide.</comment>
+  </data>
+  <data name="z3PKPMController17_" xml:space="preserve">
+    <value />
+    <comment>Le numéro n'est pas valide.</comment>
+  </data>
+  <data name="z3PKPMController18_" xml:space="preserve">
+    <value />
+    <comment>Nom Compte</comment>
+  </data>
+  <data name="z3PKPMController19_" xml:space="preserve">
+    <value />
+    <comment>Pays/Devise Compte</comment>
+  </data>
+  <data name="z3PKPMController1_" xml:space="preserve">
+    <value />
+    <comment>Le premier service à la création de l'entreprise est obligatoire.</comment>
+  </data>
+  <data name="z3PKPMController20_" xml:space="preserve">
+    <value />
+    <comment>Désolé, aucun compte ne correspond à cet email. Vérifiez le et recommencer.</comment>
+  </data>
+  <data name="z3PKPMController21_" xml:space="preserve">
+    <value />
+    <comment>Le processus de création de ce compte n'a pas été complété. Vérifiez, activez avant d'envoyer le message au client pour réinitialiser son mot de passe.</comment>
+  </data>
+  <data name="z3PKPMController22_" xml:space="preserve">
+    <value />
+    <comment>Ce compte a été supprimé.</comment>
+  </data>
+  <data name="z3PKPMController2_" xml:space="preserve">
+    <value />
+    <comment>L'entreprise est obligatoire.</comment>
+  </data>
+  <data name="z3PKPMController3_" xml:space="preserve">
+    <value />
+    <comment>L'agence d'entreprise est obligatoire.</comment>
+  </data>
+  <data name="z3PKPMController4_" xml:space="preserve">
+    <value />
+    <comment>Le rôle est obligatoire.</comment>
+  </data>
+  <data name="z3PKPMController5_" xml:space="preserve">
+    <value />
+    <comment>L'employé est obligatoire.</comment>
+  </data>
+  <data name="z3PKPMController6_" xml:space="preserve">
+    <value />
+    <comment>Cet employé est déjà caissier. Un caissier ne peut agir dans 2 agences à la fois.</comment>
+  </data>
+  <data name="z3PKPMController7_" xml:space="preserve">
+    <value />
+    <comment>Cet employé est déjà directeur de cette agence.</comment>
+  </data>
+  <data name="z3PKPMController8_" xml:space="preserve">
+    <value />
+    <comment>Cette agence a déjà un directeur.</comment>
+  </data>
+  <data name="z3PKPMController9_" xml:space="preserve">
+    <value />
+    <comment>Cet employé est déjà gestionnaire. On ne peut avoir qu'un gestionnaire par entreprise.</comment>
+  </data>
+  <data name="z3PKPOController1_" xml:space="preserve">
+    <value />
+    <comment>Choisir le compte bancaire du bénéficiaire est obligatoire.</comment>
+  </data>
+  <data name="z3PKPOController2_" xml:space="preserve">
+    <value />
+    <comment>Le paiement par le compte bancaire n'est pas encore accepté dans votre pays.</comment>
+  </data>
+  <data name="z3PKPOController3_" xml:space="preserve">
+    <value />
+    <comment>Le montant de la transaction est supérieur à la limite autorisée dans votre pays.</comment>
+  </data>
+  <data name="z3PKPOController4_" xml:space="preserve">
+    <value />
+    <comment>No Transaction</comment>
+  </data>
+  <data name="z3PKPOController5_" xml:space="preserve">
+    <value />
+    <comment>Le nom, nom court, pays, ville, titre, téléphone 1, adresse 1 et date de naissance sont obligatoires.</comment>
+  </data>
+  <data name="z3TransactionController10_" xml:space="preserve">
+    <value />
+    <comment>Le compte PayKap de paiement ne peut pas être le même compte pour le dépôt.</comment>
+  </data>
+  <data name="z3TransactionController11_" xml:space="preserve">
+    <value />
+    <comment>Compte bancaire -</comment>
+  </data>
+  <data name="z3TransactionController12_" xml:space="preserve">
+    <value />
+    <comment>Paiement de/Payment from</comment>
+  </data>
+  <data name="z3TransactionController1_" xml:space="preserve">
+    <value />
+    <comment>Relevé de transaction Receipt</comment>
+  </data>
+  <data name="z3TransactionController2_" xml:space="preserve">
+    <value />
+    <comment>No Transaction:</comment>
+  </data>
+  <data name="z3TransactionController3_" xml:space="preserve">
+    <value />
+    <comment>Company Name:</comment>
+  </data>
+  <data name="z3TransactionController4_" xml:space="preserve">
+    <value />
+    <comment>Oops! Vous n'êtes pas autorisé à accéder cette page.</comment>
+  </data>
+  <data name="z3TransactionController5_" xml:space="preserve">
+    <value />
+    <comment>Il n'est pas autorisé que la devise de votre compte soit differente de celle de cette transaction.</comment>
+  </data>
+  <data name="z3TransactionController6_" xml:space="preserve">
+    <value />
+    <comment>Oups, PayKap n'a pas actuellement de l'argent dans le pays de votre bénéficiaire. Revenez dans un futur proche.</comment>
+  </data>
+  <data name="z3TransactionController7_" xml:space="preserve">
+    <value />
+    <comment>Compte PayKap -</comment>
+  </data>
+  <data name="z3TransactionController8_" xml:space="preserve">
+    <value />
+    <comment>Payment to / Paiement à</comment>
+  </data>
+  <data name="z3TransactionController9_" xml:space="preserve">
+    <value />
+    <comment>Payment from / Paiement de</comment>
+  </data>
+</root>

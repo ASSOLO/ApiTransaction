@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiPaykapTransaction", "ApiPaykapTransaction\ApiPaykapTransaction.csproj", "{B055B105-F118-4369-9F3F-AED1793D6D30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaykapDataAccess", "PaykapDataAccess\PaykapDataAccess.csproj", "{A64BF7B2-4087-4362-8F5B-54AE0742225E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources", "ApiPaykapTransaction\Resources\Resources.csproj", "{8FF9370A-B516-458E-833D-2649D29EA177}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B055B105-F118-4369-9F3F-AED1793D6D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B055B105-F118-4369-9F3F-AED1793D6D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B055B105-F118-4369-9F3F-AED1793D6D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B055B105-F118-4369-9F3F-AED1793D6D30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A64BF7B2-4087-4362-8F5B-54AE0742225E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A64BF7B2-4087-4362-8F5B-54AE0742225E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A64BF7B2-4087-4362-8F5B-54AE0742225E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A64BF7B2-4087-4362-8F5B-54AE0742225E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FF9370A-B516-458E-833D-2649D29EA177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FF9370A-B516-458E-833D-2649D29EA177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FF9370A-B516-458E-833D-2649D29EA177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FF9370A-B516-458E-833D-2649D29EA177}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

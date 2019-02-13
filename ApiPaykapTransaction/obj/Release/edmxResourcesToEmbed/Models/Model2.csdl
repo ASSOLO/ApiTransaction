@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="paykapdevModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <ComplexType Name="GetTransactionDetails_Result">
+    <Property Name="USR_FNM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USR_LNM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FROM_USR_NBR" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="RCPT_USR_BUS_NM" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TRANS_ID" Type="Int32" Nullable="false" />
+    <Property Name="TO_TRANS_AMT" Type="Decimal" Precision="14" Scale="4" Nullable="false" />
+    <Property Name="TRANS_DESC" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FRA_TRSF_SERV_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TRANS_SCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CITY_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ADDR_LN1_TXT" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+  </ComplexType>
+  <EntityContainer Name="DataModel" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="GetTransactionDetails" IsComposable="true" ReturnType="Collection(paykapdevModel.GetTransactionDetails_Result)">
+      <Parameter Name="TransqctionID" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

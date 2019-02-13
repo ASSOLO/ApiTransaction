@@ -1,0 +1,12 @@
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\PaykapDataAccess\bin\Release\PaykapDataAccess.dll.config
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\PaykapDataAccess\bin\Release\PaykapDataAccess.dll
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\PaykapDataAccess\bin\Release\PaykapDataAccess.pdb
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\PaykapDataAccess\bin\Release\EntityFramework.dll
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\PaykapDataAccess\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\PaykapDataAccess\bin\Release\EntityFramework.xml
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\PaykapDataAccess\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\PaykapDataAccess\bin\Release\fr\EntityFramework.resources.dll
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\PaykapDataAccess\bin\Release\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\PaykapDataAccess\obj\Release\PaykapDataAccess.csprojResolveAssemblyReference.cache
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\PaykapDataAccess\obj\Release\PaykapDataAccess.dll
+C:\Users\hp\documents\visual studio 2015\Projects\ApiPaykapTransaction\PaykapDataAccess\obj\Release\PaykapDataAccess.pdb
